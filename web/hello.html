@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,32 @@
    body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       text-align: center;
+
+      color: rgb(46, 46, 46);
+      background-color: rgb(46, 46, 46);
+   }
+   
+   #background {
+      background-image: url("https://live.staticflickr.com/7174/6843071941_8eb7770dc0_b.jpg");
+      padding: 20px;
+      padding-bottom: 50px;
+      max-width: 700px;
+      margin: auto;
+      border-radius: 20px;
+   }
+
+   iframe {
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.308);
    }
 </style>
+
 <body>
-   <h3>Welcome World and Hellooooo!</h3>
-   <p>Here is some useless information. Yay!</p>
-   
+   <div id="background">
+      <h1>Welcome to my first Heroku website</h1>
+      <p>For now, sit back, grab some popcorn, and enjoy an episode of GMM!</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qnLjBr6N2mE" frameborder="0"
+         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
 </body>
+
 </html>
