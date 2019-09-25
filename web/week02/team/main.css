@@ -1,0 +1,25 @@
+.col-md-2:hover {
+    font-weight: bold;
+}
+
+input {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.row {
+    text-align: center;
+}
+
+.col-md-2 {
+    /* border: solid;
+    padding: 15px; */
+}
+
+.card {
+    margin: 10px;
+}
+
+#third_div {
+    transition: opacity 1s;
+}
