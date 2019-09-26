@@ -1,3 +1,6 @@
+/******************************************
+ *  JavaScript
+ *****************************************/
 // window.onload = () => {
 //     let button1 = document.getElementById("click_button");
 //     button1.onclick = () => {
@@ -13,9 +16,21 @@
 // };
 
 
+/******************************************
+ *  JQuery
+ *****************************************/
 $(document).ready(function () {
     $("#click_button").click(() => {
         alert("Clicked!");
+    });
+
+    $(document).on("keypress", (e) => {
+        if (e.which === 13) {
+            $("#first_div").css({
+                backgroundColor: $("#color_input").val()
+            });
+            $("#color_input").val("");
+        }
     });
 
     $("#color_button").click(() => {
