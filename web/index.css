@@ -263,7 +263,7 @@ nav {
 }
 
 .assignments li {
-    width: 100%;
+    width: inherit;
     border: solid 1px var(--nav-bgd-color-dark);
     border-radius: 5px;
     margin: 10px;
@@ -272,6 +272,7 @@ nav {
 
 .assignments li a {
     padding: 10px;
+    width: 100%;
 }
 
 .assignments li a:hover {
