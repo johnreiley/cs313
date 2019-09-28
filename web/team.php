@@ -38,9 +38,9 @@ $thisPage = "Team Assignments";
             <li><a href="week13/team/">Week 13</a></li>
             <li><a href="week14/team/">Week 14</a></li>
         </ul>
+        <hr>
     </div>
 
-    <hr>
 </body>
 <script src="index.js"></script>
 
