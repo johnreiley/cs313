@@ -1,4 +1,3 @@
-<?php include("navigation.php"); ?>
 <!-- <!DOCTYPE html> -->
 <html lang="en">
 
@@ -11,6 +10,7 @@
 </head>
 
 <body>
+    <?php include("navigation.php"); ?>
     <div class="img-header">
         <img src="resources/river.jpg" alt="">
         <div class="img-text">

@@ -1,8 +1,5 @@
-<?php
-$thisPage = "Personal Assignments"
-?>
+<?php include("navigation.php"); ?>
 
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
