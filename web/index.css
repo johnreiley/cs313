@@ -256,6 +256,10 @@ nav {
     align-items: center;
 }
 
+.assignments li {
+    list-style: none;
+}
+
 
 .btn {
     border-radius: 5px;
