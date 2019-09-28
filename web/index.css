@@ -92,9 +92,9 @@ nav {
     color: var(--primary-font-color);
 }
 
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 /****************** CONTENT STYLING *******************/
 

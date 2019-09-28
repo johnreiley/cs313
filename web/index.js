@@ -33,8 +33,12 @@ function buildPageFooter() {
 
 function setDropdownListener() {
     let ddContent = document.querySelector('.dropdown-content');
-    document.querySelector('.dropdown').addEventListener('touchend', () => {
-        console.log("so fun!")
+    let dropdown = document.querySelector('.dropdown');
+    dropdown.addEventListener('touchend', (e) => {
+        ddContent.display == 'block' ? ddContent.display = 'none !important' : ddContent.display = 'block !important';
+        e.preventDefault();
+    })
+    dropdown.addEventListener('click', () => {
         ddContent.display == 'block' ? ddContent.display = 'none !important' : ddContent.display = 'block !important';
     })
 }
