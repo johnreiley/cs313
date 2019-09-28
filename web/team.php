@@ -40,6 +40,7 @@ $thisPage = "Team Assignments";
         </ul>
     </div>
 
+    <hr>
 </body>
 <script src="index.js"></script>
 

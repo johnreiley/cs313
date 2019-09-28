@@ -263,6 +263,7 @@ nav {
 }
 
 .assignments li {
+    background-color: var(--nav-bgd-color);
     width: inherit;
     border: solid 1px var(--nav-bgd-color-dark);
     border-radius: 5px;
