@@ -78,7 +78,7 @@ nav {
     font-size: 0.9em;
     position: absolute;
     animation: fadein 0.5s;
-    display: none;
+    /* display: none; */
     min-width: 150px;
     transform: translate(-15px, 15px);
 }
@@ -92,9 +92,9 @@ nav {
     color: var(--primary-font-color);
 }
 
-/* .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-} */
+}
 
 /****************** CONTENT STYLING *******************/
 

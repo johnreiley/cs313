@@ -35,10 +35,10 @@ function setDropdownListener() {
     let ddContent = document.querySelector('.dropdown-content');
     let dropdown = document.querySelector('.dropdown');
     dropdown.addEventListener('touchend', (e) => {
-        ddContent.display == 'block' ? ddContent.display = 'none !important' : ddContent.display = 'block !important';
+        ddContent.display == 'block' ? ddContent.display = 'none' : ddContent.display = 'block';
         e.preventDefault();
     })
-    dropdown.addEventListener('click', () => {
-        ddContent.display == 'block' ? ddContent.display = 'none !important' : ddContent.display = 'block !important';
-    })
+    // dropdown.addEventListener('click', () => {
+    //     ddContent.display == 'block' ? ddContent.display = 'none !important' : ddContent.display = 'block !important';
+    // })
 }
