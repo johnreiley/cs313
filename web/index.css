@@ -258,12 +258,13 @@ nav {
 
 .assignments {
     list-style: none;
+    padding: 0;
 }
 
 .assignments li {
     width: 100%;
     border: solid 1px var(--nav-bgd-color-dark);
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 10px;
     padding: 10px;
 }
