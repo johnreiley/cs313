@@ -261,6 +261,7 @@ nav {
 }
 
 .assignments li {
+    width: 100%;
     list-style: none;
 }
 
