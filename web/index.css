@@ -257,12 +257,18 @@ nav {
 }
 
 .assignments {
-    display: flex;
+    
 }
 
-.assignments li {
+.assignments li a {
     width: 100%;
     list-style: none;
+    border: solid 1px var(--nav-bgd-color-dark);
+    border-radius: 10px;
+}
+
+.assignments li a:hover {
+    filter: brightness(0.8);
 }
 
 
@@ -270,7 +276,7 @@ nav {
     border-radius: 5px;
     border: solid 1px var(--nav-bgd-color-dark);
     padding: 10px;
-    display: inline-block;
+    display: block;
 }
 
 .btn:hover {
