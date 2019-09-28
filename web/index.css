@@ -259,11 +259,13 @@ nav {
 .assignments li {
     list-style: none;
     width: 100%;
+    border: solid 1px var(--nav-bgd-color-dark);
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .assignments li a {
-    border: solid 1px var(--nav-bgd-color-dark);
-    border-radius: 10px;
+    padding: 10px;
 }
 
 .assignments li a:hover {
