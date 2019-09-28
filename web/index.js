@@ -1,6 +1,6 @@
 
 let body = document.querySelector('body');
-body.insertBefore(buildPageHeader(), body.firstChild);
+// body.insertBefore(buildPageHeader(), body.firstChild);
 document.querySelector('.content-container').appendChild(buildPageFooter());
 
 /******************************************************/
