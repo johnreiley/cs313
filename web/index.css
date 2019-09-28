@@ -256,6 +256,10 @@ nav {
     align-items: center;
 }
 
+.assignments {
+    display: flex;
+}
+
 .assignments li {
     list-style: none;
 }
@@ -266,6 +270,10 @@ nav {
     border: solid 1px var(--nav-bgd-color-dark);
     padding: 10px;
     display: inline-block;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
 }
 
 
