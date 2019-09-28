@@ -259,6 +259,7 @@ nav {
 .assignments {
     list-style: none;
     padding: 0;
+    display: block;
 }
 
 .assignments li {
