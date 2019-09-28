@@ -54,7 +54,7 @@ nav {
 
 .nav-item {
     background-color: var(--nav-bgd-color);
-    transition: all 0.5s;
+    transition: opacity 0.5s, color 0.5s;
     text-decoration: none;
     color: var(--primary-font-color);
     font-weight: 100;
