@@ -257,8 +257,6 @@ nav {
 }
 
 .assignments {
-    text-decoration: none;
-    color: white;
     list-style: none;
     padding: 0;
     display: block;
@@ -273,6 +271,8 @@ nav {
 }
 
 .assignments li a {
+    text-decoration: none;
+    color: white;
     padding: 10px;
     width: 100%;
 }
