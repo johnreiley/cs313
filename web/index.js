@@ -10,12 +10,12 @@ function buildPageHeader() {
     header.innerHTML = 
     `
     <nav>
-        <a href="index.html" class="nav-item">Home</a>
+        <a href="index.php" class="nav-item">Home</a>
         <div class="nav-item dropdown">
             Assignments
             <div class="dropdown-content">
-                <a href="assignments-views/personal.html" class="nav-item">Personal</a>
-                <a href="assignments-views/team.html" class="nav-item">Team</a>
+                <a href="personal.php" class="nav-item">Personal</a>
+                <a href="team.php" class="nav-item">Team</a>
             </div>
         </div>
     </nav>
