@@ -35,6 +35,6 @@ function setDropdownListener() {
     let ddContent = document.querySelector('.dropdown-content');
     document.querySelector('.dropdown').addEventListener('touchend', () => {
         console.log("so fun!")
-        ddContent.display == 'block' ? ddContent.display = 'none' : ddContent.display = 'block';
+        ddContent.display == 'block' ? ddContent.display = 'none !important' : ddContent.display = 'block !important';
     })
 }
