@@ -33,6 +33,10 @@ header {
     top: 0;
 }
 
+footer {
+    text-align: center;
+}
+
 nav {
     background-color: var(--nav-bgd-color);
     margin: 0;
@@ -99,8 +103,8 @@ nav {
         box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.288);
         z-index: 8;
         margin-top: 70px;
-        padding: 5%;
-        padding-top: 30px;
+        padding: 30px 5% 30px 5%;
+        /* padding-top: 30px; */
         width: 100;
         margin: auto;
     }
@@ -162,8 +166,7 @@ nav {
         box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.288);
         z-index: 8;
         margin-top: 70px;
-        padding: 10%;
-        padding-top: 40px;
+        padding: 40px 10% 40px 10%;
         max-width: 700px;
         margin: auto;
     }
@@ -207,13 +210,15 @@ nav {
     }
     
     .img-text {
+        display: block;
         text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.651);
         text-align: center;
         max-width: 400px;
+        height: 400px;
         font-size: 5em;
         margin: auto;
         z-index: 3;
-        transform: translateY(-650px);   
+        transform: translateY(calc(-90vh));   
         padding: 20px;
     }
 }
