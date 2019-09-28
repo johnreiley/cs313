@@ -16,6 +16,7 @@ $thisPage = "Team Assignments";
     <?php include("navigation.php"); ?>
 
     <div class="img-header">
+        <img src="resources/river.jpg" alt="">
         <div class="img-text">
             <?php echo $thisPage ?>
         </div>
