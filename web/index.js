@@ -1,7 +1,7 @@
 
 let body = document.querySelector('body');
-// body.insertBefore(buildPageHeader(), body.firstChild);
 document.querySelector('.content-container').appendChild(buildPageFooter());
+setDropdownListener();
 
 /******************************************************/
 
@@ -29,4 +29,11 @@ function buildPageFooter() {
     let year = new Date().getFullYear();
     footer.innerHTML = `John Reiley - Copyright ©${year}`;
     return footer;
+}
+
+function setDropdownListener() {
+    let ddContent = document.querySelector('.dropdown-content');
+    document.querySelector('.dropdown').addEventListener('touchend', () => {
+        ddContent.display == 'block' ? ddContent.display = 'none' : ddContent.display = 'block';
+    })
 }
