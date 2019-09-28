@@ -23,8 +23,7 @@ $thisPage = "Team Assignments";
     </div>
     <div class="content-container">
         <ul class="assignments">
-            <li><a href="week01/team/">Week 1</a></li>
-            <li><a href="week02/team/">Week 2</a></li>
+            <li><a href="week02/team/team01.html">Week 2</a></li>
             <li><a href="week03/team/">Week 3</a></li>
             <li><a href="week04/team/">Week 4</a></li>
             <li><a href="week05/team/">Week 5</a></li>

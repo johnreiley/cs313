@@ -21,8 +21,8 @@ $thisPage = "Personal Assignments";
     </div>
     <div class="content-container">
         <ul class="assignments">
-            <li><a href="week01/personal/">Week 1</a></li>
-            <li><a href="week02/personal/">Week 2</a></li>
+            <li><a href="week01/personal/hello.html">Week 1</a></li>
+            <li><a href="index.php">Week 2</a></li>
             <li><a href="week03/personal/">Week 3</a></li>
             <li><a href="week04/personal/">Week 4</a></li>
             <li><a href="week05/personal/">Week 5</a></li>
