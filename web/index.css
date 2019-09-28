@@ -256,12 +256,16 @@ nav {
     align-items: center;
 }
 
-.assignments li {
+.assignments {
     list-style: none;
+}
+
+.assignments li {
     width: 100%;
     border: solid 1px var(--nav-bgd-color-dark);
     border-radius: 10px;
     margin: 10px;
+    padding: 10px;
 }
 
 .assignments li a {
