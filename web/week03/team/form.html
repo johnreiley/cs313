@@ -7,39 +7,42 @@
 </head>
 
 <body>
-    <form id="team_form" action="welcome.php" method="post">
-        <h1>This is our assignment!</h1>
-        
-        <br/>
-        Name: <input type="text" name="firstname">
-        <br/>
-        Email: <input type="text" name="email">
-        <br/>
+    <div>
+        <form id="team_form" action="welcome.php" method="post">
+            <h1>This is our assignment!</h1>
 
-        Please choose your major:
-        <br/><input type="radio" name="major" value="Computer Science" checked> Computer Science
-        <br/><input type="radio" name="major" value="Web Design and Development"> Web Design and Development
-        <br/><input type="radio" name="major" value="Computer information Technology"> Computer Information and Technology
-        <br/><input type="radio" name="major" value="Computer Engineering"> Computer Engineering
+            <br />
+            Name: <input type="text" name="firstname">
+            <br />
+            Email: <input type="text" name="email">
+            <br />
 
-        <br/>
-        Please enter any comments you have: <br/>
-        <textarea name="comments"></textarea>
+            Please choose your major:
+            <br /><input type="radio" name="major" value="Computer Science" checked> Computer Science
+            <br /><input type="radio" name="major" value="Web Design and Development"> Web Design and Development
+            <br /><input type="radio" name="major" value="Computer information Technology"> Computer Information and
+            Technology
+            <br /><input type="radio" name="major" value="Computer Engineering"> Computer Engineering
 
-        <br/>
-        <select name="places" multiple>
-            <option value="North America"> North America</option>
-            <option value="South America"> South America</option>
-            <option value="Europe"> Europe</option>
-            <option value="Asia"> Asia</option>
-            <option value="Australia"> Australia</option>
-            <option value="Africa"> Africa</option>
-            <option value="Antarctica"> Antarctica</option>
-        </select>
+            <br />
+            Please enter any comments you have: <br />
+            <textarea name="comments"></textarea>
 
-        <br/>
+            <br />
+            <select name="places" multiple>
+                <option value="North America"> North America</option>
+                <option value="South America"> South America</option>
+                <option value="Europe"> Europe</option>
+                <option value="Asia"> Asia</option>
+                <option value="Australia"> Australia</option>
+                <option value="Africa"> Africa</option>
+                <option value="Antarctica"> Antarctica</option>
+            </select>
+
+            <br />
             <input type="submit" value="Submit Form">
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>

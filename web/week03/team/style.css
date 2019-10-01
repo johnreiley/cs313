@@ -1,15 +1,20 @@
 
-
 body {
     max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 
 form {
     margin: auto;
     max-width: 400px;
+    border: solid;
 }
 
 div {
     padding: 10px;
     margin: auto;
+    text-emphasis: center;
 }
