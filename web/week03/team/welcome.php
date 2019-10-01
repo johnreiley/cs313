@@ -15,7 +15,6 @@
             <p>You have visited:</p>
             <ul>
                 <?php
-                //echo var_dump($_POST['places']);
                 foreach ($_POST['places'] as $place) {
                     echo "<li> $place </li>";
                 }

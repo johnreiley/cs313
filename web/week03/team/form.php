@@ -19,6 +19,7 @@
 
             <div>
                 Please choose your major:
+                <?php include("majors.php"); ?>
                 <br /><input type="radio" name="major" value="Computer Science" checked> Computer Science
                 <br /><input type="radio" name="major" value="Web Design and Development"> Web Design and Development
                 <br /><input type="radio" name="major" value="Computer information Technology"> Computer Information and
