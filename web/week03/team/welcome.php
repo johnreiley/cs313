@@ -14,7 +14,7 @@
         <p>You have visited:</p>
         <ul>
             <?php
-            foreach ($_POST["places"] as $place) {
+            foreach ($_POST['places'] as $place) {
                 echo "<li> $place </li>";
             }
             ?>
