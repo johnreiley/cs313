@@ -15,9 +15,19 @@
             <p>You have visited:</p>
             <ul>
                 <?php
-                foreach ($_POST['places'] as $place) {
-                    echo "<li> $place </li>";
-                }
+                    $placeMap = array(
+                        "na" => "North America",
+                        "sa" => "South America",
+                        "er" => "Europe",
+                        "as" => "Asia",
+                        "at" => "Australia",
+                        "af" => "Africa",     
+                        "an" => "Antarctica"                   
+                    );
+
+                    foreach ($_POST['places'] as $place) {
+                        echo "<li> $placeMap[$place] </li>";
+                    }
                 ?>
             </ul>
             <a href="form.html">Back To Form</a>

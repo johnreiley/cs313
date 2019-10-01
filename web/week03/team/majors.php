@@ -1,8 +1,8 @@
 <?php
 
-// $majors = 
+$majors = array("Computer Science", "Web Design and Development", 
+"Computer Information Technology", "Computer Engineering");
 
-echo "Hello my mates";
-
-
-?>
+foreach ($majors as $major) {
+    echo "<input type=\"radio\" name=\"major\" value=\"$major\" > $major <br>";
+}

@@ -35,13 +35,13 @@
             <div>
                 Select the place you have visited: <br/>
                 <select name="places[]" multiple>
-                    <option value="North America"> North America</option>
-                    <option value="South America"> South America</option>
-                    <option value="Europe"> Europe</option>
-                    <option value="Asia"> Asia</option>
-                    <option value="Australia"> Australia</option>
-                    <option value="Africa"> Africa</option>
-                    <option value="Antarctica"> Antarctica</option>
+                    <option id="na" value="North America"> North America</option>
+                    <option id="sa" value="South America"> South America</option>
+                    <option id="eu" value="Europe"> Europe</option>
+                    <option id="as" value="Asia"> Asia</option>
+                    <option id="at" value="Australia"> Australia</option>
+                    <option id="af" value="Africa"> Africa</option>
+                    <option id="an" value="Antarctica"> Antarctica</option>
                 </select>
             </div>
 
