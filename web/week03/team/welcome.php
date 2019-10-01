@@ -15,10 +15,10 @@
         <ul>
             <?php
             foreach ($_POST['places'] as $place) {
-                echo "<l$place ";
+                echo "<li> $place </li>";
             }
             ?>
-
+        </ul>
         <a href="form.html">Back To Form</a>
     </div>
 </body>
