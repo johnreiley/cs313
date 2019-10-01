@@ -18,11 +18,11 @@
                     $placeMap = array(
                         "na" => "North America",
                         "sa" => "South America",
-                        "er" => "Europe",
+                        "eu" => "Europe",
                         "as" => "Asia",
                         "at" => "Australia",
                         "af" => "Africa",     
-                        "an" => "Antarctica"                   
+                        "aq" => "Antarctica"                   
                     );
 
                     foreach ($_POST['places'] as $place) {

@@ -18,13 +18,8 @@
             </div>
 
             <div>
-                Please choose your major:
+                Please choose your major: <br/>
                 <?php include("majors.php"); ?>
-                <br /><input type="radio" name="major" value="Computer Science" checked> Computer Science
-                <br /><input type="radio" name="major" value="Web Design and Development"> Web Design and Development
-                <br /><input type="radio" name="major" value="Computer information Technology"> Computer Information and
-                Technology
-                <br /><input type="radio" name="major" value="Computer Engineering"> Computer Engineering
             </div>
 
             <div>
@@ -33,15 +28,15 @@
             </div>
 
             <div>
-                Select the place you have visited: <br/>
+                Select the place you have visited: <br />
                 <select name="places[]" multiple>
-                    <option id="na" value="North America"> North America</option>
-                    <option id="sa" value="South America"> South America</option>
-                    <option id="eu" value="Europe"> Europe</option>
-                    <option id="as" value="Asia"> Asia</option>
-                    <option id="at" value="Australia"> Australia</option>
-                    <option id="af" value="Africa"> Africa</option>
-                    <option id="an" value="Antarctica"> Antarctica</option>
+                    <option id="na" value="na"> North America</option>
+                    <option id="sa" value="sa"> South America</option>
+                    <option id="eu" value="eu"> Europe</option>
+                    <option id="as" value="as"> Asia</option>
+                    <option id="at" value="at"> Australia</option>
+                    <option id="af" value="af"> Africa</option>
+                    <option id="aq" value="aq"> Antarctica</option>
                 </select>
             </div>
 
