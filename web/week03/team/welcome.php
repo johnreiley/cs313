@@ -30,7 +30,7 @@
                     }
                 ?>
             </ul>
-            <a href="form.html">Back To Form</a>
+            <a href="form.php">Back To Form</a>
         </div>
     </div>
 </body>
