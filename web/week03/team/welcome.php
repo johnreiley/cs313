@@ -17,7 +17,7 @@
                 <?php
                 echo var_dump($_POST['places']);
                 foreach ($_POST['places'] as $place) {
-                    echo "<li>" . $place . "</li>";
+                    echo "<li> $place </li>";
                 }
                 ?>
             </ul>
