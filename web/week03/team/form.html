@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <form id="team_form" action="welcome.php">
+        Name: <input type="text" name="firstname">
+        Email: <input type="text" name="email">
+
+        Please choose your major:
+        <input type="radio" name="major" value="Computer Science" checked>
+        <input type="radio" name="major" value="Web Design and Development">
+        <input type="radio" name="major" value="Computer information Technology">
+        <input type="radio" name="major" value="Computer Engineering">
+
+        Please enter any comments you have:
+        <textarea name="comments"></textarea>
+
+        <select multiple>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia"> Asia </option>
+            <option value="">North America </option>
+
+            <input type="submit" value="Submit Form">
+    </form>
+</body>
+
+</html>
