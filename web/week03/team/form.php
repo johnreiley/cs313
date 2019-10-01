@@ -13,7 +13,7 @@
 
             <div>
                 Name: <input type="text" name="firstname">
-                <br />
+                <br/><br/>
                 Email: <input type="text" name="email">
             </div>
 
@@ -30,13 +30,13 @@
             <div>
                 Select the place you have visited: <br />
                 <select name="places[]" multiple>
-                    <option id="na" value="na"> North America</option>
-                    <option id="sa" value="sa"> South America</option>
-                    <option id="eu" value="eu"> Europe</option>
-                    <option id="as" value="as"> Asia</option>
-                    <option id="at" value="at"> Australia</option>
-                    <option id="af" value="af"> Africa</option>
-                    <option id="aq" value="aq"> Antarctica</option>
+                    <option value="na"> North America</option>
+                    <option value="sa"> South America</option>
+                    <option value="eu"> Europe</option>
+                    <option value="as"> Asia</option>
+                    <option value="at"> Australia</option>
+                    <option value="af"> Africa</option>
+                    <option value="aq"> Antarctica</option>
                 </select>
             </div>
 
