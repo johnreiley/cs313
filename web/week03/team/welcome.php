@@ -9,6 +9,13 @@
     <div> You are majoring in <?php echo $_POST["major"] ?> </div>
     <div>You said "<?php echo $_POST["comments"] ?>"</div>
 
+    <?php
+    $places_array = $_POST["places"];
+
+    for($x = 0; $x < $arrlength; $x++) {
+        echo $cars[$x];
+        echo "<br>";
+    }
 </body>
 
 </html>
