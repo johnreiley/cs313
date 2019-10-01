@@ -8,12 +8,10 @@ body {
 }
 
 form {
-    margin: auto;
     max-width: 400px;
-    border: solid;
 }
 
-div {
+#container {
     padding: 10px;
     margin: auto;
     text-align: center;
