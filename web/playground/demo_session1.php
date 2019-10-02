@@ -17,7 +17,7 @@ $_SESSION["favcolor"] = "green";
 $_SESSION["favanimal"] = "cat";
 echo "Session variables are set.";
 ?>
-
+<a href="demo_session2.php">demo_session2.php</a>
     
 </body>
 </html>
