@@ -42,7 +42,7 @@ body {
 .fancy-input-txt {
     user-select: none;
     float: left;
-    position: fixed;
+    position: absolute;
     margin: 0;
     transition: all 0.3s;
     max-width: 200px;
@@ -55,10 +55,11 @@ body {
     border-radius: 15px;
 }
 
-.fancy-input input:focus+.fancy-input-txt  {
+.fancy-input input:focus+.fancy-input-txt {
     background-color: white;
     color: rgb(0, 162, 255);
     transform: translate(15px, -16px) scale(0.7);
+    -webkit-transform: translate(15px, -16px) scale(0.7);
     font-weight: 400;
 }
 
