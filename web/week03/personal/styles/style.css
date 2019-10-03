@@ -13,6 +13,7 @@
 
 
 body {
+    margin: 0;
     font-family: var(--font-apple);
 }
 
@@ -92,5 +93,6 @@ nav .right {
 
 /*********** FOOTER ***********/
 footer {
+    font-weight: 100;
     text-align: center;
 }
