@@ -14,7 +14,7 @@ $thisPage = "Home"
 <body>
     <?php include("components/navigation.php"); ?>
     
-
+    <?php include("components/generate-items.php"); ?>
     
     <?php include("components/footer.php"); ?>
 </body>
