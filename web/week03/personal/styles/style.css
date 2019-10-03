@@ -59,6 +59,7 @@ nav .right {
 
 .nav-item:hover {
     color: var(--primary-font-color-dark) !important;
+    background-color: var(--nav-bgd-color-dark) !important;
 }
 
 .dropdown {
