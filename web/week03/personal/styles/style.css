@@ -1,3 +1,17 @@
+:root {
+    --primary-bgd-color: rgb(255, 255, 255);
+    --second-bgd-color: rgb(212, 212, 212);
+    --nav-bgd-color: rgb(255, 255, 255);
+    --nav-bgd-color-dark: rgb(170, 170, 170);
+    --primary-font-color: white;
+    --primary-font-color-dark: rgb(160, 160, 160);
+    --accent-color: rgb(71, 123, 219);
+    --font-apple: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --nav-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.26);
+    --item-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.26);
+}
+
+
 /*********** NAVIGATION ***********/
 
 header {
