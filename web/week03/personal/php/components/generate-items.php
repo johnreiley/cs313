@@ -1,5 +1,5 @@
 <?php
-$shopItemsDir = "../../data/shop-items.json";
+$shopItemsDir = "shop-items.json";
 
 if (file_exists($shopItemsDir)) {
     echo "The file $filename exists";
