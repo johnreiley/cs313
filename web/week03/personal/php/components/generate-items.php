@@ -1,6 +1,6 @@
 <?php
 $shopItemsDir = "../../data/shop-items.json";
-$shopItemsFile = fopen($shopItemsDir, "r") or die("Unable to open file!");
+$shopItemsFile = fopen("../../data/shop-items.json", "r") or die("Unable to open file!");
 $shopItemsJson = fread($shopItemsFile, filesize($shopItemsDir));
 fclose($shopItemsFile);
 
