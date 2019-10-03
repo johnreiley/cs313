@@ -12,6 +12,11 @@
 }
 
 
+body {
+    font-family: var(--font-apple);
+}
+
+
 /*********** NAVIGATION ***********/
 
 header {
