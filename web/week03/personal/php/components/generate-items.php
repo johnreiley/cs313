@@ -94,5 +94,5 @@ $shopItemsDir = "shop-items.json";
 
 $shopItems = json_decode($shopItemsJSON, true);
 print_r($shopItems);
-echo $shopItems;
+echo $shopItems[0]["name"];
 ?>
