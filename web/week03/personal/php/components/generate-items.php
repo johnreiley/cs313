@@ -82,15 +82,15 @@ $shopItemsJSON = "[
 
 $shopItemsDir = "shop-items.json";
 
-if (file_exists($shopItemsDir)) {
-    echo "The file $filename exists";
-} else {
-    echo "The file ain't nowhere";
-}
+// if (file_exists($shopItemsDir)) {
+//     echo "The file $filename exists";
+// } else {
+//     echo "The file ain't nowhere";
+// }
 
-$shopItemsFile = fopen($shopItemsDir, "r") or die("Unable to open file!");
-$shopItemsJson = fread($shopItemsFile, filesize($shopItemsDir));
-fclose($shopItemsFile);
+// $shopItemsFile = fopen($shopItemsDir, "r") or die("Unable to open file!");
+// $shopItemsJson = fread($shopItemsFile, filesize($shopItemsDir));
+// fclose($shopItemsFile);
 
 $shopItems = json_decode($shopItemsJSON, true);
 print_r($shopItems);
