@@ -93,6 +93,8 @@ nav .right {
 
 /*********** FOOTER ***********/
 footer {
+    background-color: var(--second-bgd-color);
+    padding: 50px;
     font-weight: 200;
     text-align: center;
 }
