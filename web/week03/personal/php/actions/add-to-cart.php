@@ -4,7 +4,9 @@ header("Location: $filepath");
 session_start();
 
 $item = $_POST["item"];
+echo($item); ///////////////////////////
 $shopItems = getShopInventory();
+print_r($shopItems); //////////////////////////////
 $itemToAdd = array_filter($shopItems, function ($shopItem, $item) { return $shopItem->id == $item->id; }, $item);
 
 array_push($_SESSION["cart"], $itemToAdd[0]);
