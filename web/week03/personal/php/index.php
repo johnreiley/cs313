@@ -27,7 +27,8 @@ $thisPage = "Home";
     <div class="content-container">
 
         <?php
-            foreach ($_SESSION["cart"] as $item) { 
+        $items = $_SESSION["cart"];
+            foreach ($items as $item) { 
                 echo "$item->name<br>";
             }
         ?>

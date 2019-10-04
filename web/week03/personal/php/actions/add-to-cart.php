@@ -3,7 +3,7 @@ session_start();
 $filepath = 'https://calm-bastion-61884.herokuapp.com/week03/personal/php/index.php';
 // header("Location: $filepath");
 
-$id = $_POST["id"];
+$id = $_REQUEST["id"];
 echo($id . "<br>"); ///////////////////////////
 $shopItems = getShopInventory();
 print_r($shopItems . "<br>"); //////////////////////////////
