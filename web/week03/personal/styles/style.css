@@ -145,6 +145,7 @@ nav .right {
 }
 
 .nav-item:hover {
+    box-shadow: inset var(--item-box-shadow);
     color: var(--primary-font-color-dark) !important;
     background-color: var(--nav-bgd-color-dark) !important;
 }
