@@ -80,7 +80,7 @@ $shopItemsJSON = '[
 ]';
 
 
-$shopItemsDir = __DIR__ . '../../data/shop-items.json';
+$shopItemsDir = __DIR__ . '/../../data/shop-items.json';
 echo $shopItemsDir;
 
 if (file_exists($shopItemsDir)) {
@@ -89,11 +89,11 @@ if (file_exists($shopItemsDir)) {
     echo "The file ain't nowhere";
 }
 
-// $shopItemsFile = fopen(__DIR__ . $shopItemsDir, "r") or die("Unable to open file!");
-// $shopItemsJson = fread($shopItemsFile, filesize($shopItemsDir));
-// fclose($shopItemsFile);
+$shopItemsFile = fopen(__DIR__ . $shopItemsDir, "r") or die("Unable to open file!");
+$shopItemsJson = fread($shopItemsFile, filesize($shopItemsDir));
+fclose($shopItemsFile);
 
-$shopItems = json_decode($shopItemsJSON);
+$shopItems = json_decode($shopItemsJson);
 
 echo "<div class=\"card-show\">";
 foreach($shopItems as $item) {
