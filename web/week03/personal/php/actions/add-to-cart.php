@@ -7,10 +7,14 @@ $id = $_REQUEST["id"];
 echo($id); ///////////////////////////
 $shopItems = getShopInventory();
 print_r($shopItems);
-$itemToAdd = array_filter($shopItems, function($shopItem) use($id) { return $shopItem->id === $id; })[0];
-echo($itemToAdd);
+$itemToAdd = array_filter($shopItems, function($shopItem) use($id) { 
+    if ($shopItem->id == $id) {
+        echo "Found the one! $id";
+    }
+    return $shopItem->id === $id; });
+echo($itemToAdd[0]);
 
-array_push($_SESSION["cart"], $itemToAdd);
+// array_push($_SESSION["cart"], $itemToAdd[0]);
 
 
 
