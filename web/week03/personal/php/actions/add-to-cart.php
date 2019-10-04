@@ -6,10 +6,10 @@ header("Location: $filepath");
 $id = $_REQUEST["id"];
 echo($id . "<br>"); ///////////////////////////
 $shopItems = getShopInventory();
-$itemToAdd = array_filter($shopItems, function($shopItem) use($id) { return $shopItem->id == $id; });
-print_r($itemToAdd);
+$itemToAdd = array_filter($shopItems, function($shopItem) use($id) { return $shopItem->id == $id; })[0];
 
 array_push($_SESSION["cart"], $itemToAdd);
+
 
 
 
