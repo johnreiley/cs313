@@ -13,7 +13,8 @@ foreach($shopItems as $item) {
     echo "<div class=\"card\">
             <img class=\"card-img\" src=\"$item->imgUrl\" alt=\"\">
             <div class=\"card-txt\">
-                $item->name
+                <div>$item->name</div>
+                <div>$item->price</div>
             </div>
         </div>";
 }
