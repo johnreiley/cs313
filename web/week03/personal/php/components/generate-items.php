@@ -10,7 +10,7 @@ $shopItems = json_decode($shopItemsJson);
 
 echo "<div class=\"card-show\">";
 foreach($shopItems as $item) {
-    echo "<div class=\"card\">
+    echo "<div class=\"card\" data-id=\"$item->id\">
             <img class=\"card-img\" src=\"$item->imgUrl\" alt=\"\">
             <div class=\"card-txt\">
                 <div>$item->name</div>
