@@ -6,7 +6,7 @@ $filepath = 'https://calm-bastion-61884.herokuapp.com/week03/personal/php/index.
 $id = $_REQUEST["id"];
 echo($id . "<br>"); ///////////////////////////
 $shopItems = getShopInventory();
-print_r($shopItems); //////////////////////////////
+//print_r($shopItems); //////////////////////////////
 $itemToAdd = array_filter($shopItems, function ($shopItem, $id) { return $shopItem->id == $id; }, $id)[0];
 print_r($itemToAdd);
 
