@@ -22,17 +22,17 @@
     },
     {
         "id": "004",
-        "name": "",
-        "description": "",
-        "imgUrl": "",
-        "price": ""
+        "name": "Baby Blue Wood Bench",
+        "description": "A hard wooden bench that will numb up your cheeks",
+        "imgUrl": "https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/fetch/FetchRules/Partial/DD17-Cat-Furniture-L1-EntrywayFurniture-200x200.jpg",
+        "price": "$159.99"
     },
     {
         "id": "005",
-        "name": "",
-        "description": "",
-        "imgUrl": "",
-        "price": ""
+        "name": "Grey Chase Lounge",
+        "description": "A loung perfect for emotional days",
+        "imgUrl": "https://www.meubelsplaza.nl/wp-content/uploads/2019/06/Beliani-Alsvag-Chaise-longue-Grijs-Fluweel.jpg",
+        "price": "$199.99"
     },
     {
         "id": "006",
