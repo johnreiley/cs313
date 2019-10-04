@@ -238,6 +238,8 @@ footer {
 }
 
 .card-add-cart-btn {
+    /* float: right; */
+    display: inline-block;
     text-align: center;
     margin: auto;
     border-radius: 5px;
