@@ -29,7 +29,7 @@ $thisPage = "Home";
         <?php
             $items = $_SESSION["cart"];
             foreach ($items as $item) { 
-                echo "$item->name<br>";
+                echo "$item->name";
             }
         ?>
 
