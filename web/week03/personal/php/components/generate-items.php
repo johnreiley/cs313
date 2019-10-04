@@ -80,7 +80,7 @@ $shopItemsJSON = '[
 ]';
 
 
-$shopItemsDir = __DIR__ . "shop-items.json";
+$shopItemsDir = 'shop-items.json';
 
 // if (file_exists($shopItemsDir)) {
 //     echo "The file $filename exists";
@@ -88,7 +88,7 @@ $shopItemsDir = __DIR__ . "shop-items.json";
 //     echo "The file ain't nowhere";
 // }
 
-$shopItemsFile = fopen($shopItemsDir, "r") or die("Unable to open file!");
+$shopItemsFile = fopen(__DIR__ . $shopItemsDir, "r") or die("Unable to open file!");
 $shopItemsJson = fread($shopItemsFile, filesize($shopItemsDir));
 fclose($shopItemsFile);
 
