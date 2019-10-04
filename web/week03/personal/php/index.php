@@ -1,8 +1,5 @@
-<?php
-$thisPage = "Home"
-?>
-
 <?php 
+session_start();
 include("components/session.php");
 $thisPage = "Home";
 ?>
