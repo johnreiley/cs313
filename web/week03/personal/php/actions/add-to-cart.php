@@ -7,7 +7,7 @@ $id = $_REQUEST["id"];
 echo($id); ///////////////////////////
 $shopItems = getShopInventory();
 print_r($shopItems);
-$itemToAdd = array_filter($shopItems, function($shopItem) use($id) { echo $shopItem->id == $id; return $shopItem->id == $id; })[0];
+$itemToAdd = array_filter($shopItems, function($shopItem) use($id) { if ($shopItem->id == $id) return true; })[0];
 echo($itemToAdd);
 
 array_push($_SESSION["cart"], $itemToAdd);
