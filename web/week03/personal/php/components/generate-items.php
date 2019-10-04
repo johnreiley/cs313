@@ -17,6 +17,7 @@ foreach($shopItems as $item) {
                 <div class=\"card-txt-desc\">$item->description</div>
                 <div>$item->price</div>
             </div>
+            <button class=\"card-add-cart-btn\">Add to Cart</button
         </div>";
 }
 echo "</div>";
