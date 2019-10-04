@@ -232,6 +232,7 @@ footer {
 
 .card-txt-desc {
     font-size: 0.8em;
+    color: var(--accent-color);
 }
 
 
