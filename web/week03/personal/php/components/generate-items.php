@@ -14,7 +14,7 @@ foreach($shopItems as $item) {
             <img class=\"card-img\" src=\"$item->imgUrl\" alt=\"\">
             <div class=\"card-txt\">
                 <div>$item->name</div>
-                <div>$item->description</div>
+                <div class=\"card-txt-desc\">$item->description</div>
                 <div>$item->price</div>
             </div>
         </div>";
