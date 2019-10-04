@@ -16,6 +16,12 @@ $thisPage = "Cart View"
 
 <body>
     <?php include("components/navigation.php"); ?>
+    <div class="img-header">
+        <img src="https://i.redd.it/liu352h66pjx.jpg" alt="">
+        <div class="img-text">
+            Cart
+        </div>
+    </div>
 
     <div class="content-container">
         <?php include("components/generate-cart.php"); ?>
