@@ -1,4 +1,5 @@
 <?php
+include("components/session.php");
 $thisPage = "Cart View"
 ?>
 

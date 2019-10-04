@@ -2,6 +2,11 @@
 $thisPage = "Home"
 ?>
 
+<?php 
+include("components/session.php");
+$thisPage = "Home";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
