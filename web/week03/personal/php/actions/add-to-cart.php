@@ -1,8 +1,14 @@
 <?php
+$filepath = 'https://calm-bastion-61884.herokuapp.com/week03/personal/php/index.php';
+header("Location: $filepath");
 session_start();
 
+$item = $_POST["item"];
 $shopItems = getShopInventory();
-array_filter($shopItems, function ($shopItem) { return $shopItem->id == $item->id })
+$itemToAdd = array_filter($shopItems, function ($shopItem, $item) { return $shopItem->id == $item->id; }, $item);
+
+array_push($_SESSION["cart"], $itemToAdd[0]);
+
 
 
 
