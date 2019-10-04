@@ -207,7 +207,7 @@ footer {
 }
 
 .card:hover {
-    border: solid 3px var(--accent-color);
+    box-shadow: var(--item-box-shadow) inset 0px 0px 0px 2px var(--accent-color);
 }
 
 .card-img {
