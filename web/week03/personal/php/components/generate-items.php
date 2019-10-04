@@ -9,15 +9,15 @@ fclose($shopItemsFile);
 $shopItems = json_decode($shopItemsJson);
 
 echo "<div class=\"card-show\">";
-foreach($shopItems as $item) {
-    echo "<div class=\"card\" data-id=\"$item->id\">
+foreach ($shopItems as $item) {
+    echo "<div class=\"card\">
             <img class=\"card-img\" src=\"$item->imgUrl\" alt=\"\">
             <div class=\"card-txt\">
                 <div>$item->name</div>
-                <div class=\"card-txt-desc\">$item->description</div>
-                <div>$item->price</div>
+                 <div class=\"card-txt-desc\">$item->description</div>
+                 <div>$item->price</div>
             </div>
-            <button class=\"card-add-cart-btn\">Add to Cart</button>
+            <a href=\"add-to-cart.php?item=$item->id\" class=\"card-add-cart-btn\">Add to Cart</a>
         </div>";
 }
 echo "</div>";

@@ -17,9 +17,11 @@ $thisPage = "Cart View"
 <body>
     <?php include("components/navigation.php"); ?>
 
+    <div class="content-container">
+        <?php include("components/generate-cart.php"); ?>
+        <?php include("components/footer.php"); ?>
+    </div>
 
-
-    <?php include("components/footer.php"); ?>
 </body>
 
 </html>

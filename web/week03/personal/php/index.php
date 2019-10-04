@@ -28,6 +28,7 @@ $thisPage = "Home";
         </div>
     </div>
     <div class="content-container">
+        <button type="submit"></button>
         <?php include("components/generate-items.php"); ?>
         <?php include("components/footer.php"); ?>
     </div>
