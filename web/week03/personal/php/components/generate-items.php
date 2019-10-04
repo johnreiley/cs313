@@ -92,7 +92,16 @@ $shopItemsDir = "shop-items.json";
 // $shopItemsJson = fread($shopItemsFile, filesize($shopItemsDir));
 // fclose($shopItemsFile);
 
-$shopItems = json_decode($shopItemsJSON, true);
-print_r($shopItems);
-echo $shopItems[0]["name"];
+$shopItems = json_decode($shopItemsJSON);
+
+echo "<div class=\"card-show\">";
+foreach($shopItems as $item) {
+    echo "<div class=\"card\">
+            <img class=\"card-img\" src=\"$item->imgUrl\" alt=\"\">
+            <div class=\"card-txt\">
+                $item->name
+            </div>
+        </div>";
+}
+echo "</div>"
 ?>
