@@ -29,9 +29,9 @@ $thisPage = "Home";
     </div>
     <div class="content-container">
         <?php include("components/generate-items.php"); ?>
+        <?php include("components/footer.php"); ?>
     </div>
 
-    <?php include("components/footer.php"); ?>
 </body>
 
 </html>
