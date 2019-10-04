@@ -79,7 +79,7 @@
     .img-header img {
         z-index: -1;
         width: 100%;
-        height: 400px;
+        height: 300px;
         object-fit: cover;
     }
     
@@ -244,7 +244,7 @@ footer {
     border-radius: 5px;
     width: 100%;
     padding: 5px 0 5px 0;
-    margin-top: 5px;
+    margin: 5px 0 5px 0;
     color: inherit;
     text-decoration: none;
     background-color: var(--nav-bgd-color-dark);
