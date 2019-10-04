@@ -80,7 +80,7 @@ $shopItemsJSON = '[
 ]';
 
 
-$shopItemsDir = __DIR__ . 'shop-items.json';
+$shopItemsDir = __DIR__ . '/shop-items.json';
 echo $shopItemsDir;
 
 if (file_exists($shopItemsDir)) {
