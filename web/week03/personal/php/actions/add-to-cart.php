@@ -14,10 +14,10 @@ print_r($shopItems);
 //     return $shopItem->id === $id; });
 $i = 0;
 do {
-    if ($shopItem[$i]->id == $id) {
-        $itemToAdd = $shopItem[$i];
+    if ($shopItems[$i]->id == $id) {
+        $itemToAdd = $shopItems[$i];
     }
-} while ($i < count($shopItems) && $shopItem[$i++]->id != $id);
+} while ($i < count($shopItems) && $shopItems[$i++]->id != $id);
 echo($itemToAdd);
 
 // array_push($_SESSION["cart"], $itemToAdd[0]);
