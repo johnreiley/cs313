@@ -113,7 +113,7 @@ footer {
     box-shadow: var(--item-box-shadow);
     max-width: 300px;
     display: block;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     padding: 10px;
 }
 
@@ -126,7 +126,7 @@ footer {
 
 .card-txt {
     margin-top: 0;
-    background-color: white;
+    background-color: inherit;
     color: black;
     padding: 5px;
     text-align: center;
