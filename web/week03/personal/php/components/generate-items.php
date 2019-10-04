@@ -92,7 +92,7 @@ $shopItemsDir = "shop-items.json";
 // $shopItemsJson = fread($shopItemsFile, filesize($shopItemsDir));
 // fclose($shopItemsFile);
 
-$shopItems = json_decode($shopItemsJSON);
-print_r($shopItems, true);
+$shopItems = json_decode($shopItemsJSON, true);
+print_r($shopItems);
 echo $shopItems[0]["name"];
 ?>
