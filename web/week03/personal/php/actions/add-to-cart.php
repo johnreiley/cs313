@@ -7,8 +7,8 @@ $id = $_REQUEST["id"];
 echo($id . "<br>"); ///////////////////////////
 $shopItems = getShopInventory();
 print_r($shopItems); //////////////////////////////
-$itemToAdd = array_filter($shopItems, function ($shopItem, $id) { if ($shopItem->id == $id) return $shopItem; }, $id);
-echo("<br>" . $itemToAdd[0]->name . "<br>");
+$itemToAdd = array_filter($shopItems, function ($shopItem, $id) { if ($shopItem->id == $id) return $shopItem; }, $id)[0];
+print_r($itemToAdd);
 
 array_push($_SESSION["cart"], $itemToAdd[0]);
 
