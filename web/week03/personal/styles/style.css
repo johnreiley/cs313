@@ -118,6 +118,11 @@ footer {
     font-weight: 200;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    border: solid 2px var(--accent-color);
+}
+
 .card-img {
     object-fit: cover;
     width: 100%;
