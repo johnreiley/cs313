@@ -10,7 +10,7 @@ print_r($shopItems); //////////////////////////////
 $itemToAdd = array_filter($shopItems, function ($shopItem, $id) { if ($shopItem->id == $id) return $shopItem; }, $id)[0];
 print_r($itemToAdd);
 
-array_push($_SESSION["cart"], $itemToAdd[0]);
+array_push($_SESSION["cart"], $itemToAdd);
 
 
 
