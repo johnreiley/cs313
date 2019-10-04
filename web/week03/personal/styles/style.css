@@ -41,6 +41,7 @@
     
     .img-text {
         color: white;
+        font-weight: 200;
         display: block;
         text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.651);
         text-align: center;
@@ -84,6 +85,7 @@
     
     .img-text {
         color: white;
+        font-weight: 200;
         text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.651);
         text-align: center;
         max-width: 400px;
@@ -205,8 +207,7 @@ footer {
 }
 
 .card:hover {
-    transform: scale(1.01);
-    border: solid 2px var(--accent-color);
+    border: solid 3px var(--accent-color);
 }
 
 .card-img {
