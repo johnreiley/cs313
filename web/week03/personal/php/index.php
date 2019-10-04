@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("components/session.php");
 $thisPage = "Home";
@@ -26,6 +26,15 @@ $thisPage = "Home";
         </div>
     </div>
     <div class="content-container">
+
+        <?php
+            foreach ($_SESSION["cart"] as $item) { 
+                echo "$item->name<br>";
+            }
+        ?>
+
+
+
         <?php include("components/generate-items.php"); ?>
         <?php include("components/footer.php"); ?>
     </div>
