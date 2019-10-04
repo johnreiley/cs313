@@ -238,6 +238,7 @@ footer {
 }
 
 .card-add-cart-btn {
+    display: block;
     margin: auto;
     border-radius: 5px;
     width: 100%;
