@@ -80,9 +80,10 @@ $shopItemsJSON = '[
 ]';
 
 
-$shopItemsDir = 'shop-items.json';
+$shopItemsDir = __DIR__ . 'shop-items.json';
+echo $shopItemsDir;
 
-if (file_exists(__DIR__ . $shopItemsDir)) {
+if (file_exists($shopItemsDir)) {
     echo "The file $filename exists";
 } else {
     echo "The file ain't nowhere";
