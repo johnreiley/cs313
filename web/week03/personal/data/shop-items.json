@@ -16,7 +16,7 @@
     {
         "id": "003",
         "name": "Wooden Desk",
-        "description": "A desk that cost more than a desk should.",
+        "description": "A desk that costs more than a desk should.",
         "imgUrl": "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/87960_XXX_v1.tif&qlt=267&wid=267&cvt=jpeg",
         "price": "$299.95"
     },
@@ -30,7 +30,7 @@
     {
         "id": "005",
         "name": "Grey Chase Lounge",
-        "description": "A loung perfect for emotional days",
+        "description": "A lounge perfect for emotional days",
         "imgUrl": "https://www.meubelsplaza.nl/wp-content/uploads/2019/06/Beliani-Alsvag-Chaise-longue-Grijs-Fluweel.jpg",
         "price": "$199.99"
     },
