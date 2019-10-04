@@ -238,7 +238,7 @@ footer {
 }
 
 .card-add-cart-btn {
-    display: block;
+    display: inline-block;
     margin: auto;
     border-radius: 5px;
     width: 100%;
@@ -246,6 +246,10 @@ footer {
     color: inherit;
     text-decoration: none;
     background-color: var(--nav-bgd-color-dark);
+}
+
+.card-add-cart-btn:hover {
+    filter: brightness(0.8);
 }
 
 
