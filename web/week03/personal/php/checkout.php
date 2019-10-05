@@ -114,7 +114,9 @@ $thisPage = "Checkout"
                 <input type="text">
                 <div class="fancy-input-txt">zip code</div>
             </div>
+            <div class="break"></div>
             <h2 class="fancy-title">Order Summary</h2>
+            <div class="break"></div>
             <div class="order-summary">
                 <table>
                     <?php include("actions/generate-order-summary.php"); ?>
