@@ -115,10 +115,12 @@ $thisPage = "Checkout"
                 <div class="fancy-input-txt">zip code</div>
             </div>
             <h2 class="fancy-title">Order Summary</h2>
+            <div class="order-summary">
+                <table>
+                    <?php include("actions/generate-order-summary.php"); ?>
+                </table>
+            </div>
         </form>
-        <table>
-            <?php include("actions/generate-order-summary.php"); ?>
-        </table>
 
         <?php include("components/footer.php"); ?>
     </div>
