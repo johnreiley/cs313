@@ -29,8 +29,8 @@ $thisPage = "Home";
             <?php include("components/generate-items.php"); ?>
         </div>
 
+        <?php include("components/footer.php"); ?>
     </div>
-    <?php include("components/footer.php"); ?>
 
 </body>
 

@@ -185,12 +185,10 @@ nav .right {
 footer {
     width: 100%;
     z-index: -1;
-    background-color: var(--second-bgd-color);
+    /* background-color: var(--second-bgd-color); */
     padding: 50px;
     font-weight: 200;
     text-align: center;
-    position: fixed;
-    bottom: 0;
 }
 
 
