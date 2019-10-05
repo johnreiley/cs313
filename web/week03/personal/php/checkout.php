@@ -19,6 +19,13 @@ $thisPage = "Cart Checkout"
 <body>
     <?php include("components/navigation.php"); ?>
 
+    <div class="img-header">
+        <img src="https://i.redd.it/liu352h66pjx.jpg" alt="">
+        <div class="img-text">
+            <?php echo $thisPage ?>
+        </div>
+    </div>
+
     <form class="fancy-form">
         <h2 class="fancy-title">Order Information</h2>
         <div class="break"></div>

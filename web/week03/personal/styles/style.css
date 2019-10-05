@@ -285,7 +285,11 @@ footer {
 }
 
 .cart-item td {
-    padding: 5px 10px 5px 10px;
+    padding: 5px;
+}
+
+.cart-item-img {
+    max-width: 200px;
 }
 
 .cart-item-img img {
@@ -294,6 +298,7 @@ footer {
 
 .cart-item-name {
     font-size: 15px;
+    text-align: left;
 }
 
 .cart-item-price {
