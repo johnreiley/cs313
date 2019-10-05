@@ -10,9 +10,8 @@ foreach($cart as $item) {
             <td class=\"order-item-price\">$$item->price</td>
         </tr>";
 }
-echo "<tr>
+echo "<tr class=\"order-add-line\">
         <td class=\"order-plus-sign\">+</td>
-        <td></td>
     </tr>
     <tr>
         <td>Total:</td>

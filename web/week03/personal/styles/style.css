@@ -321,6 +321,10 @@ footer {
     text-decoration-line: underline;
 }
 
+.empty-cart-msg {
+    text-align: center;
+}
+
 /************ CHECKOUT *************/
 
 .order-summary tr {
@@ -331,7 +335,10 @@ footer {
     text-align: right;
 }
 
+.order-add-line {
+    border-bottom: solid black 1px;
+}
+
 .order-plus-sign {
     text-align: right;
-    border-bottom: solid black 1px;
 }
