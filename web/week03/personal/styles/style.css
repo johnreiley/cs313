@@ -186,6 +186,8 @@ footer {
     padding: 50px;
     font-weight: 200;
     text-align: center;
+    position: sticky;
+    bottom: 0;
 }
 
 
@@ -263,6 +265,8 @@ footer {
 
 .cart table {
     width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px 20px;
 }
 
 .cart tr {
