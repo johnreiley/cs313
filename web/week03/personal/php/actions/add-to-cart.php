@@ -9,7 +9,7 @@ echo($id); ///////////////////////////
 $shopItems = getShopInventory();
 print_r($shopItems);
 
-$itemToAdd = array_filter($shopItems, function($shopItem) use($id) { 
+$shopItems = array_filter($shopItems, function($shopItem) use($id) { 
     if ($shopItem->id == $id) {
         echo "Found the one! $shopItem->id == $id";
     } else {
@@ -17,7 +17,9 @@ $itemToAdd = array_filter($shopItems, function($shopItem) use($id) {
     }
     return $shopItem->id == $id; });
 
-array_push($_SESSION["cart"], $itemToAdd);
+foreach ($shopItems as $itemToAdd) {
+    array_push($_SESSION["cart"], $itemToAdd);
+}
 
 // $i = 0;
 // do {
@@ -40,4 +42,3 @@ function getShopInventory() {
     $shopItems = json_decode($shopItemsJson);
     return $shopItems;
 }
-?>
