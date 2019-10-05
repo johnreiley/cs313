@@ -382,3 +382,10 @@ footer {
 .order-plus-sign {
     text-align: right;
 }
+
+
+/********** ORDER CONFIRMATION ***********/
+
+.order-confirm-page {
+    border: solid 2px var(--accent-color);
+}

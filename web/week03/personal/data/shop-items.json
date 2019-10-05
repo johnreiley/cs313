@@ -36,44 +36,44 @@
     },
     {
         "id": "006",
-        "name": "",
-        "description": "",
-        "imgUrl": "",
-        "price": ""
+        "name": "Brown Leather Chair",
+        "description": "A chair perfect for tanning",
+        "imgUrl": "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/87969_XXX_v1.tif&qlt=267&wid=267&cvt=jpeg",
+        "price": "49.95"
     },
     {
         "id": "007",
-        "name": "",
-        "description": "",
-        "imgUrl": "",
-        "price": ""
+        "name": "Light Wood Dresser",
+        "description": "A dresser that doesn't dress you",
+        "imgUrl": "https://www.athome.com/on/demandware.static/-/Sites/default/dwb02abc74/2018%20Web%20Clean%20Up/Furniture/General%20Furniture/Explore-Accent-Furniture.jpg",
+        "price": "229.95"
     },
     {
         "id": "008",
-        "name": "",
-        "description": "",
-        "imgUrl": "",
-        "price": ""
+        "name": "Leather Sofa",
+        "description": "A couch that eats your socks",
+        "imgUrl": "https://www.mkt-jcpenney.com/prod/mkt/images/ashley-furniture-sofa-1a02c092-7c76-448c-b6e6-c35471c81a85.png",
+        "price": "579.99"
     },
     {
         "id": "009",
-        "name": "",
-        "description": "",
-        "imgUrl": "",
-        "price": ""
+        "name": "Old-style Lamp",
+        "description": "A lamp perfect for your grandma",
+        "imgUrl": "https://cdn.houseofhackney.com/media/catalog/product/cache/1/small_image/600x/040ec09b1e35df139433887a97daa66f/a/v/avalon_isabella_velvet_lampshade_noir_serpentis_standard_lampstand_gold.jpg",
+        "price": "109.95"
     },
     {
         "id": "010",
-        "name": "",
-        "description": "",
-        "imgUrl": "",
-        "price": ""
+        "name": "Marble Table Set",
+        "description": "A table for Papa, Mama, and baby too",
+        "imgUrl": "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/78369fam_XXX_v1.tif&qlt=267&wid=267&cvt=jpeg",
+        "price": "199.95"
     },
     {
         "id": "011",
-        "name": "",
-        "description": "",
-        "imgUrl": "",
-        "price": ""
+        "name": "Mobile Seat",
+        "description": "Take a ride down the slopes in style",
+        "imgUrl": "http://curedetoxifiere.com/wp-content/uploads/2018/03/strange-furniture-strange-furniture-unusual-furniture-no-comments-strange-outdoor-furniture.jpg",
+        "price": "799.95"
     }
 ]
