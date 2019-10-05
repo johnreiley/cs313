@@ -186,7 +186,7 @@ footer {
     width: 100%;
     z-index: -1;
     /* background-color: var(--second-bgd-color); */
-    padding: 50px;
+    padding: 50px 0 50px 0;
     font-weight: 200;
     text-align: center;
 }

@@ -20,6 +20,7 @@ $thisPage = "Cart Checkout"
     <?php include("components/navigation.php"); ?>
 
     <form class="fancy-form">
+        <h2 class="fancy-title"></h2>
         <div class="fancy-input">
             <input type="text">
             <div class="fancy-input-txt">first name</div>

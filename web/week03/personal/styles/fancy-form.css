@@ -13,6 +13,10 @@
     flex-wrap: wrap;
 }
 
+.fancy-title {
+    
+}
+
 .fancy-input {
     width: 100%;
     display: flex;
