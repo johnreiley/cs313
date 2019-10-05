@@ -95,6 +95,7 @@
         transform: translateY(-220px);
         margin: auto;
         padding: 20px;
+        vertical-align: middle;
     }
 }
 
