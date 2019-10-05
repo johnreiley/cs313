@@ -4,7 +4,7 @@ $cart = $_SESSION["cart"];
 // do the magic stuff here!
 
 if (count($cart) > 0) {
-    echo "<div class=\"checkout-btn\" href=\"actions/checkout-cart.php\"><a>Checkout</a></div>";
+    echo "<div class=\"checkout-btn\"><a href=\"actions/checkout-cart.php\">Checkout</a></div>";
 } else {
     echo "<div class=\"empty-cart-msg\">Looks like you're cart is empty</div>";
 }
