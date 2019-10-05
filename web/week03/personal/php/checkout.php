@@ -53,13 +53,6 @@ $thisPage = "Cart Checkout"
             <input type="text">
             <div class="fancy-input-txt">zip code</div>
         </div>
-
-        <div class="break"></div>
-        <div class="fancy-input">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <div class="fancy-input-txt">comments</div>
-        </div>
-
     </form>
 
 
