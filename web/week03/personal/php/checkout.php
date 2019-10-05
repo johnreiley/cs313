@@ -127,7 +127,7 @@ $thisPage = "Checkout"
                 </table>
             </div>
             <div class="break"></div>
-            <div class="primary-btn"><a href="order-confirmation.php">Confirm Order</a></div>
+            <div class="primary-btn"><button type="submit">Confirm Order</button></div>
         </form>
 
         <?php include("components/footer.php"); ?>

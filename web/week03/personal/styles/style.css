@@ -115,6 +115,12 @@ body {
     float: right;
 }
 
+.primary-btn button {
+    color: white;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+}
+
 .primary-btn a {
     padding: 10px;
     color: white;
@@ -351,7 +357,7 @@ footer {
 /************ CHECKOUT *************/
 
 .order-summary {
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
 }
 
 .order-summary table {
