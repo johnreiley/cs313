@@ -352,7 +352,7 @@ footer {
 
 .order-summary table {
     display: block;
-    border-collapse: separate;
+    border-collapse: collapse;
 }
 
 .order-summary tr {

@@ -27,8 +27,8 @@ $thisPage = "Checkout"
     </div>
 
     <div class="content-container">
-        <div class="primary-btn left"><a href="cart-view.php">Return to Cart</a></div>
         <form class="fancy-form">
+            <div class="primary-btn left"><a href="cart-view.php">Return to Cart</a></div>
             <h2 class="fancy-title">Shipping Address</h2>
             <div class="break"></div>
             <div class="fancy-input">

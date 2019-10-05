@@ -17,7 +17,7 @@ $thisPage = "Order Confirmation"
 <body>
     <?php include("components/navigation.php"); ?>
 
-
+    <div>You're order has been comfirmed.  Please wait 25 days before </div>
 
     <?php include("components/footer.php"); ?>
 </body>
