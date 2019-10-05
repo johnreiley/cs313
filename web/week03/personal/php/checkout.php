@@ -21,6 +21,7 @@ $thisPage = "Cart Checkout"
 
     <form class="fancy-form">
         <h2 class="fancy-title">Order Information</h2>
+        <div class="break"></div>
         <div class="fancy-input">
             <input type="text">
             <div class="fancy-input-txt">first name</div>
