@@ -290,11 +290,16 @@ footer {
     text-align: right;
 }
 
-.remove-item-btn a {
-    color: black;
+.remove-item-btn {
     text-align: right;
+}
+
+.remove-item-btn a {
+    text-decoration: none;
+    color: black;
 }
 
 .remove-item-btn a:hover {
     color: var(--accent-color);
+    text-decoration-line: underline;
 }
