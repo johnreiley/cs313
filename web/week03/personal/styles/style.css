@@ -285,6 +285,7 @@ footer {
 }
 
 .cart-item-price {
+    color: var(--accent-color);
     text-align: right;
 }
 

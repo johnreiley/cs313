@@ -92,7 +92,7 @@ h2 {
     font-weight: 400;
 }
 
-.fancy-button button {
+.fancy-btn button {
     display: block;
     margin: 20px;
     font-family: inherit;
@@ -105,7 +105,7 @@ h2 {
     outline: none;
 }
 
-.fancy-button button:active {
+.fancy-btn button:active {
     background-color: var(--beauty-blue-dark);
     box-shadow: 0px 0px 4px 0px rgba(0, 174, 255, 0.678);
 }
