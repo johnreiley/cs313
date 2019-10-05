@@ -272,6 +272,7 @@ footer {
 
 .cart-item-img img {
     max-height: 100px;
+    min-width: 30px;
 }
 
 .cart-item-name {
