@@ -7,7 +7,7 @@ foreach($cart as $item) {
     $totalPrice += $item->price;
     echo "<tr>
             <td>$item->name</td>
-            <td>$$item->price</td>
+            <td class=\"order-item-price\">$$item->price</td>
         </tr>";
 }
 echo "<tr>

@@ -320,3 +320,9 @@ footer {
     color: var(--accent-color);
     text-decoration-line: underline;
 }
+
+/************ CHECKOUT *************/
+
+.order-summary tr {
+
+}
