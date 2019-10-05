@@ -290,5 +290,10 @@ footer {
 }
 
 .remove-item-btn {
+    color: black;
     text-align: right;
+}
+
+.remove-item-btn:hover {
+    color: var(--accent-color);
 }
