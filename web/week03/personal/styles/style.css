@@ -279,9 +279,9 @@ footer {
 }
 
 .cart-item-price {
-
+    text-align: right;
 }
 
 .remove-item-btn {
-
+    text-align: right;
 }
