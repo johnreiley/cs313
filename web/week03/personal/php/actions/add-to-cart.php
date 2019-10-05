@@ -11,11 +11,11 @@ print_r($shopItems);
 
 $itemToAdd = array_filter($shopItems, function($shopItem) use($id) { 
     if ($shopItem->id == $id) {
-        echo "Found the one! $id";
+        echo "Found the one! $shopItem->id == $id";
     } else {
         echo " Nope, ";
     }
-    return $shopItem->id === $id; });
+    return $shopItem->id == $id; });
 
 array_push($_SESSION["cart"], $itemToAdd[0]);
 
