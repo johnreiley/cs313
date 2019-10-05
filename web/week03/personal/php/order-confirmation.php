@@ -30,7 +30,7 @@ $cart = $_SESSION["cart"];
     <div class="content-container order-confirm-page">
         <div>You're order has been comfirmed and will be shipped to the following address in 25 days:</div><br>
         <div><?php echo "$fname $lname<br>$a1 $a2<br>$city, $state<br>$zipcode"; ?></div><br>
-        <div><strong>Your Order:<strong></div>
+        <div><strong>Your Order:</strong></div>
         <div>
             <?php
             foreach ($cart as $item) {
