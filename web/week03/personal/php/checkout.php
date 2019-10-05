@@ -27,6 +27,7 @@ $thisPage = "Checkout"
     </div>
 
     <div class="content-container">
+        <div class="primary-btn left"><a href="cart-view.php">Return to Cart</a></div>
         <form class="fancy-form">
             <h2 class="fancy-title">Shipping Address</h2>
             <div class="break"></div>
@@ -120,10 +121,8 @@ $thisPage = "Checkout"
             <div class="order-summary">
                 <table>
                     <?php include("actions/generate-order-summary.php"); ?>
-                    <div class="break"></div>
                 </table>
-                <div class="primary-btn left"><a href="cart-view.php">Return to Cart</a></div>
-                <div class="primary-btn right"><a href="order-confirmation.php">Confirm Order</a></div>
+                <div class="primary-btn"><a href="order-confirmation.php">Confirm Order</a></div>
             </div>
         </form>
 
