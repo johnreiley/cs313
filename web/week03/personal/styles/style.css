@@ -324,9 +324,13 @@ footer {
 /************ CHECKOUT *************/
 
 .order-summary tr {
-
+    padding: 5px 5px 0 0;
 }
 
 .order-item-price {
+    text-align: right;
+}
+
+.order-plus-sign {
     text-align: right;
 }

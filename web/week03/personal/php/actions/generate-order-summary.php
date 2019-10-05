@@ -11,7 +11,7 @@ foreach($cart as $item) {
         </tr>";
 }
 echo "<tr>
-        <td>+</td>
+        <td class=\"order-plus-sign\">+</td>
         <td></td>
     </tr>
     <tr>
