@@ -335,7 +335,7 @@ footer {
     text-align: right;
 }
 
-.order-add-line {
+.order-add-line td{
     border-bottom: solid black 1px;
 }
 
