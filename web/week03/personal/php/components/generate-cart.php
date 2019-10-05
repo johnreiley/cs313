@@ -9,7 +9,7 @@ foreach($cart as $item) {
             <td class=\"cart-item-img\"><img src=\"$item->imgUrl\"></td>
             <td class=\"cart-item-name\">$item->name</td>
             <td class=\"cart-item-price\">$item->price</td>
-            <td class=\"remove-item-btn\"><a>Remove</a></td>
+            <td class=\"remove-item-btn\"><a href=\"../actions/delete-from-cart.php\">Remove</a></td>
         </tr>";
 }
 

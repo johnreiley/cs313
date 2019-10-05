@@ -262,7 +262,7 @@ footer {
 }
 
 .cart-item {
-    
+    padding: 5px 10px 5px 10px;
 }
 
 .cart-item-img img {
@@ -270,7 +270,7 @@ footer {
 }
 
 .cart-item-name {
-
+    font-size: 15px;
 }
 
 .cart-item-price {
