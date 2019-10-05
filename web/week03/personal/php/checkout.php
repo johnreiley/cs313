@@ -45,6 +45,7 @@ $thisPage = "Cart Checkout"
         </div>
         <div class="fancy-input">
             <input list="statelist">
+            <div class="fancy-input-txt">state</div>
             <datalist id="statelist">
                 <option value="Alabama"></option>
                 <option value="Alaska"></option>
@@ -98,7 +99,6 @@ $thisPage = "Cart Checkout"
                 <option value="Wisconsin"></option>
                 <option value="Wyoming"></option>
             </datalist>
-            <div class="fancy-input-txt">state</div>
         </div>
         <div class="fancy-input">
             <input type="text">
