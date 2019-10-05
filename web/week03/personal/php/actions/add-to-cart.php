@@ -4,32 +4,12 @@ $filepath = 'https://calm-bastion-61884.herokuapp.com/week03/personal/php/index.
 header("Location: $filepath");
 
 $id = $_REQUEST["id"];
-echo($id); ///////////////////////////
-
 $shopItems = getShopInventory();
-print_r($shopItems);
-
-$shopItems = array_filter($shopItems, function($shopItem) use($id) { 
-    if ($shopItem->id == $id) {
-        echo "Found the one! $shopItem->id == $id";
-    } else {
-        echo " Nope, ";
-    }
-    return $shopItem->id == $id; });
+$shopItems = array_filter($shopItems, function($shopItem) use($id) { return $shopItem->id == $id; });
 
 foreach ($shopItems as $itemToAdd) {
     array_push($_SESSION["cart"], $itemToAdd);
 }
-
-// $i = 0;
-// do {
-//     if ($shopItems[$i]->id == $id) {
-//         $itemToAdd = $shopItems[$i];
-//     }
-// } while ($i < count($shopItems) && $shopItems[$i++]->id != $id);
-// echo($itemToAdd);
-
-
 
 
 function getShopInventory() {
