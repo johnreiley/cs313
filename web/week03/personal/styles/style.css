@@ -258,7 +258,7 @@ footer {
 /************* CART STYLING ***************/
 
 .cart {
-
+    padding: 10px;
 }
 
 .cart-item {
@@ -266,7 +266,7 @@ footer {
 }
 
 .cart-item-img img {
-    height: 100px;
+    max-height: 100px;
 }
 
 .cart-item-name {
