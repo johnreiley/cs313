@@ -121,9 +121,9 @@ $thisPage = "Checkout"
                 <table>
                     <?php include("actions/generate-order-summary.php"); ?>
                     <div class="break"></div>
-                    <div class="primary-btn left"><a href="cart-view.php">Return to Cart</a></div>
-                    <div class="primary-btn right"><a href="order-confirmation.php">Confirm Order</a></div>
                 </table>
+                <div class="primary-btn left"><a href="cart-view.php">Return to Cart</a></div>
+                <div class="primary-btn right"><a href="order-confirmation.php">Confirm Order</a></div>
             </div>
         </form>
 
