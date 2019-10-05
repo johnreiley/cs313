@@ -350,6 +350,10 @@ footer {
 
 /************ CHECKOUT *************/
 
+.order-summary {
+    margin: 0 0 10px 0;
+}
+
 .order-summary table {
     display: block;
     border-collapse: collapse;
