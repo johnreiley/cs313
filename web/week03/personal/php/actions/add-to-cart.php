@@ -17,7 +17,7 @@ $itemToAdd = array_filter($shopItems, function($shopItem) use($id) {
     }
     return $shopItem->id == $id; });
 
-array_push($_SESSION["cart"], $itemToAdd[0]);
+array_push($_SESSION["cart"], $itemToAdd);
 
 // $i = 0;
 // do {
