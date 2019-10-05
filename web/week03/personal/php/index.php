@@ -26,13 +26,6 @@ $thisPage = "Home";
     </div>
     <div class="content-container">
 
-        <?php
-            $items = $_SESSION["cart"];
-            print_r($items);
-        ?>
-
-
-
         <?php include("components/generate-items.php"); ?>
         <?php include("components/footer.php"); ?>
     </div>
