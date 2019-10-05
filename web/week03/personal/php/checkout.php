@@ -24,7 +24,6 @@ $thisPage = "Cart Checkout"
             <input type="text">
             <div class="fancy-input-txt">first name</div>
         </div>
-        <div class="break"></div>
         <div class="fancy-input">
             <input type="text">
             <div class="fancy-input-txt">last name</div>
@@ -43,12 +42,10 @@ $thisPage = "Cart Checkout"
             <input type="text">
             <div class="fancy-input-txt">city</div>
         </div>
-        <div class="break"></div>
         <div class="fancy-input">
             <input type="text">
             <div class="fancy-input-txt">state</div>
         </div>
-        <div class="break"></div>
         <div class="fancy-input">
             <input type="text">
             <div class="fancy-input-txt">zip code</div>
