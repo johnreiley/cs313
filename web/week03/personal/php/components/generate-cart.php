@@ -4,7 +4,7 @@ $cart = $_SESSION["cart"];
 // do the magic stuff here!
 
 if (count($cart) > 0) {
-    echo "<div class=\"checkout-btn\">Checkout</div>";
+    echo "<div class=\"checkout-btn\"><a>Checkout</a></div>";
 }
 
 foreach($cart as $item) {

@@ -260,6 +260,10 @@ footer {
 
 /************* CART STYLING ***************/
 
+.checkout-btn {
+    float: right;
+}
+
 .cart table {
     width: 100%;
     border-collapse: separate;
