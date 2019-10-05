@@ -12,6 +12,7 @@ foreach($cart as $item) {
 }
 echo "<tr class=\"order-add-line\">
         <td class=\"order-plus-sign\">+</td>
+        <td></td>
     </tr>
     <tr>
         <td>Total:</td>
