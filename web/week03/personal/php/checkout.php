@@ -120,7 +120,8 @@ $thisPage = "Checkout"
             <div class="order-summary">
                 <table>
                     <?php include("actions/generate-order-summary.php"); ?>
-                    
+                    <div class="primary-btn"><a href="cart-view.php">Return to Cart</a></div>
+                    <div class="primary-btn"><a href="order-confirmation.php">Confirm Order</a></div>
                 </table>
             </div>
         </form>

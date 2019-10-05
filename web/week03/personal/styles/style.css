@@ -100,10 +100,25 @@
     }
 }
 
+/*********** GENERAL STYLING *************/
+
 body {
     background-color: white;
     margin: 0;
     font-family: var(--font-apple);
+}
+
+.primary-btn {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    float: right;
+}
+
+.primary-btn a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -327,6 +342,10 @@ footer {
 
 /************ CHECKOUT *************/
 
+.order-summary table {
+    border-collapse: separate;
+}
+
 .order-summary tr {
     padding: 5px 5px 0 0;
 }
@@ -335,7 +354,7 @@ footer {
     text-align: right;
 }
 
-.order-add-line td{
+.order-add-line{
     border-bottom: solid black 1px;
 }
 
