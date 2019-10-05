@@ -183,6 +183,7 @@ nav .right {
 
 /*********** FOOTER ***********/
 footer {
+    width: 100%;
     z-index: -1;
     background-color: var(--second-bgd-color);
     padding: 50px;
