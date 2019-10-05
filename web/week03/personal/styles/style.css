@@ -351,6 +351,7 @@ footer {
 /************ CHECKOUT *************/
 
 .order-summary table {
+    display: block;
     border-collapse: separate;
 }
 
