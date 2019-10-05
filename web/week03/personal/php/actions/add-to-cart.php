@@ -5,12 +5,16 @@ header("Location: $filepath");
 
 $id = $_REQUEST["id"];
 echo($id); ///////////////////////////
+
 $shopItems = getShopInventory();
 print_r($shopItems);
+
 $itemToAdd = array_filter($shopItems, function($shopItem) use($id) { 
-    // if ($shopItem->id == $id) {
-    //     echo "Found the one! $id";
-    // }
+    if ($shopItem->id == $id) {
+        echo "Found the one! $id";
+    } else {
+        echo " Nope, ";
+    }
     return $shopItem->id === $id; });
 
 array_push($_SESSION["cart"], $itemToAdd[0]);
