@@ -5,7 +5,7 @@ $cart = $_SESSION["cart"];
 
 
 foreach($cart as $item) {
-    echo "<tr class=\"cart-item\"
+    echo "<tr class=\"cart-item\">
             <td class=\"cart-item-img\"><img src=\"$item->imgUrl\"></td>
             <td class=\"cart-item-name\">$item->name</td>
             <td class=\"cart-item-price\">$item->price</td>
