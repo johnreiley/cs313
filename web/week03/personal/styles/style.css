@@ -326,3 +326,7 @@ footer {
 .order-summary tr {
 
 }
+
+.order-item-price {
+    text-align: right;
+}
