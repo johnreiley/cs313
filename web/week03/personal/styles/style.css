@@ -147,7 +147,6 @@ nav .right {
 }
 
 .nav-item:hover {
-    box-shadow: inset var(--item-box-shadow);
     color: var(--primary-font-color-dark) !important;
     background-color: var(--nav-bgd-color-dark) !important;
 }
@@ -261,7 +260,13 @@ footer {
 /************* CART STYLING ***************/
 
 .checkout-btn {
+    border-radius: 5px;
+    background-color: var(--nav-bgd-color-dark);
     float: right;
+}
+
+.checkout-btn a {
+    text-decoration: none;
 }
 
 .cart table {
