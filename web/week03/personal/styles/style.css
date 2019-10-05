@@ -261,7 +261,8 @@ footer {
 
 .checkout-btn {
     border-radius: 5px;
-    background-color: var(--nav-bgd-color-dark);
+    color: white;
+    background-color: var(--accent-color);
     float: right;
 }
 
