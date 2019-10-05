@@ -5,6 +5,8 @@ $cart = $_SESSION["cart"];
 
 if (count($cart) > 0) {
     echo "<div class=\"checkout-btn\" href=\"actions/checkout-cart.php\"><a>Checkout</a></div>";
+} else {
+    echo "<div class=\"empty-cart-msg\">Looks like you're cart is empty</div>";
 }
 
 foreach($cart as $item) {
