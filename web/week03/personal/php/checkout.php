@@ -11,6 +11,7 @@ $thisPage = "Cart Checkout"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/fancy-form.css">
     <title>Shop - <?php echo $thisPage ?></title>
     <script src="../js/fancy-form.js" defer></script>
 </head>
