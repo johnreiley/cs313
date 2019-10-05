@@ -105,6 +105,19 @@ h2 {
     outline: none;
 }
 
+.fancy-btn a {
+    display: block;
+    margin: 20px;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background-color: var(--beauty-blue);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
 .fancy-btn button:active {
     background-color: var(--beauty-blue-dark);
     box-shadow: 0px 0px 4px 0px rgba(0, 174, 255, 0.678);
