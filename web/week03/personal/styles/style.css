@@ -89,6 +89,7 @@
         text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.651);
         text-align: center;
         max-width: 400px;
+        height: inherit;
         font-size: 4em;
         margin: auto;
         z-index: 3;
