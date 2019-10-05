@@ -25,8 +25,10 @@ $thisPage = "Home";
         </div>
     </div>
     <div class="content-container">
+        <div class="card-show">
+            <?php include("components/generate-items.php"); ?>
+        </div>
 
-        <?php include("components/generate-items.php"); ?>
         <?php include("components/footer.php"); ?>
     </div>
 

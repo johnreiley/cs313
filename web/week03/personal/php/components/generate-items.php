@@ -8,7 +8,6 @@ fclose($shopItemsFile);
 
 $shopItems = json_decode($shopItemsJson);
 
-echo "<div class=\"card-show\">";
 foreach ($shopItems as $item) {
     echo "<div class=\"card\">
             <img class=\"card-img\" src=\"$item->imgUrl\" alt=\"\">
@@ -21,6 +20,5 @@ foreach ($shopItems as $item) {
             <a href=\"actions/add-to-cart.php?id=$item->id\" class=\"card-add-cart-btn\">Add to Cart</a>
         </div>";
 }
-echo "</div>";
 
 ?>

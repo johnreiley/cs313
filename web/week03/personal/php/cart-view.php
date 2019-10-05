@@ -24,7 +24,12 @@ $thisPage = "Cart View"
     </div>
 
     <div class="content-container">
-        <?php include("components/generate-cart.php"); ?>
+        <div class="cart">
+            <table>
+                <?php include("components/generate-cart.php"); ?>
+            </table>
+        </div>
+
         <?php include("components/footer.php"); ?>
     </div>
 
