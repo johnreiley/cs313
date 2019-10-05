@@ -197,7 +197,8 @@ footer {
 }
 
 .card {
-    transition: all 0.3s;
+    user-select: none;
+    transition: box-shadow 0.3s, filter 0.3s;
     margin: 20px 10px 20px 10px;
     box-shadow: var(--item-box-shadow);
     max-width: 250px;
