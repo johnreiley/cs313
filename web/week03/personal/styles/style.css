@@ -188,6 +188,8 @@ footer {
     padding: 50px;
     font-weight: 200;
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 
 
