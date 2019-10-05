@@ -27,16 +27,18 @@ $cart = $_SESSION["cart"];
 <body>
     <?php include("components/navigation.php"); ?>
 
-
-    <div>You're order has been comfirmed and will be shipped to the following address in 25 days:</div>
-    <div><?php echo "$fname $lname<br>$a1 $a2<br>$city, $state<br>$zipcode"; ?></div>
-    <div>Your Order:</div>
-    <div>
-        <?php
-        foreach ($cart as $item) {
-            echo "<div>$item->name</div>";
-        }
-        ?>
+    <div class="content-container">
+        <div>You're order has been comfirmed and will be shipped to the following address in 25 days:</div>
+        <div><?php echo "$fname $lname<br>$a1 $a2<br>$city, $state<br>$zipcode"; ?></div>
+        <div>Your Order:</div>
+        <div>
+            <?php
+            foreach ($cart as $item) {
+                echo "<div>$item->name</div>";
+            }
+            session_unset();
+            ?>
+        </div>
     </div>
 
     <?php include("components/footer.php"); ?>
