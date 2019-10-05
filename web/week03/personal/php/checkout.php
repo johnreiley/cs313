@@ -27,7 +27,7 @@ $thisPage = "Checkout"
     </div>
 
     <div class="content-container">
-        <form class="fancy-form">
+        <form class="fancy-form" action="order-confirmation.php" method="post">
 
             <div class="primary-btn left"><a href="cart-view.php">Return to Cart</a></div>
             <div class="break"></div>
@@ -35,30 +35,30 @@ $thisPage = "Checkout"
             <h2 class="fancy-title">Shipping Address</h2>
             <div class="break"></div>
             <div class="fancy-input">
-                <input type="text">
+                <input type="text" name="fname">
                 <div class="fancy-input-txt">first name</div>
             </div>
             <div class="fancy-input">
-                <input type="text">
+                <input type="text" name="lname">
                 <div class="fancy-input-txt">last name</div>
             </div>
             <div class="break"></div>
             <div class="fancy-input">
-                <input type="text">
-                <div class="fancy-input-txt">address</div>
+                <input type="text" name="address1">
+                <div class="fancy-input-txt">address 1</div>
             </div>
             <div class="break"></div>
             <div class="fancy-input">
-                <input type="text">
+                <input type="text" name="address2">
                 <div class="fancy-input-txt">address 2</div>
             </div>
             <div class="break"></div>
             <div class="fancy-input">
-                <input type="text">
+                <input type="text" name="city">
                 <div class="fancy-input-txt">city</div>
             </div>
             <div class="fancy-input">
-                <input list="statelist">
+                <input list="statelist" name="state">
                 <div class="fancy-input-txt">state</div>
                 <datalist id="statelist">
                     <option value="Alabama"></option>
@@ -115,7 +115,7 @@ $thisPage = "Checkout"
                 </datalist>
             </div>
             <div class="fancy-input">
-                <input type="text">
+                <input type="text" name="zipcode">
                 <div class="fancy-input-txt">zip code</div>
             </div>
             <div class="break"></div>
