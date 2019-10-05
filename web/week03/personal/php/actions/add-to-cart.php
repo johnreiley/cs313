@@ -7,21 +7,21 @@ $id = $_REQUEST["id"];
 echo($id); ///////////////////////////
 $shopItems = getShopInventory();
 print_r($shopItems);
-// $itemToAdd = array_filter($shopItems, function($shopItem) use($id) { 
-//     if ($shopItem->id == $id) {
-//         echo "Found the one! $id";
+$itemToAdd = array_filter($shopItems, function($shopItem) use($id) { 
+    // if ($shopItem->id == $id) {
+    //     echo "Found the one! $id";
+    // }
+    return $shopItem->id === $id; });
+
+array_push($_SESSION["cart"], $itemToAdd[0]);
+
+// $i = 0;
+// do {
+//     if ($shopItems[$i]->id == $id) {
+//         $itemToAdd = $shopItems[$i];
 //     }
-//     return $shopItem->id === $id; });
-$i = 0;
-do {
-    if ($shopItems[$i]->id == $id) {
-        $itemToAdd = $shopItems[$i];
-    }
-} while ($i < count($shopItems) && $shopItems[$i++]->id != $id);
-echo($itemToAdd);
-
-// array_push($_SESSION["cart"], $itemToAdd[0]);
-
+// } while ($i < count($shopItems) && $shopItems[$i++]->id != $id);
+// echo($itemToAdd);
 
 
 
