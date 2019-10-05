@@ -258,7 +258,12 @@ footer {
 /************* CART STYLING ***************/
 
 .cart {
+    width: 100%;
     padding: 10px;
+}
+
+.cart-item {
+    border-bottom: solid var(--nav-bgd-color-dark) 2px;
 }
 
 .cart-item td {
