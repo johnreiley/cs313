@@ -266,7 +266,7 @@ footer {
 }
 
 .cart-item {
-    border-bottom: solid var(--nav-bgd-color-dark) 2px;
+    border-bottom: solid 2px var(--nav-bgd-color-dark);
 }
 
 .cart-item td {
