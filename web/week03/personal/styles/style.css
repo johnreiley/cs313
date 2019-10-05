@@ -265,8 +265,9 @@ footer {
     width: 100%;
 }
 
-.cart-item {
-    border-bottom: solid 2px var(--nav-bgd-color-dark);
+.cart tr {
+    margin: 5px 0 5px 0;
+    box-shadow: var(--item-box-shadow);
 }
 
 .cart-item td {
