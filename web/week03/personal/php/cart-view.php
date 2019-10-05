@@ -31,8 +31,8 @@ $thisPage = "Cart View"
             </table>
         </div>
 
-        <?php include("components/footer.php"); ?>
     </div>
+    <?php include("components/footer.php"); ?>
 
 </body>
 
