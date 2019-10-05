@@ -75,5 +75,12 @@
         "description": "Take a ride down the slopes in style",
         "imgUrl": "http://curedetoxifiere.com/wp-content/uploads/2018/03/strange-furniture-strange-furniture-unusual-furniture-no-comments-strange-outdoor-furniture.jpg",
         "price": "799.95"
+    },
+    {
+        "id": "012",
+        "name": "Leg Lamp",
+        "description": "The name says it all",
+        "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/31cbHlhWWOL._SX425_.jpg",
+        "price": "149.99"
     }
 ]
