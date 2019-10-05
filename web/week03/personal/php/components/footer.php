@@ -1,4 +1,4 @@
 <footer>
     <hr>
-    Shop - Copyright ©<?php echo date('Y') ?>
+    Furniture Farm - Copyright ©<?php echo date('Y') ?>
 </footer>
