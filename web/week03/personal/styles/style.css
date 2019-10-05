@@ -262,13 +262,13 @@ footer {
 /************* CART STYLING ***************/
 
 .checkout-btn {
-    padding: 10px;
     border-radius: 5px;
     background-color: var(--accent-color);
     float: right;
 }
 
 .checkout-btn a {
+    padding: 10px;
     color: white;
     text-decoration: none;
 }
