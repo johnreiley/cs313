@@ -14,7 +14,7 @@ foreach ($shopItems as $item) {
             <div class=\"card-txt\">
                 <div>$item->name</div>
                  <div class=\"card-txt-desc\">$item->description</div>
-                 <div>$item->price</div>
+                 <div>$$item->price</div>
             </div>
             
             <a href=\"actions/add-to-cart.php?id=$item->id\" class=\"card-add-cart-btn\">Add to Cart</a>

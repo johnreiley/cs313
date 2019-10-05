@@ -4,35 +4,35 @@
         "name": "Green Chair",
         "description": "An overpriced plastic green chair",
         "imgUrl": "https://atlas-content-cdn.pixelsquid.com/assets_v2/194/1943517897053705554/jpeg-600/G03.jpg",
-        "price": "$59.95"
+        "price": "59.95"
     },
     {
         "id": "002",
         "name": "Blue Sofa",
         "description": "A comfy sofa for the whole family to sit on",
         "imgUrl": "https://www.critellifurniture.com/css/20439/images/categories/sofas.jpg",
-        "price": "$229.95"
+        "price": "229.95"
     },
     {
         "id": "003",
         "name": "Wooden Desk",
         "description": "A desk that costs more than a desk should",
         "imgUrl": "https://ii.worldmarket.com/fcgi-bin/iipsrv.fcgi?FIF=/images/worldmarket/source/87960_XXX_v1.tif&qlt=267&wid=267&cvt=jpeg",
-        "price": "$299.95"
+        "price": "299.95"
     },
     {
         "id": "004",
         "name": "Baby Blue Wood Bench",
         "description": "A wooden bench to numb your cheeks",
         "imgUrl": "https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/fetch/FetchRules/Partial/DD17-Cat-Furniture-L1-EntrywayFurniture-200x200.jpg",
-        "price": "$159.99"
+        "price": "159.99"
     },
     {
         "id": "005",
         "name": "Grey Chase Lounge",
         "description": "A lounge perfect for emotional days",
         "imgUrl": "https://www.meubelsplaza.nl/wp-content/uploads/2019/06/Beliani-Alsvag-Chaise-longue-Grijs-Fluweel.jpg",
-        "price": "$199.99"
+        "price": "199.99"
     },
     {
         "id": "006",
