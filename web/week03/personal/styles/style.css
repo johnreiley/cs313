@@ -333,4 +333,5 @@ footer {
 
 .order-plus-sign {
     text-align: right;
+    border-bottom: solid black 1px;
 }
