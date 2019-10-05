@@ -6,5 +6,5 @@ header("Location: $filepath");
 $id = $_REQUEST["id"];
 $cartItems = $_SESSION["cart"];
 
-$_SESSION["cart"] = array_filter($cartItems, function($cartItem) use($id) { return $cartItem->id != $id });
+$_SESSION["cart"] = array_filter($cartItems, function($cartItem) use($id) { return $cartItem->id != $id; });
 ?>
