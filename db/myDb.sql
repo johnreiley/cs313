@@ -50,7 +50,7 @@ CREATE SEQUENCE sl_comments_s1 START WITH 1001;
 
 /******** ADD MYSELF AS ADMIN ********/
 INSERT INTO users( user_id, username, password, email, first_name, last_name, creation_date)
-VALUES( nextval('users_s1'), 'jlreiley', 'JLpass19', 'johnlouisreiley@gmail.com', 'John', 'Reiley', transaction_timestamp());
+VALUES( nextval('users_s1'), 'jlreiley', 'cangetin', 'johnlouisreiley@gmail.com', 'John', 'Reiley', transaction_timestamp());
 
 INSERT INTO administrators(admin_id, user_id)
 VALUES( nextval('administrators_s1'), currval('users_s1'));
