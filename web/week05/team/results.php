@@ -11,7 +11,8 @@ echo ("book = $book");
 // $stmt->execute();
 // $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-foreach ($db->query('SELECT chapter, verse FROM scriptures WHERE book="John";') as $row) {
+$query = "SELECT chapter, verse FROM scriptures WHERE book='$book'";
+foreach ($db->query($query) as $row) {
     $chapter = $row['chapter'];
     $verse = $row['verse'];
     
