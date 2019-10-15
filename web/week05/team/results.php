@@ -4,7 +4,6 @@ require 'db-connect.php';
 $book = $_POST["book"];
 
 echo ("book = $book");
-print_r($db);
 // $query = "
 // SELECT book, chapter, verse IN scriptures
 // WHERE book = $book";
@@ -12,7 +11,7 @@ print_r($db);
 // $stmt->execute();
 // $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-foreach ($db->query("SELECT chapter, verse IN scriptures WHERE book = $book;") as $row) {
+foreach ($db->query("SELECT chapter, verse FROM scriptures WHERE book = $book;") as $row) {
     $chapter = $row['chapter'];
     $verse = $row['verse'];
     

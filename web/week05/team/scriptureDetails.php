@@ -14,7 +14,10 @@ AND chapter = chapter=:chapter
 AND verse = verse=:verse';
 $query->execute();
 
-while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
+$select = $db->prepare('SELECT book, chapter, verse, content FROM scripture');
+$select.execute();
+
+while ($row = $select->fetch(PDO::FETCH_ASSOC)) {
     $content = $row['content'];
 }
 
