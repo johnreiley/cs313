@@ -5,14 +5,14 @@ $book = $_POST["book"];
 
 echo ("book = $book");
 
-$query = "
-SELECT book, chapter, verse IN scriptures
-WHERE book = $book";
-$stmt = $db->prepare($query);
-$stmt->execute();
-$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// $query = "
+// SELECT book, chapter, verse IN scriptures
+// WHERE book = $book";
+// $stmt = $db->prepare($query);
+// $stmt->execute();
+// $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-foreach ($rows as $row) {
+foreach ($db->query("SELECT book, chapter, verse IN scriptures WHERE book = $book;") as $row) {
     $book = $row['book'];
     $chapter = $row['chapter'];
     $verse = $row['verse'];
