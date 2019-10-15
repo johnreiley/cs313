@@ -1,4 +1,7 @@
 <?php
+session_start();
+
+
 try {
     $dbUrl = getenv('DATABASE_URL');
 
@@ -40,12 +43,8 @@ foreach ($db->query('SELECT book, chapter, verse, content FROM scriptures;') as 
 
     echo "<b>$book $chapter:$verse</b> - \"$content\"";
     echo "<br/>";
+    echo "<br/>";
 }
 ?>
-<form action="stretch.php">
-Please enter a book you would like to search for: <br />
-  <input type="text" name="book_name">
-</form>
-
 </body>
 </html>
