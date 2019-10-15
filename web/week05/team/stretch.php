@@ -1,6 +1,5 @@
 <?php
 require 'db-connect.php';
-$db = get_db();
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +16,7 @@ $db = get_db();
 Please enter a book you would like to search for: <br />
 <form action="results.php" method="post">
     <input type="text" name="book" id="book" placeholder="Book">
+    <br />
     >><input type="submit" value="Submit"><<
 </form>
 
