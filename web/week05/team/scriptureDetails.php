@@ -8,6 +8,8 @@ $book = $_GET["book"];
 $chapter = $_GET["chapter"];
 $verse = $_GET["verse"];
 
+echo $book . "<br>";
+
 $query = "SELECT book, chapter, verse, content FROM scriptures
 WHERE book = '$book'
 AND chapter = '$chapter'
