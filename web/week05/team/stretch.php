@@ -1,27 +1,5 @@
 <?php
-session_start();
-
-try {
-    $dbUrl = getenv('DATABASE_URL');
-
-    $dbOpts = parse_url($dbUrl);
-
-    $dbHost = $dbOpts["host"];
-    $dbPort = $dbOpts["port"];
-    $dbUser = $dbOpts["user"];
-    $dbPassword = $dbOpts["pass"];
-    $dbName = ltrim($dbOpts["path"], '/');
-
-    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $_SESSION['db'] = $db;
-    
-} catch (PDOException $ex) {
-    echo 'Error!: ' . $ex->getMessage();
-    die();
-}
-
+require 'db-connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -35,9 +13,9 @@ try {
 <body>
 
 <h1>Scripture Resources</h1>
+Please enter a book you would like to search for: <br />
 <form action="results.php" method="post">
-    Please enter a book you would like to search for: <br />
-    <input type="text" name="book_name" id="book_name">
+    <input type="text" name="book" id="book" placeholder="Book">
 </form>
 
 <?php

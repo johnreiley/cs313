@@ -1,9 +1,7 @@
 <?php
-session_start();
-$db = $_SESSION['db'];
+require 'db-connect.php';
 
-$book = $_POST["book_name"];
-
+$book = $_POST["book"];
 
 $query = '
 SELECT book, chapter, verse IN scriptures
@@ -22,4 +20,3 @@ foreach ($rows as $row) {
 
 ?>
 
-// $query = 'content
