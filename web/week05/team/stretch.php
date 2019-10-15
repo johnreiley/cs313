@@ -16,7 +16,7 @@ require 'db-connect.php';
 Please enter a book you would like to search for: <br />
 <form action="results.php" method="post">
     <input type="text" name="book" id="book" placeholder="Book">
-    <input type="submit">
+    >><input type="submit" value="Submit"><<
 </form>
 
 <?php
