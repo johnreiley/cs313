@@ -17,7 +17,7 @@ Please enter a book you would like to search for: <br />
 <form action="results.php" method="post">
     <input type="text" name="book" id="book" placeholder="Book">
     <br />
-    >><input type="submit" value="Submit"><<
+    <input type="submit" value="Search">
 </form>
 
 <?php
