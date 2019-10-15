@@ -1,7 +1,9 @@
 <?php
 require 'db-connect.php';
 
-$book = $_POST['book'];
+$book = $_POST["book"];
+
+echo ("book = $book");
 
 // $query = '
 // SELECT book, chapter, verse IN scriptures
