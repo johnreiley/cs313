@@ -4,9 +4,9 @@ require 'db-connect.php';
 
 
 Scripture Details: <?php 
-$book = $_POST["book"];
-$chapter = $_POST["chapter"];
-$verse = $_POST["verse"];
+$book = $_GET["book"];
+$chapter = $_GET["chapter"];
+$verse = $_GET["verse"];
 
 $query = "SELECT book, chapter, verse, content FROM scriptures
 WHERE book = '$book'
