@@ -20,7 +20,7 @@ $page = "Home";
 
     <?php
     foreach (getAllPosts($db) as $post) {
-        echo "<a>" . $post['post_title'] . "</a><br>";
+        echo "<a>" . $post['post_date'] .  ":" . $post['post_title'] . "</a><br>";
     }
     ?>
 
