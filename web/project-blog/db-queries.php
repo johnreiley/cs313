@@ -30,11 +30,8 @@ function getAllPosts($db)
 {
     $query = 'SELECT post_date, post_title, post_text FROM posts';
     $stmt = $db->prepare($query);
+    $stmt->execute();
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-    foreach ($rows as $row) {
-        echo $row['post_date'];
-    }
 
     return $rows;
 }

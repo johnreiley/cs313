@@ -19,12 +19,9 @@ $page = "Home";
     <h1><?php echo $page ?></h1>
 
     <?php
-    foreach ($db->query('SELECT post_date, post_title, post_text FROM posts') as $row) {
-        echo $row['post_title'] . "<br>";
+    foreach (getAllPosts($db) as $post) {
+        echo "<a>" . $post['post_title'] . "</a><br>";
     }
-    // foreach (getAllPosts($db) as $post) {
-    //     echo "<a>" . $post['post_title'] . "</a><br>";
-    // }
     ?>
 
 </body>
