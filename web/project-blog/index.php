@@ -19,9 +19,10 @@ $page = "Home";
     <h1><?php echo $page ?></h1>
 
     <?php
-    foreach (getAllPosts($db) as $post) {
-        echo "<a>" . $post['post_title'] . "</a><br>";
-    }
+
+    // foreach (getAllPosts($db) as $post) {
+    //     echo "<a>" . $post['post_title'] . "</a><br>";
+    // }
     ?>
 
 </body>

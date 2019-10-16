@@ -32,7 +32,9 @@ function getAllPosts($db)
     $stmt = $db->prepare($query);
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    echo "I MADE IT HERE";
+    foreach ($rows as $row) {
+        echo $row['post_date'];
+    }
 
     return $rows;
 }
