@@ -23,6 +23,8 @@ $title = $post['post_title'];
 
     <p><?php echo $post['post_text'] ?></p>
 
+    <a href="index.php">Home</a>
+
 </body>
 
 </html>
