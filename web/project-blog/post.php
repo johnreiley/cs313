@@ -3,7 +3,7 @@ require 'db-queries.php';
 require 'connect-db.php';
 $db = get_db();
 
-$id = $_POST['id'];
+$id = $_GET['id'];
 $post = getSinglePost($db, $id);
 $title = $post['post_title'];
 ?>
