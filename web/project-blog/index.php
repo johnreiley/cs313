@@ -22,6 +22,7 @@ $page = "Home";
     foreach (getAllPosts($db) as $post) {
         $id = $post['post_id'];
         $title = $post['post_title'];
+        echo $id;
         echo "<a href=post.php?id=$id>$title</a><br>";
     }
     ?>
