@@ -32,6 +32,8 @@ function getAllPosts($db)
     $stmt = $db->prepare($query);
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+    echo "I MADE IT HERE";
+
     return $rows;
 }
 
