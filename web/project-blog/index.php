@@ -1,5 +1,5 @@
 <?php
-require 'db-queries.php';
+// require 'db-queries.php';
 require 'connect-db.php';
 $db = get_db();
 $page = "Home";
@@ -19,9 +19,9 @@ $page = "Home";
     <h1><?php $page ?></h1>
 
     <?php
-    foreach (getAllPosts($db) as $post) {
-        echo "<a>" . $post['post_title'] . "</a><br>";
-    }
+    // foreach (getAllPosts($db) as $post) {
+    //     echo "<a>" . $post['post_title'] . "</a><br>";
+    // }
     ?>
 
 </body>
