@@ -12,7 +12,7 @@ function isAdminUser($db, $userId)
 {
     $query = '
     SELECT admin_id FROM administrators
-    WHERE user_id = id=:user_id';
+    WHERE user_id=:user_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':user_id' => $userId));
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -45,7 +45,7 @@ function getSinglePost($db, $postId)
 {
     $query = '
     SELECT * FROM posts
-    WHERE post_id = id=:post_id';
+    WHERE post_id=:post_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':post_id' => $postId));
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -143,7 +143,7 @@ function deleteBlogPost($db, $postId)
 {
     $query = '
     DELETE FROM posts
-    WHERE post_id = id=:post_id';
+    WHERE post_id=:post_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':post_id' => $postId));
 }
@@ -154,7 +154,7 @@ function deleteComment($db, $commentId)
 { 
     $query = '
     DELETE FROM comments
-    WHERE comment_id = id=:comment_id';
+    WHERE comment_id=:comment_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':comment_id' => $commentId));
 }
@@ -165,7 +165,7 @@ function deleteSecondaryComment($db, $commentId)
 {
     $query = '
     DELETE FROM second_level_comments
-    WHERE id = id=:comment_id';
+    WHERE id=:comment_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':comment_id' => $commentId));
 }
