@@ -25,6 +25,8 @@ $page = "Home";
         echo "<a href=post.php?id=$id>$title</a><br>";
     }
     ?>
+    
+    <a href="index.php">Home</a>
 
 </body>
 
