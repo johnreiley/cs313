@@ -8,7 +8,7 @@ function getUserInfo()
 
 
 // check if the user is an admin
-function isAdminUser($userId)
+function isAdminUser($db, $userId)
 {
     $query = '
     SELECT admin_id FROM administrators
@@ -26,7 +26,7 @@ function isAdminUser($userId)
 
 
 // get all blog posts
-function getAllPosts()
+function getAllPosts($db)
 {
     $query = 'SELECT * FROM posts';
     $stmt = $db->prepare($query);
@@ -37,7 +37,7 @@ function getAllPosts()
 
 
 // get blog post and its comments
-function getSinglePost($postId)
+function getSinglePost($db, $postId)
 {
     $query = '
     SELECT * FROM posts
@@ -54,7 +54,7 @@ function getSinglePost($postId)
 /************INSERT QUERIES**************/
 
 // register new user
-function registerNewUser($username, $password, $email, $firstName, $lastName)
+function registerNewUser($db, $username, $password, $email, $firstName, $lastName)
 {
     $query = '
     INSERT INTO users
@@ -86,17 +86,38 @@ function registerNewUser($username, $password, $email, $firstName, $lastName)
 
 
 // post new blog post
-function postNewBlogPost($userId, $postTitle, $postText)
-{ }
+function postNewBlogPost($db, $userId, $postTitle, $postText)
+{ 
+    $query = '
+    INSERT INTO posts
+    ( post_id
+    , user_id
+    , post_date
+    , post_title
+    , post_text
+    VALUES
+    ( posts_s1.NEXTVAL
+    , user_id=:user_id
+    , transaction_timestamp()
+    , post_title=:post_title
+    , post_text=:post_text
+    )';
+    $stmt = $db->prepare($query);
+    $stmt->execute(array(
+        ':user_id' => $userId,
+        ':post_title' => $postTitle,
+        ':post_text' => $postText
+    ));
+}
 
 
 // post new comment
-function postNewComment($userId, $postId, $commentText)
+function postNewComment($db, $userId, $postId, $commentText)
 { }
 
 
 // post new secondary comment
-function postNewSecondaryComment($userId, $commentId, $commentText)
+function postNewSecondaryComment($db, $userId, $commentId, $commentText)
 { }
 
 
@@ -104,7 +125,7 @@ function postNewSecondaryComment($userId, $commentId, $commentText)
 /****************UPDATE QUERIES**************/
 
 // edit blog post
-function updateBlogPost()
+function updateBlogPost($db, $postTitle, $postText)
 { }
 
 
@@ -112,15 +133,33 @@ function updateBlogPost()
 /***************DELETE QUERIES****************/
 
 // delete blog post
-function deleteBlogPost($postId)
-{ }
+function deleteBlogPost($db, $postId)
+{
+    $query = '
+    DELETE FROM posts
+    WHERE post_id = id=:post_id';
+    $stmt = $db->prepare($query);
+    $stmt->execute(array(':post_id' => $postId));
+}
 
 
 // delete comment
-function deleteComment($commentId)
-{ }
+function deleteComment($db, $commentId)
+{ 
+    $query = '
+    DELETE FROM comments
+    WHERE comment_id = id=:comment_id';
+    $stmt = $db->prepare($query);
+    $stmt->execute(array(':comment_id' => $commentId));
+}
 
 
 // delete secondary comment
-function deleteSecondaryComment($commentId)
-{ }
+function deleteSecondaryComment($db, $commentId)
+{
+    $query = '
+    DELETE FROM second_level_comments
+    WHERE id = id=:comment_id';
+    $stmt = $db->prepare($query);
+    $stmt->execute(array(':comment_id' => $commentId));
+}
