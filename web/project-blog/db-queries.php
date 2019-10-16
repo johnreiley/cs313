@@ -40,6 +40,7 @@ function getAllPosts($db)
 // get blog post and its comments
 function getSinglePost($db, $postId)
 {
+    // join users and comments
     $query = '
     SELECT * FROM posts
     WHERE post_id=:post_id';

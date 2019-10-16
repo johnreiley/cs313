@@ -2,7 +2,10 @@
 require 'db-queries.php';
 require 'connect-db.php';
 $db = get_db();
-$page = "Home";
+
+$id = $_POST['id'];
+$post = getSinglePost($db, $id);
+$title = $post['post_title'];
 ?>
 
 <!DOCTYPE html>
@@ -12,17 +15,13 @@ $page = "Home";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog - <?php echo $page ?></title>
+    <title>Blog - <?php echo $title ?></title>
 </head>
 
 <body>
-    <h1><?php echo $page ?></h1>
+    <h1><?php echo $title ?></h1>
 
-    <?php
-    foreach (getAllPosts($db) as $post) {
-        echo "<a href=post.php?id=\"$id\">" . $post['post_title'] . "</a><br>";
-    }
-    ?>
+    <p><?php echo $post['post_text'] ?></p>
 
 </body>
 
