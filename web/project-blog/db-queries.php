@@ -28,7 +28,7 @@ function isAdminUser($db, $userId)
 // get all blog posts
 function getAllPosts($db)
 {
-    $query = 'SELECT * FROM posts';
+    $query = 'SELECT post_date, post_title, post_text FROM posts';
     $stmt = $db->prepare($query);
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -48,6 +48,7 @@ function getSinglePost($db, $postId)
 
     return $row;
 }
+
 
 
 
@@ -119,6 +120,7 @@ function postNewComment($db, $userId, $postId, $commentText)
 // post new secondary comment
 function postNewSecondaryComment($db, $userId, $commentId, $commentText)
 { }
+
 
 
 
