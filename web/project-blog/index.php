@@ -1,6 +1,6 @@
 <?php
-require 'db-queries.php';
-require 'connect-db.php';
+require 'utilities/db-queries.php';
+require 'utilities/connect-db.php';
 $db = get_db();
 $page = "Home";
 ?>
@@ -16,6 +16,8 @@ $page = "Home";
 </head>
 
 <body>
+    <?php require 'components/navigation.php' ?>
+
     <h1><?php echo $page ?></h1>
 
     <?php
@@ -25,6 +27,8 @@ $page = "Home";
         echo "<a href=post.php?id=$id>$title</a><br>";
     }
     ?>
+
+    <?php require 'components/footer.php' ?>
 
 </body>
 

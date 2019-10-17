@@ -1,11 +1,14 @@
 <?php
-require 'db-queries.php';
-require 'connect-db.php';
+require 'utilities/db-queries.php';
+require 'utilities/connect-db.php';
 $db = get_db();
 
 $id = $_GET['id'];
+
 $post = getSinglePost($db, $id);
 $title = $post['post_title'];
+$date = $post['post_date'];
+$author = "TODO";
 ?>
 
 <!DOCTYPE html>
@@ -19,10 +22,14 @@ $title = $post['post_title'];
 </head>
 
 <body>
-    <h1><?php echo $title ?></h1>
 
-    <p><?php echo $post['post_text'] ?></p>
+    <main>
+    <h2 class="post-title"><?php echo $title ?></h2>
+    <div class="post-info"><?php echo "$date - $author"; ?></div>
+    <div class="post-body"><?php echo $post['post_text'] ?></div>
 
+    <!-- Add comments here -->
+    </main>
     <a href="index.php">Home</a>
 
 </body>
