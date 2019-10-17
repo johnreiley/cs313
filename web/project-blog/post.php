@@ -38,7 +38,7 @@ $author = "TODO";
                 $date = $comment['comment_time'];
                 $text = $comment['comment_text'];
                 echo "
-                <div class=\"comment\"
+                <div class=\"comment\">
                     <div class=\"comment-details\">$user - $date</div>
                     <div class=\"comment-body\">$text</div>
                 </div>";

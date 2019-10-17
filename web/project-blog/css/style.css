@@ -113,4 +113,8 @@ footer {
 .comment-box .comment {
   padding: 10px;
 }
+
+.comment-box .comment-details {
+  text-align: left;
+}
 /*# sourceMappingURL=style.css.map */
