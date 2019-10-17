@@ -93,7 +93,13 @@ footer {
   padding: 20px 0 5px 0;
 }
 
+.post-info {
+  font-family: var(--post-font);
+}
+
 .post-body {
   font-family: var(--post-font);
+  padding: 30px;
+  max-width: 600px;
 }
 /*# sourceMappingURL=style.css.map */

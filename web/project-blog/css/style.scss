@@ -100,11 +100,15 @@ footer {
 }
 
 // info
-.post-info {}
+.post-info {
+    font-family: var(--post-font);
+}
 
 // body
 .post-body {
     font-family: var(--post-font);
+    padding: 30px;
+    max-width: 600px;
 }
 
 // comments
