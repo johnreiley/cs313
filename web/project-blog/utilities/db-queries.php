@@ -44,9 +44,9 @@ function getSinglePost($db, $postId)
     SELECT 
       post_id
     , user_id
+    , post_date
     , post_title
     , post_text
-    , comment 
     FROM posts
     WHERE post_id=:post_id';
     $stmt = $db->prepare($query);
