@@ -72,4 +72,8 @@ main {
 main a {
   color: var(--accent-color);
 }
+
+main h2 {
+  margin: auto;
+}
 /*# sourceMappingURL=style.css.map */
