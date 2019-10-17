@@ -103,7 +103,9 @@ footer {
 .post-info {}
 
 // body
-.post-body {}
+.post-body {
+    font-family: var(--post-font);
+}
 
 // comments
 .comment-box {

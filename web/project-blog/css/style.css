@@ -92,4 +92,8 @@ footer {
   text-align: center;
   padding: 20px 0 5px 0;
 }
+
+.post-body {
+  font-family: var(--post-font);
+}
 /*# sourceMappingURL=style.css.map */
