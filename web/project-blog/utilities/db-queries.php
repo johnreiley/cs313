@@ -37,12 +37,17 @@ function getAllPosts($db)
 }
 
 
-// get blog post and its comments
+// get blog post
 function getSinglePost($db, $postId)
 {
-    // join users and comments
     $query = '
-    SELECT * FROM posts
+    SELECT 
+      post_id
+    , post_id
+    , post_title
+    , post_text
+    , comment 
+    FROM posts
     WHERE post_id=:post_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':post_id' => $postId));
@@ -51,6 +56,32 @@ function getSinglePost($db, $postId)
     return $row;
 }
 
+
+// get blog post comments
+function getPostComments($db, $postId)
+{
+    $query = '
+    SELECT 
+      comment_id
+    , user_id
+    , post_id
+    , comment_time
+    , comment_text
+    FROM comments
+    WHERE post_id=:post_id';
+    $stmt = $db->prepare($query);
+    $stmt->execute(array(':post_id' => $postId));
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    return $row;
+}
+
+
+// get blog post comments
+function getSecondLevelComments($db, $commentId)
+{
+    
+}
 
 
 

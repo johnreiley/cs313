@@ -31,6 +31,20 @@ $author = "TODO";
         <div class="post-body"><?php echo $post['post_text'] ?></div>
 
         <!-- Add comments here -->
+        <div class="comment-box">
+            <?php 
+            foreach(getPostComments($db, $id) as $comment) {
+                $user = $comment['user_id'];
+                $date = $comment['comment_time'];
+                $text = $comment['comment_text'];
+                echo "
+                <div class=\"comment\"
+                    <div class=\"comment-details\">$user - $date</div>
+                    <div class=\"comment-body\">$text</div>
+                </div>";
+            } 
+            ?>
+        </div>
     </main>
 
     <?php require 'components/footer.php' ?>
