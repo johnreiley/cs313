@@ -76,4 +76,9 @@ main a {
 main h2 {
   margin: auto;
 }
+
+footer {
+  background-color: var(--primary-bgd-color);
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
