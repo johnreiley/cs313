@@ -34,7 +34,6 @@ $author = "TODO";
     </main>
 
     <?php require 'components/footer.php' ?>
-    <a href="index.php">Home</a>
 
 </body>
 
