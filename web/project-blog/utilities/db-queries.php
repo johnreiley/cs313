@@ -71,9 +71,9 @@ function getPostComments($db, $postId)
     WHERE post_id=:post_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':post_id' => $postId));
-    $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    return $row;
+    return $rows;
 }
 
 
