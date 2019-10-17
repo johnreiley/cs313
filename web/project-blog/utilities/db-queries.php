@@ -80,7 +80,20 @@ function getPostComments($db, $postId)
 // get blog post comments
 function getSecondLevelComments($db, $commentId)
 {
-    
+    $query = '
+    SELECT 
+      id
+    , user_id
+    , comment_id
+    , comment_time
+    , comment_text
+    FROM comments
+    WHERE comment_id=:comment_id';
+    $stmt = $db->prepare($query);
+    $stmt->execute(array(':post_id' => $commentId));
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    return $rows;
 }
 
 
