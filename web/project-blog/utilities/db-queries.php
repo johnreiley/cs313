@@ -43,7 +43,7 @@ function getSinglePost($db, $postId)
     $query = '
     SELECT 
       post_id
-    , post_id
+    , user_id
     , post_title
     , post_text
     , comment 
