@@ -101,5 +101,6 @@ footer {
   font-family: var(--post-font);
   padding: 30px;
   max-width: 600px;
+  text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */
