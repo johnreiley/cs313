@@ -18,6 +18,7 @@ $author = "TODO";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <?php require 'components/inject-head.php' ?>
     <title>Blog - <?php echo $title ?></title>
 </head>
 
