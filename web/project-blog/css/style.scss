@@ -58,7 +58,10 @@ header {
 
 
 // CONTENT BODY
-
+main {
+    background-color: var(--primary-bgd-color);
+    min-height: 100vh;
+}
 
 
 // FOOTER

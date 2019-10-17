@@ -21,13 +21,15 @@ $page = "Home";
 
     <h1><?php echo $page ?></h1>
 
-    <?php
-    foreach (getAllPosts($db) as $post) {
-        $id = $post['post_id'];
-        $title = $post['post_title'];
-        echo "<a href=post.php?id=$id>$title</a><br>";
-    }
-    ?>
+    <main>
+        <?php
+        foreach (getAllPosts($db) as $post) {
+            $id = $post['post_id'];
+            $title = $post['post_title'];
+            echo "<a href=post.php?id=$id>$title</a><br>";
+        }
+        ?>
+    </main>
 
     <?php require 'components/footer.php' ?>
 

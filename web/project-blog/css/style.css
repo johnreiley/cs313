@@ -62,4 +62,9 @@ header nav .nav-item:hover {
   color: var(--primary-font-color-dark) !important;
   background-color: var(--nav-bgd-color-dark) !important;
 }
+
+main {
+  background-color: var(--primary-bgd-color);
+  min-height: 100vh;
+}
 /*# sourceMappingURL=style.css.map */
