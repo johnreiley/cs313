@@ -23,32 +23,33 @@ $author = "TODO";
 </head>
 
 <body>
+    <!--
     <?php require 'components/navigation.php' ?>
 
     <main>
-        <h2 class="post-title"><?php echo $title ?></h2>
-        <div class="post-info"><?php echo "$date - $author"; ?></div>
-        <div class="post-body"><?php echo $post['post_text'] ?></div>
+        <h2 class="post-title"><?php //echo $title ?></h2>
+        <div class="post-info"><?php //echo "$date - $author"; ?></div>
+        <div class="post-body"><?php //echo $post['post_text'] ?></div>
 
-        <!-- Add comments here -->
+
         <div class="comment-box">
             <?php 
-            foreach(getPostComments($db, $id) as $comment) {
-                $user = $comment['user_id'];
-                $date = $comment['comment_time'];
-                $text = $comment['comment_text'];
-                echo "
-                <div class=\"comment\"
-                    <div class=\"comment-details\">$user - $date</div>
-                    <div class=\"comment-body\">$text</div>
-                </div>";
-            } 
+            // foreach(getPostComments($db, $id) as $comment) {
+            //     $user = $comment['user_id'];
+            //     $date = $comment['comment_time'];
+            //     $text = $comment['comment_text'];
+            //     echo "
+            //     <div class=\"comment\"
+            //         <div class=\"comment-details\">$user - $date</div>
+            //         <div class=\"comment-body\">$text</div>
+            //     </div>";
+            // } 
             ?>
         </div>
     </main>
 
     <?php require 'components/footer.php' ?>
-
+        -->
 </body>
 
 </html>
