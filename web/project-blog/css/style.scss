@@ -113,8 +113,11 @@ footer {
 
 // comments
 .comment-box {
+    margin: auto;
 
-    .comment {}
+    .comment {
+        padding: 10px;
+    }
 
     .secondary-comment {}
 
