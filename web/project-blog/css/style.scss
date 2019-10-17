@@ -12,9 +12,10 @@
 }
 
 body {
-    font-family: var(--font-apple);
     padding: 0;
     margin: 0;
+    font-family: var(--font-apple);
+    color: var(--primary-font-color);
 }
 
 // NAVIGATION
@@ -61,6 +62,10 @@ header {
 main {
     background-color: var(--primary-bgd-color);
     min-height: 100vh;
+
+    a {
+        color: var(--accent-color);
+    }
 }
 
 
