@@ -1,0 +1,1 @@
+<footer>John Reiley - Copyright ©<?php echo date("Y") ?></footer>
