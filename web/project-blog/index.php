@@ -19,9 +19,9 @@ $page = "Home";
 <body>
     <?php require 'components/navigation.php' ?>
 
-    <h1><?php echo $page ?></h1>
 
     <main>
+        <h2><?php echo $page ?></h2>
         <?php
         foreach (getAllPosts($db) as $post) {
             $id = $post['post_id'];
