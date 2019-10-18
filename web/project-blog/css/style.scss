@@ -68,6 +68,10 @@ main {
     background-color: var(--primary-bgd-color);
     min-height: calc(100vh - var(--footer-height) - var(--nav-height));
 
+    .content-container {
+        max-width: 600px;
+    }
+
     a {
         color: var(--accent-color);
     }
@@ -91,43 +95,41 @@ footer {
 
 
 // POST
-.post-content {
-    max-width: 600px;
-    // title
-    .post-title {
-        text-align: center;
-        padding: 20px 0 5px 0;
+
+// title
+.post-title {
+    text-align: center;
+    padding: 20px 0 5px 0;
+}
+
+// info
+.post-info {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+// body
+.post-body {
+    margin: auto;
+    padding: 30px;
+    text-align: justify;
+}
+
+// comments
+.comment-box {
+    margin: auto;
+    padding: 30px;
+
+    .comment {
+        padding: 10px;
     }
 
-    // info
-    .post-info {
-        padding-left: 20px;
-        padding-right: 20px;
+    .secondary-comment {}
+
+    .comment-details {
+        text-align: left;
     }
 
-    // body
-    .post-body {
-        margin: auto;
-        padding: 30px;
-        text-align: justify;
-    }
+    .comment-body {}
 
-    // comments
-    .comment-box {
-        margin: auto;
-        padding: 30px;
-
-        .comment {
-            padding: 10px;
-        }
-
-        .secondary-comment {}
-
-        .comment-details {
-            text-align: left;
-        }
-
-        .comment-body {}
-
-    }
 }
