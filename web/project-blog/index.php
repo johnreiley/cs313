@@ -22,7 +22,7 @@ $page = "Home";
 
     <main>
         <div class="content-container">
-            <h2><?php echo $page ?></h2>
+            <h2 class="page-title"><?php echo $page ?></h2>
             <?php
             foreach (getAllPosts($db) as $post) {
                 $id = $post['post_id'];

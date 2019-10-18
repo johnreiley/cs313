@@ -1,6 +1,7 @@
 <?php
 require 'utilities/db-queries.php';
 require 'utilities/connect-db.php';
+require 'utilities/generate-comments';
 $db = get_db();
 
 $id = $_GET['id'];
@@ -27,7 +28,7 @@ $date = $post['post_date'];
 
     <main>
         <div class="content-container">
-            
+
             <h2 class="post-title"><?php echo $title ?></h2>
             <div class="post-info"><?php echo "$date - $author"; ?></div>
             <div class="post-body"><?php echo $post['post_text'] ?></div>
@@ -35,14 +36,18 @@ $date = $post['post_date'];
             <div class="comment-box">
                 <?php
                 foreach (getPostComments($db, $id) as $comment) {
-                    $user = $author = $comment['first_name'] . " " . $comment['last_name'];
+                    $commentId = $comment['comment_id'];
+                    $user = $comment['first_name'] . " " . $comment['last_name'];
                     $date = $comment['comment_time'];
                     $text = $comment['comment_text'];
                     echo "
-                <div class=\"comment\">
-                    <div class=\"comment-details\">$user - $date</div>
-                    <div class=\"comment-body\">$text</div>
-                </div>";
+                    <div id=\"comment-$commentId\" class=\"comment\">
+                       <div class=\"comment-details\">$user - $date</div>
+                       <div class=\"comment-body\">$text</div>
+                    </div>
+                    <div class=\"children\">";
+                    generateChildrenComments($db, $id);
+                    echo "</div>";
                 }
                 ?>
             </div>

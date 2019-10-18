@@ -68,6 +68,8 @@ main {
     background-color: var(--primary-bgd-color);
     min-height: calc(100vh - var(--footer-height) - var(--nav-height));
 
+    .page-title
+
     .content-container {
         max-width: 600px;
         margin: auto;
@@ -95,7 +97,7 @@ footer {
 // POST PREVIEW
 
 
-// POST
+/************** POST ******************/
 
 // title
 .post-title {
@@ -123,6 +125,10 @@ footer {
         padding: 10px;
     }
 
+    .children {
+        margin-left: 30px;
+    }
+
     .secondary-comment {}
 
     .comment-details {
@@ -130,5 +136,6 @@ footer {
     }
 
     .comment-body {}
+
 
 }

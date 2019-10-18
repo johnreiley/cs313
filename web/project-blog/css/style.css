@@ -73,7 +73,8 @@ main {
   min-height: calc(100vh - var(--footer-height) - var(--nav-height));
 }
 
-main .content-container {
+main .page-title
+.content-container {
   max-width: 600px;
   margin: auto;
 }
@@ -93,6 +94,7 @@ footer {
   font-weight: 200;
 }
 
+/************** POST ******************/
 .post-title {
   text-align: center;
   padding: 20px 0 5px 0;
@@ -114,6 +116,10 @@ footer {
 
 .comment-box .comment {
   padding: 10px;
+}
+
+.comment-box .children {
+  margin-left: 30px;
 }
 
 .comment-box .comment-details {
