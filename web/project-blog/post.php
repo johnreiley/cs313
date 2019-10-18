@@ -33,7 +33,7 @@ $date = $post['post_date'];
         <div class="comment-box">
             <?php 
             foreach(getPostComments($db, $id) as $comment) {
-                $user = $author = $commnet['first_name'] . " " . $comment['last_name'];
+                $user = $author = $comment['first_name'] . " " . $comment['last_name'];
                 $date = $comment['comment_time'];
                 $text = $comment['comment_text'];
                 echo "
