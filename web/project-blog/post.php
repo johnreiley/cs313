@@ -39,7 +39,7 @@ $author = $post['first_name'] . " " . $post['last_name'];
                 $text = $comment['comment_text'];
                 echo "
                 <div class=\"comment\">
-                    <div class=\"comment-details\">$user - $date</div>
+                    <div class=\"comment-details\">$author - $date</div>
                     <div class=\"comment-body\">$text</div>
                 </div>";
             } 
