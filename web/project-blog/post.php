@@ -8,7 +8,6 @@ $id = $_GET['id'];
 $post = getSinglePost($db, $id);
 $title = $post['post_title'];
 $date = $post['post_date'];
-$author = $post['first_name']// . " " . $post['last_name'];
 ?>
 
 <!DOCTYPE html>
@@ -34,12 +33,12 @@ $author = $post['first_name']// . " " . $post['last_name'];
         <div class="comment-box">
             <?php 
             foreach(getPostComments($db, $id) as $comment) {
-                $user = $comment['user_id'];
+                $user = $author = $commnet['first_name'] . " " . $comment['last_name'];
                 $date = $comment['comment_time'];
                 $text = $comment['comment_text'];
                 echo "
                 <div class=\"comment\">
-                    <div class=\"comment-details\">$author - $date</div>
+                    <div class=\"comment-details\">$user - $date</div>
                     <div class=\"comment-body\">$text</div>
                 </div>";
             } 
