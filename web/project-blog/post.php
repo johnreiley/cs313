@@ -22,32 +22,34 @@ $date = $post['post_date'];
 </head>
 
 <body>
-    
+
     <?php require 'components/navigation.php' ?>
 
-    <main class="post-content">
-        <h2 class="post-title"><?php echo $title ?></h2>
-        <div class="post-info"><?php echo "$date - $author"; ?></div>
-        <div class="post-body"><?php echo $post['post_text'] ?></div>
+    <main>
+        <div class="post-content">
+            <h2 class="post-title"><?php echo $title ?></h2>
+            <div class="post-info"><?php echo "$date - $author"; ?></div>
+            <div class="post-body"><?php echo $post['post_text'] ?></div>
 
-        <div class="comment-box">
-            <?php 
-            foreach(getPostComments($db, $id) as $comment) {
-                $user = $author = $comment['first_name'] . " " . $comment['last_name'];
-                $date = $comment['comment_time'];
-                $text = $comment['comment_text'];
-                echo "
+            <div class="comment-box">
+                <?php
+                foreach (getPostComments($db, $id) as $comment) {
+                    $user = $author = $comment['first_name'] . " " . $comment['last_name'];
+                    $date = $comment['comment_time'];
+                    $text = $comment['comment_text'];
+                    echo "
                 <div class=\"comment\">
                     <div class=\"comment-details\">$user - $date</div>
                     <div class=\"comment-body\">$text</div>
-                </div>"; 
-            } 
-            ?>
+                </div>";
+                }
+                ?>
+            </div>
         </div>
     </main>
 
     <?php require 'components/footer.php' ?>
-        
+
 </body>
 
 </html>
