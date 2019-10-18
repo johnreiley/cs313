@@ -40,7 +40,7 @@ $date = $post['post_date'];
                 <div class=\"comment\">
                     <div class=\"comment-details\">$user - $date</div>
                     <div class=\"comment-body\">$text</div>
-                </div>";
+                </div>"; 
             } 
             ?>
         </div>
