@@ -88,33 +88,36 @@ footer {
   font-weight: 200;
 }
 
-.post-title {
+.post-content {
+  max-width: 600px;
+}
+
+.post-content .post-title {
   text-align: center;
   padding: 20px 0 5px 0;
 }
 
-.post-info {
+.post-content .post-info {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.post-body {
+.post-content .post-body {
   margin: auto;
   padding: 30px;
-  max-width: 600px;
   text-align: justify;
 }
 
-.comment-box {
+.post-content .comment-box {
   margin: auto;
   padding: 30px;
 }
 
-.comment-box .comment {
+.post-content .comment-box .comment {
   padding: 10px;
 }
 
-.comment-box .comment-details {
+.post-content .comment-box .comment-details {
   text-align: left;
 }
 /*# sourceMappingURL=style.css.map */

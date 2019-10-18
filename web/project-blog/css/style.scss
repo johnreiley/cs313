@@ -92,42 +92,44 @@ footer {
 
 
 // POST
-
-// title
-.post-title {
-    text-align: center;
-    padding: 20px 0 5px 0;
-}
-
-// info
-.post-info {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-// body
-.post-body {
-    margin: auto;
-    padding: 30px;
+.post-content {
     max-width: 600px;
-    text-align: justify;
-}
 
-// comments
-.comment-box {
-    margin: auto;
-    padding: 30px;
-
-    .comment {
-        padding: 10px;
+    // title
+    .post-title {
+        text-align: center;
+        padding: 20px 0 5px 0;
     }
 
-    .secondary-comment {}
-
-    .comment-details {
-        text-align: left;
+    // info
+    .post-info {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .comment-body {}
+    // body
+    .post-body {
+        margin: auto;
+        padding: 30px;
+        text-align: justify;
+    }
 
+    // comments
+    .comment-box {
+        margin: auto;
+        padding: 30px;
+
+        .comment {
+            padding: 10px;
+        }
+
+        .secondary-comment {}
+
+        .comment-details {
+            text-align: left;
+        }
+
+        .comment-body {}
+
+    }
 }
