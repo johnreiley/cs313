@@ -75,6 +75,7 @@ main {
 
 main .content-container {
   max-width: 600px;
+  margin: auto;
 }
 
 main a {
@@ -103,13 +104,11 @@ footer {
 }
 
 .post-body {
-  margin: auto;
   padding: 30px;
   text-align: justify;
 }
 
 .comment-box {
-  margin: auto;
   padding: 30px;
 }
 
