@@ -67,7 +67,7 @@ header {
 main {
     background-color: var(--primary-bgd-color);
     min-height: calc(100vh - var(--footer-height) - var(--nav-height));
-
+    max-width: 600px;
 
     a {
         color: var(--accent-color);
@@ -93,7 +93,6 @@ footer {
 
 // POST
 .post-content {
-    max-width: 600px;
 
     // title
     .post-title {
