@@ -62,13 +62,16 @@ function getPostComments($db, $postId)
 {
     $query = '
     SELECT 
-      comment_id
-    , user_id
-    , post_id
-    , comment_time
-    , comment_text
-    FROM comments
-    WHERE post_id=:post_id';
+      c.comment_id
+    , c.user_id
+    , c.post_id
+    , c.comment_time
+    , c.comment_text
+    , u.first_name
+    , u.last_name
+    FROM comments c JOIN users u
+    ON c.user_id = u.user_id 
+    WHERE c.post_id=:post_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':post_id' => $postId));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);

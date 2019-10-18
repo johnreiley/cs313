@@ -8,7 +8,7 @@ $id = $_GET['id'];
 $post = getSinglePost($db, $id);
 $title = $post['post_title'];
 $date = $post['post_date'];
-$author = "TODO";
+$author = $post['first_name'] . " " . $post['last_name'];
 ?>
 
 <!DOCTYPE html>
