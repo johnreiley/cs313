@@ -85,12 +85,15 @@ function getSecondLevelComments($db, $commentId)
 {
     $query = '
     SELECT 
-      id
-    , user_id
-    , comment_id
-    , comment_time
-    , comment_text
-    FROM comments
+      c.id
+    , c.user_id
+    , c.comment_id
+    , c.comment_time
+    , c.comment_text
+    , u.first_name
+    , u.last_name
+    FROM second_level_comments c JOIN users u
+    ON c.user_id = u.user_id 
     WHERE comment_id=:comment_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':comment_id' => $commentId));
