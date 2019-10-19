@@ -74,6 +74,7 @@ main {
     }
 
     .content-container {
+        padding: 30px;
         background-color: inherit;
         max-width: 600px;
         margin: auto;
@@ -105,20 +106,19 @@ footer {
 
 // info
 .post-info {
-    padding-left: 30px;
-    padding-right: 30px;
+
 }
 
 // body
 .post-body {
-    padding: 30px;
+    padding: 20px 0 30px 0;
     text-align: justify;
 }
 
 // comments
 .comment-box {
     background-color: inherit;
-    padding: 30px;
+    padding: 30px 0 30px 0;
 
     .comment {
         border-top: solid gray 1px;
@@ -126,7 +126,7 @@ footer {
     }
 
     .children {
-        margin-left: 40px;
+        margin-left: 30px;
     }
 
     .secondary-comment {}
