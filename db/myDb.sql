@@ -35,6 +35,7 @@ CREATE TABLE posts
 , user_id       INTEGER      NOT NULL REFERENCES users(user_id)
 , post_date     TIMESTAMP    NOT NULL
 , post_title    VARCHAR(100) NOT NULL
+-- , post_img      TEXT         NOT NULL
 , post_text     TEXT         NOT NULL
 );
 CREATE SEQUENCE posts_s1 START WITH 1001;
