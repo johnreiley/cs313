@@ -55,7 +55,7 @@ header nav .nav-item {
   transition: background-color 0.3s;
   text-decoration: none;
   color: var(--primary-font-color);
-  font-weight: 100;
+  font-weight: 200;
   padding: 15px;
   -webkit-user-select: none;
      -moz-user-select: none;
