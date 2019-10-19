@@ -50,7 +50,7 @@ $date = $post['post_date'];
                     <div class="break"></div>
                     <div class="fancy-btn">
                         <button>Submit</button>
-                    </div>f
+                    </div>
                 </form>
 
                 <?php
