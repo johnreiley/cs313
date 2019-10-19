@@ -56,7 +56,8 @@ $date = $post['post_date'];
                             <div class=\"comment-details\">$user - $date</div>
                             <div class=\"comment-body\">$text</div>
                         </div>";
-                    echo "</div>";
+                        echo "</div>";
+                    }
                 }
                 ?>
             </div>
