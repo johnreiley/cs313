@@ -1,0 +1,114 @@
+:root {
+    --beauty-blue: rgb(0, 162, 255);
+    --beauty-blue-dark: rgb(0, 134, 206);
+}
+
+.fancy-form {
+    margin: 30px 0 30px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+.fancy-title {
+    font-weight: 200;
+}
+
+.fancy-input {
+    width: 100%;
+    display: flex;
+    flex: 4;
+    margin: 10px;
+    font-size: 20px;
+    max-width: 700px;
+    min-width: 200px;
+}
+
+.fancy-input input, .fancy-input textarea {
+    z-index: 2;
+    min-width: 100px;
+    display: block;
+    transition: border 0.3s, box-shadow 0.3s;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid rgb(197, 197, 197) 3px;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: rgb(83, 83, 83);
+    -webkit-appearance: none;
+}
+
+.fancy-input textarea {
+    font-family: inherit;
+    resize: none;
+}
+
+.fancy-input input:focus, .fancy-input textarea:focus {
+    border: solid rgb(0, 162, 255) 3px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 174, 255, 0.678);
+    outline: none;
+}
+
+.fancy-input-txt {
+    font-family: inherit;
+    object-fit: cover;
+    z-index: 1;
+    user-select: none;
+    float: left;
+    position: absolute;
+    margin: 0;
+    transition: transform 0.3s, font-weight 0.3s, color 0.3s, background-color 0.3s;
+    transform: translate(10px, 7px);
+    -webkit-transform: translate(10px, 7px);
+    transform-origin: 0% 100%;
+    color: rgb(197, 197, 197);
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 300;
+    border-radius: 15px;
+}
+
+.fancy-input input:focus+.fancy-input-txt, .fancy-input textarea:focus+.fancy-input-txt {
+    z-index: 2;
+    background-color: white;
+    color: rgb(0, 162, 255);
+    transform: translate(15px, -16px) scale(0.7);
+    -webkit-transform: translate(15px, -16px) scale(0.7);
+    font-weight: 400;
+}
+
+.persist-focus {
+    z-index: 2;
+    background-color: white;
+    color: rgb(197, 197, 197);
+    transform: translate(15px, -16px) scale(0.7);
+    -webkit-transform: translate(15px, -16px) scale(0.7);
+    font-weight: 400;
+}
+
+.fancy-btn button {
+    display: block;
+    margin: 20px;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background-color: var(--beauty-blue);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.fancy-btn button:active {
+    background-color: var(--beauty-blue-dark);
+    box-shadow: 0px 0px 4px 0px rgba(0, 174, 255, 0.678);
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}

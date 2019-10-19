@@ -33,7 +33,25 @@ $date = $post['post_date'];
             <div class="post-body"><?php echo $post['post_text'] ?></div>
 
             <div class="comment-box">
-                
+                <h2>COMMENT</h2>
+                <form class="fancy-form">
+                    <div class="fancy-input">
+                        <input type="text">
+                        <div class="fancy-input-txt">name</div>
+                    </div>
+                    <div class="fancy-input">
+                        <input type="text">
+                        <div class="fancy-input-txt">email</div>
+                    </div>
+                    <div class="fancy-input">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <div class="fancy-input-txt">comments</div>
+                    </div>
+                    <div class="break"></div>
+                    <div class="fancy-button">
+                        <button>Submit</button>
+                    </div>
+                </form>
 
                 <?php
                 foreach (getPostComments($db, $id) as $comment) {
