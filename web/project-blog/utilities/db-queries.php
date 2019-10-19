@@ -71,7 +71,8 @@ function getPostComments($db, $postId)
     , u.last_name
     FROM comments c JOIN users u
     ON c.user_id = u.user_id 
-    WHERE c.post_id=:post_id';
+    WHERE c.post_id=:post_id
+    ORDRE BY c.comment_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':post_id' => $postId));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -94,7 +95,8 @@ function getSecondLevelComments($db, $commentId)
     , u.last_name
     FROM second_level_comments c JOIN users u
     ON c.user_id = u.user_id 
-    WHERE comment_id=:comment_id';
+    WHERE comment_id=:comment_id
+    ORDER BY c.id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':comment_id' => $commentId));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
