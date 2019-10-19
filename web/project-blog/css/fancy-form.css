@@ -21,6 +21,7 @@
 .fancy-input {
     width: 100%;
     display: flex;
+    align-items: center;
     position: relative;
     flex: 4;
     margin: 10px;
@@ -29,7 +30,8 @@
     min-width: 200px;
 }
 
-.fancy-input input, .fancy-input textarea {
+.fancy-input input,
+.fancy-input textarea {
     background-color: inherit;
     z-index: 2;
     min-width: 100px;
@@ -50,7 +52,8 @@
     resize: none;
 }
 
-.fancy-input input:focus, .fancy-input textarea:focus {
+.fancy-input input:focus,
+.fancy-input textarea:focus {
     border: solid var(--accent-color) 3px;
     box-shadow: 0px 0px 4px 0px var(--accent-color);
     outline: none;
@@ -65,7 +68,7 @@
     margin: 0;
     transition: transform 0.3s, font-weight 0.3s, color 0.3s, background-color 0.3s;
     height: 16px;
-    line-height: 16px;
+    line-height: 15px;
     /* top: 7px; */
     /* left: 10px; */
     /* transform: translate(10px, 7px); */
@@ -77,7 +80,8 @@
     border-radius: 5px;
 }
 
-.fancy-input input:focus+.fancy-input-txt, .fancy-input textarea:focus+.fancy-input-txt {
+.fancy-input input:focus+.fancy-input-txt,
+.fancy-input textarea:focus+.fancy-input-txt {
     z-index: 2;
     background-color: var(--primary-bgd-color);
     color: var(--accent-color);
