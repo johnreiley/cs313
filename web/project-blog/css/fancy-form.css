@@ -28,6 +28,7 @@
 }
 
 .fancy-input input, .fancy-input textarea {
+    background-color: inherit;
     z-index: 2;
     min-width: 100px;
     display: block;
