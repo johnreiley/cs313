@@ -21,7 +21,6 @@
 .fancy-input {
     width: 100%;
     display: flex;
-    align-items: center;
     position: relative;
     flex: 4;
     margin: 10px;
@@ -67,12 +66,8 @@
     position: absolute;
     margin: 0;
     transition: transform 0.3s, font-weight 0.3s, color 0.3s, background-color 0.3s;
-    height: 16px;
-    line-height: 15px;
-    /* top: 7px; */
-    /* left: 10px; */
-    /* transform: translate(10px, 7px); */
-    /* -webkit-transform: translate(10px, 7px); */
+    transform: translate(10px, 7px);
+    -webkit-transform: translate(10px, 7px);
     transform-origin: 0% 100%;
     color: rgb(197, 197, 197);
     padding-left: 5px;
