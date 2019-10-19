@@ -48,7 +48,7 @@ $date = $post['post_date'];
                         <div class="fancy-input-txt">comments</div>
                     </div>
                     <div class="break"></div>
-                    <div class="fancy-button">
+                    <div class="fancy-btn">
                         <button>Submit</button>
                     </div>
                 </form>
