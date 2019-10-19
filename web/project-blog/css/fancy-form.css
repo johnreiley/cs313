@@ -21,6 +21,7 @@
 .fancy-input {
     width: 100%;
     display: flex;
+    position: relative;
     flex: 4;
     margin: 10px;
     font-size: 15px;
