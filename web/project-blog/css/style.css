@@ -110,6 +110,7 @@ footer {
 }
 
 .comment-box {
+  background-color: inherit;
   padding: 30px;
 }
 
