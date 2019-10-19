@@ -70,7 +70,7 @@
     color: rgb(197, 197, 197);
     padding-left: 5px;
     padding-right: 5px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .fancy-input input:focus+.fancy-input-txt, .fancy-input textarea:focus+.fancy-input-txt {
@@ -86,8 +86,8 @@
     z-index: 2;
     background-color: var(--primary-bgd-color);
     color: rgb(197, 197, 197);
-    transform: translate(15px, -16px) scale(0.7);
-    -webkit-transform: translate(15px, -16px) scale(0.7);
+    transform: translate(15px, -13px) scale(0.7);
+    -webkit-transform: translate(15px, -13px) scale(0.7);
     font-weight: 400;
 }
 
