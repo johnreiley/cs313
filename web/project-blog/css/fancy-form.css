@@ -76,7 +76,7 @@
 
 .fancy-input input:focus+.fancy-input-txt, .fancy-input textarea:focus+.fancy-input-txt {
     z-index: 2;
-    background-color: var(--primary-bg-color);
+    background-color: var(--primary-bgd-color);
     color: rgb(0, 162, 255);
     transform: translate(15px, -16px) scale(0.7);
     -webkit-transform: translate(15px, -16px) scale(0.7);
@@ -85,7 +85,7 @@
 
 .persist-focus {
     z-index: 2;
-    background-color: var(--primary-bg-color);
+    background-color: var(--primary-bgd-color);
     color: rgb(197, 197, 197);
     transform: translate(15px, -16px) scale(0.7);
     -webkit-transform: translate(15px, -16px) scale(0.7);
