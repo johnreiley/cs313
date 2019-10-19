@@ -1,7 +1,6 @@
 <?php
 require 'utilities/db-queries.php';
 require 'utilities/connect-db.php';
-require 'components/generate-comments.php';
 $db = get_db();
 
 $id = $_GET['id'];
@@ -28,6 +27,7 @@ $date = $post['post_date'];
 
     <main>
         <div class="content-container">
+            
             <h2 class="post-title"><?php echo $title ?></h2>
             <div class="post-info"><?php echo $date ?></div>
             <div class="post-body"><?php echo $post['post_text'] ?></div>
@@ -51,7 +51,7 @@ $date = $post['post_date'];
                         $date = $comment['comment_time'];
                         $text = $comment['comment_text'];
                         echo "
-                        <div id=\"s-comment-$commentId\" class=\"comment\">
+                        <div id=\"comment-$commentId\" class=\"comment\">
                             <div class=\"comment-details\">$user - $date</div>
                             <div class=\"comment-body\">$text</div>
                         </div>";
