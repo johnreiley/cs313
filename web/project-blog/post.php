@@ -47,7 +47,7 @@ $date = $post['post_date'];
                     </div>
                     <div class=\"children\">";
                     foreach (getSecondLevelComments($db, $commentId) as $comment) {
-                        $commentId = $comment['comment_id'];
+                        $commentId = $comment['id'];
                         $user = $comment['first_name'] . " " . $comment['last_name'];
                         $date = $comment['comment_time'];
                         $text = $comment['comment_text'];
