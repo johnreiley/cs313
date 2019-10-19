@@ -72,7 +72,7 @@ function getPostComments($db, $postId)
     FROM comments c JOIN users u
     ON c.user_id = u.user_id 
     WHERE c.post_id=:post_id
-    ORDRE BY c.comment_id';
+    ORDER BY c.comment_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':post_id' => $postId));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
