@@ -29,7 +29,7 @@ $date = $post['post_date'];
     <main>
         <div class="content-container">
             <h2 class="post-title"><?php echo $title ?></h2>
-            <div class="post-info"><?php echo "$date - $author"; ?></div>
+            <div class="post-info"><?php echo $date ?></div>
             <div class="post-body"><?php echo $post['post_text'] ?></div>
 
             <div class="comment-box">
