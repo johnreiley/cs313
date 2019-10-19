@@ -40,7 +40,7 @@
     padding: 7px;
     border-radius: 5px;
     font-size: 20px;
-    color: rgb(83, 83, 83);
+    color: var(--primary-font-color);
     -webkit-appearance: none;
 }
 
