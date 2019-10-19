@@ -93,7 +93,7 @@ function getSecondLevelComments($db, $commentId)
     FROM comments
     WHERE comment_id=:comment_id';
     $stmt = $db->prepare($query);
-    $stmt->execute(array(':post_id' => $commentId));
+    $stmt->execute(array(':comment_id' => $commentId));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     return $rows;
