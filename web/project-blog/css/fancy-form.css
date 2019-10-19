@@ -106,7 +106,7 @@
 }
 
 .fancy-btn button:active {
-    background-color: var(--beauty-blue-dark);
+    background-color: var(--accent-color);
     box-shadow: 0px 0px 4px 0px rgba(0, 174, 255, 0.678);
 }
 
