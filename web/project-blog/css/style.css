@@ -73,8 +73,7 @@ main {
   min-height: calc(100vh - var(--footer-height) - var(--nav-height));
 }
 
-main .page-title
-.content-container {
+main .content-container {
   max-width: 600px;
   margin: auto;
 }

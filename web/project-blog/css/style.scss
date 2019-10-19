@@ -68,7 +68,9 @@ main {
     background-color: var(--primary-bgd-color);
     min-height: calc(100vh - var(--footer-height) - var(--nav-height));
 
-    .page-title
+    .page-title {
+        
+    }
 
     .content-container {
         max-width: 600px;
