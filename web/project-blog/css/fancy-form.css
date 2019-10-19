@@ -23,7 +23,7 @@
     display: flex;
     flex: 4;
     margin: 10px;
-    font-size: 20px;
+    font-size: 15px;
     max-width: 700px;
     min-width: 200px;
 }
@@ -39,7 +39,7 @@
     border: solid rgb(197, 197, 197) 3px;
     padding: 7px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 15px;
     color: var(--primary-font-color);
     -webkit-appearance: none;
 }
@@ -63,7 +63,6 @@
     float: left;
     position: absolute;
     margin: 0;
-    background-color: inherit;
     transition: transform 0.3s, font-weight 0.3s, color 0.3s, background-color 0.3s;
     transform: translate(10px, 7px);
     -webkit-transform: translate(10px, 7px);
