@@ -115,11 +115,12 @@ footer {
 }
 
 .comment-box .comment {
+  border-top: solid gray 1px;
   padding: 10px;
 }
 
 .comment-box .children {
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 .comment-box .comment-details {

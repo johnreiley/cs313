@@ -122,11 +122,12 @@ footer {
     padding: 30px;
 
     .comment {
+        border-top: solid gray 1px;
         padding: 10px;
     }
 
     .children {
-        margin-left: 50px;
+        margin-left: 40px;
     }
 
     .secondary-comment {}
