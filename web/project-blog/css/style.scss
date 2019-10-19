@@ -69,7 +69,8 @@ main {
     min-height: calc(100vh - var(--footer-height) - var(--nav-height));
 
     .page-title {
-
+        text-align: center;
+        padding: 20px 30px 5px 30px;
     }
 
     .content-container {
@@ -100,12 +101,6 @@ footer {
 
 
 /************** POST ******************/
-
-// title
-.post-title {
-    text-align: center;
-    padding: 20px 30px 5px 30px;
-}
 
 // info
 .post-info {
