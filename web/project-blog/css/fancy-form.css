@@ -64,6 +64,8 @@
     position: absolute;
     margin: 0;
     transition: transform 0.3s, font-weight 0.3s, color 0.3s, background-color 0.3s;
+    height: 16px;
+    line-height: 16px;
     /* top: 7px; */
     /* left: 10px; */
     /* transform: translate(10px, 7px); */
