@@ -46,7 +46,7 @@ $date = $post['post_date'];
                        <div class=\"comment-body\">$text</div>
                     </div>
                     <div class=\"children\">";
-                    generateChildrenComments($db, $id);
+                    generateChildrenComments($db, $commentId);
                     echo "</div>";
                 }
                 ?>
