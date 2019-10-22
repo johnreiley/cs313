@@ -22,12 +22,22 @@ $page = "Home";
 
     <main>
         <div class="content-container">
-            <h2 class="page-title"><?php echo $page ?></h2>
+            <h2 class="page-title">Blog</h2>
             <?php
             foreach (getAllPosts($db) as $post) {
                 $id = $post['post_id'];
                 $title = $post['post_title'];
-                echo "<a href=post.php?id=$id>$title</a><br>";
+                //$img = $post['post_img'];
+                $text = $post['post_text'];
+                echo "    
+                <div class=\"post-preview\">
+                    <a href=\"post.php?id=$id\">
+                        <h3>$title</h3>
+                        <img src=\"\" alt=\"\">
+                        <p>$text</p>
+                        <div class=\"preview-fader\"></div>
+                    </a>
+                </div>";
             }
             ?>
         </div>

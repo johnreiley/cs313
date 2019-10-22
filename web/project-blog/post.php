@@ -33,7 +33,7 @@ $date = $post['post_date'];
             <div class="post-body"><?php echo $post['post_text'] ?></div>
 
             <div class="comment-box">
-                <h2>COMMENT</h2>
+                <h2>Comments</h2>
                 <form class="fancy-form">
                     <div class="fancy-input">
                         <input type="text">

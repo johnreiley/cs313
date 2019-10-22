@@ -3,7 +3,7 @@
 /****************SELECT QUERIES ***************/
 
 // get user credentials
-function getUserInfo()
+function getUserInfo($db)
 { }
 
 
