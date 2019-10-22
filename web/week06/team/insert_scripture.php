@@ -1,33 +1,32 @@
 <?php
-    try {
-        require 'db-connect.php';
+try {
+    require 'db-connect.php';
 
-        $book = $_POST["book"];
-        $chapter = $_POST["chapter"];
-        $verse = $_POST["verse"];
-        $content = $_POST["content"];
+    $book = $_POST["book"];
+    $chapter = $_POST["chapter"];
+    $verse = $_POST["verse"];
+    $content = $_POST["content"];
 
-        $sql = "INSERT INTO scripture (book, chapter, verse, content) VALUES($book, $chapter, $verse, $content)";
+    $sql = "INSERT INTO scripture (book, chapter, verse, content) VALUES($book, $chapter, $verse, $content)";
 
-        if ($db->query($sql) === TRUE) {
-            echo "Successfully added scripture.";
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-        }
+    if ($db->query($sql) === TRUE) {
+        echo "Successfully added scripture.";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
 
-        echo "Topic tags:";
-        echo "<ul>";
+    echo "Topic tags:";
+    echo "<ul>";
     foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
         $topic_name = $row['topic_name'];
         if (isset($_POST($topic_name))) {
             echo "<li>$topic_name</li>";
         }
-        }
-        echo "</ul>";
     }
-    catch (Exception $e) {
-        $e->getMessage();
-    }
+    echo "</ul>";
+} catch (Exception $e) {
+    echo $e->getMessage();
+}
 
     // $s = "INSERT INTO scriptures( book, chapter, verse, content)
     // VALUES ( 'Hebrews', 11, 4,

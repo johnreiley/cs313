@@ -1,6 +1,6 @@
 let inputs = Array.from(document.querySelectorAll('.fancy-input'));
 inputs.forEach((input) => {
-    if (input.value != '') {
+    if (input.children[0].value != '') {
         input.children[1].classList.add('persist-focus');
     } else {
         input.children[1].classList.remove('persist-focus');
