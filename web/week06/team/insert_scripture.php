@@ -8,9 +8,9 @@ try {
     $content = $_POST["content"];
 
     // Error Checking
-    echo "$book<br>$chapter<br>$verse<br>$content";
+    echo "$book<br>$chapter<br>$verse<br>$content<br>";
 
-    $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ($book, $chapter, $verse, $content);";
+    $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ('$book', $chapter, $verse, '$content');";
 
     if ($db->query($sql) === TRUE) {
         echo "Successfully added scripture.";
