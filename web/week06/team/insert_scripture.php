@@ -6,11 +6,7 @@
     $verse = $_POST["verse"];
     $content = $_POST["content"];
 
-    $sql = "INSERT INTO scripture(book, chapter, verse, content)
-    VALUES ('John', 'Doe', 'john@example.com')";
-
-    $query = "INSERT INTO scripture(book, chapter, verse, content) VALUES($book, $chapter, $verse, $content)";
-    $statement = $db->prepare($query);
+    $sql = "INSERT INTO scripture(book, chapter, verse, content) VALUES($book, $chapter, $verse, $content)";
 
 $s = "INSERT INTO scriptures( book, chapter, verse, content)
 VALUES ( 'Hebrews', 11, 4,
