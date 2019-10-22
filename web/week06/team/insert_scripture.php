@@ -1,13 +1,13 @@
 <?php
+require 'db-connect.php';
 try {
-    require 'db-connect.php';
 
     $book = $_POST["book"];
-    $chapter = strval($_POST["chapter"]);
-    $verse = strval($_POST["verse"]);
+    $chapter = (int) ($_POST["chapter"]);
+    $verse = (int) ($_POST["verse"]);
     $content = $_POST["content"];
 
-    $sql = "INSERT INTO scripture (book, chapter, verse, content) VALUES($book, $chapter, $verse, $content)";
+    $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ($book, $chapter, $verse, $content);";
 
     if ($db->query($sql) === TRUE) {
         echo "Successfully added scripture.";
@@ -26,6 +26,7 @@ try {
     echo "</ul>";
 } catch (Exception $e) {
     echo $e->getMessage();
+    die();
 }
 
     // $s = "INSERT INTO scriptures( book, chapter, verse, content)
