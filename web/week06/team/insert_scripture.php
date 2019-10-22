@@ -3,8 +3,8 @@ try {
     require 'db-connect.php';
 
     $book = $_POST["book"];
-    $chapter = $_POST["chapter"];
-    $verse = $_POST["verse"];
+    $chapter = strval($_POST["chapter"]);
+    $verse = strval($_POST["verse"]);
     $content = $_POST["content"];
 
     $sql = "INSERT INTO scripture (book, chapter, verse, content) VALUES($book, $chapter, $verse, $content)";
