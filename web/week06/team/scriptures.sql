@@ -49,6 +49,6 @@ VALUES
 );
 
 
-INSERT INTO topic (name) VALUES ('Faith');
-INSERT INTO topic (name) VALUES ('Sacrifice');
-INSERT INTO topic (name) VALUES ('Charity');
+INSERT INTO topic (topic_name) VALUES ('Faith');
+INSERT INTO topic (topic_name) VALUES ('Sacrifice');
+INSERT INTO topic (topic_name) VALUES ('Charity');

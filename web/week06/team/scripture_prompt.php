@@ -16,7 +16,7 @@ require 'db-connect.php';
 </head>
 
 <body>
-    <form class="fancy-form" action="SOMETHING" method="post">
+    <form class="fancy-form" action="insert_scripture.php" method="post">
         <div class="fancy-input">
             <input type="text" id="book">
             <div class="fancy-input-txt">Book</div>
