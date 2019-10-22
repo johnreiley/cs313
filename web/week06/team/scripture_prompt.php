@@ -38,7 +38,7 @@
                     echo "<input type='checkbox' id='$topic_name' value='$topic_name'>$topic_name<br/>";
                     echo "<br />";
                 }
-                echo "<input type='checkbox' id='new_topic_name'><br/>";
+                echo "<input type='checkbox' id='new_topic_name'><input type'text'><br/>";
             }
             catch (Exception $e) {
                 echo $e->getMessage();
