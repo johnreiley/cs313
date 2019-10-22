@@ -39,7 +39,7 @@
                     echo "<br />";
                 }
                 //STRETCH: Insert new topic_name to db
-                //echo "<input type='checkbox' id='new_topic_name'><input type'text'><br/>";
+                echo "<input type='checkbox' id='new_topic_name'><input type'text'><br/>";
             }
             catch (Exception $e) {
                 echo $e->getMessage();

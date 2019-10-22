@@ -10,14 +10,25 @@ try {
 
     $faith = $_POST["Faith"];
     $sacrifice = $_POST["Sacrifice"];
-    $charity = $_POST["Charity"];
+    $charity = $_POST["Charity"];        
 
     $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ('$book', $chapter, $verse, '$content');";
-
+     
+    
     if ($db->query($sql) == TRUE) {
         echo "New scripture created successfully";
     } else {
         echo "Error: " . $sql . "<br>" . $db->error;
+    }
+
+    $scriptureId = $db->lastInsertId("scripture_id");
+
+    foreach ($db->query('SELECT topic_name, topic_id FROM topic;') as $row) {
+        $topic_id = $row['topic_id'];
+
+        if ($_POST[$topic_name]) {
+            $sql = "INSERT INTO link (topic_id, scripture_id) VALUES ($topic_id, $scriptureId);";
+        }
     }
 
     // echo "Topic tags:";
