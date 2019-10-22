@@ -52,8 +52,6 @@ VALUES
 
 
 
-
-
 INSERT INTO topic (topic_name) VALUES ('Faith');
 INSERT INTO topic (topic_name) VALUES ('Sacrifice');
 INSERT INTO topic (topic_name) VALUES ('Charity');

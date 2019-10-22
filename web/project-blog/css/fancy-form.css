@@ -43,13 +43,12 @@
     border-radius: 5px;
     font-size: 15px;
     -webkit-appearance: none;
-    color: black;
+    color: var(--primary-font-color);
 }
 
 .fancy-input textarea {
     font-family: inherit;
     resize: none;
-    color: black;
 }
 
 .fancy-input input:focus,
