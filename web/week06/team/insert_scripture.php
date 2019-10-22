@@ -1,4 +1,17 @@
 <?php
+    function displayScriptures() {
+        foreach ($db->query('SELECT book, chapter, verse, content FROM scriptures;') as $row) {
+            $book = $row['book'];
+            $chapter = $row['chapter'];
+            $verse = $row['verse'];
+            $content = $row['content'];
+        
+            echo "<b>$book $chapter:$verse</b> - \"$content\"";
+            echo "<br/>";
+            echo "<br/>";
+        }
+    }
+
     require 'db-connect.php';
 
     $book = $_POST["book"];

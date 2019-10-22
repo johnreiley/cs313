@@ -31,11 +31,17 @@
         </div>
         
         <?php
-            foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
-                $topic_name = $row['topic_name'];
-                echo "<input type='checkbox' name='$topic_name' value='$topic_name'>$topic_name<br>";
+            try {
+                foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
+                    $topic_name = $row['topic_name'];
+                    echo "<input type='checkbox' name='$topic_name' value='$topic_name'>$topic_name<br>";
+                }
+            }
+            catch (Exception $e) {
+                echo $e->getMessage();
             }
         ?>
+        <br />
         <br />
         <div class="fancy-btn">
             <input type="submit" value="Submit">
