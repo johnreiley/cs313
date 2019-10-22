@@ -8,9 +8,8 @@ try {
     $content = $_POST["content"];
 
     $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ('$book', $chapter, $verse, '$content');";
-    echo $sql;
-    
-    if ($db->query($sql) === TRUE) {
+
+    if ($db->query($sql) == TRUE) {
         echo "New scripture created successfully";
     } else {
         echo "Error: " . $sql . "<br>" . $db->error;
