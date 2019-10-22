@@ -31,6 +31,8 @@ try {
         }
     }
 
+    $db->query($sql);
+
     // echo "Topic tags:";
     // echo "<ul>";
     // foreach ($db->query("SELECT topic_name FROM topic;") as $row) {
