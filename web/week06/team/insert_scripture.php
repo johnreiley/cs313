@@ -1,32 +1,35 @@
 <?php
     try {
-    require 'db-connect.php';
+        require 'db-connect.php';
 
-    $book = $_POST["book"];
-    $chapter = $_POST["chapter"];
-    $verse = $_POST["verse"];
-    $content = $_POST["content"];
+        $book = $_POST["book"];
+        $chapter = $_POST["chapter"];
+        $verse = $_POST["verse"];
+        $content = $_POST["content"];
 
-    $sql = "INSERT INTO scripture (book, chapter, verse, content) VALUES($book, $chapter, $verse, $content)";
+        $sql = "INSERT INTO scripture (book, chapter, verse, content) VALUES($book, $chapter, $verse, $content)";
 
-    if ($db->query($sql) === TRUE) {
-        echo "Successfully added scripture.";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        if ($db->query($sql) === TRUE) {
+            echo "Successfully added scripture.";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+
+        echo "Topic tags:";
+        echo "<ul>";
+    foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
+        $topic_name = $row['topic_name'];
+        if (isset($_POST($topic_name))) {
+            echo "<li>$topic_name</li>";
+        }
+        }
+        echo "</ul>";
+    }
+    catch (Exception $e) {
+        $e->getMessage();
     }
 
-    echo "Topic tags:";
-    echo "<ul>";
-   foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
-       $topic_name = $row['topic_name'];
-       if (isset($_POST($topic_name))) {
-        echo "<li>$topic_name</li>";
-      }
-    }
-    echo "</ul>";
-}
-
-    // $s = "INSERT INTO scriptures( book, chapter, verse, content)";
+    // $s = "INSERT INTO scriptures( book, chapter, verse, content)
     // VALUES ( 'Hebrews', 11, 4,
     // 'By faith Abel offered unto God a more excellent sacrifice than Cain, by which he obtained witness that he was righteous, God testifying of his gifts: and by it he being dead yet speaketh.'
     // )";
@@ -40,4 +43,3 @@
     // VALUES ( 'Moroni', 7, 47,
     // 'But charity is the pure love of Christ, and it endureth forever; and whoso is found possessed of it at the last day, it shall be well with him.'
     // )";
-?>
