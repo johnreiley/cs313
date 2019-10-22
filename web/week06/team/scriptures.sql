@@ -1,4 +1,6 @@
-DROP TABLE IF EXISTS scriptures;
+DROP TABLE link;
+DROP TABLE topic;
+DROP TABLE scriptures;
 
 CREATE TABLE scriptures
 (   scripture_id        SERIAL          PRIMARY KEY

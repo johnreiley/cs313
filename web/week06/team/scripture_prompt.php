@@ -35,10 +35,10 @@
             try {
                 foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
                     $topic_name = $row['topic_name'];
-                    echo "<input type='checkbox' name='$topic_name' value='$topic_name'>$topic_name<br>";
+                    echo "<input type='checkbox' name='$topic_name' value='$topic_name'>$topic_name<br/>";
                     echo "<br />";
                 }
-                echo "<input type";
+                echo "<input type='checkbox' value=''><br/>";
             }
             catch (Exception $e) {
                 echo $e->getMessage();

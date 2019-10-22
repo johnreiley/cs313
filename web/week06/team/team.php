@@ -13,6 +13,7 @@ require 'db-connect.php';
 <body>
 
 <h1>Scripture Resources</h1>
+<a href="scripture_prompt.php">Add a scripture</a>
 <?php
 
 foreach ($db->query('SELECT book, chapter, verse, content FROM scriptures;') as $row) {
