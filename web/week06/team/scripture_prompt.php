@@ -30,6 +30,7 @@
             <div class="fancy-input-txt">Content</div>
         </div>
         <br />
+        <br />
         <?php
             try {
                 foreach ($db->query('SELECT topic_name FROM topic;') as $row) {

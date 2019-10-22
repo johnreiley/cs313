@@ -49,6 +49,7 @@
 .fancy-input textarea {
     font-family: inherit;
     resize: none;
+    color: black;
 }
 
 .fancy-input input:focus,

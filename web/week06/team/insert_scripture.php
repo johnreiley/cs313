@@ -14,9 +14,13 @@
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
+    //echo "Topic tags:"
+    //"echo "<ul>
    // foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
      //   $topic_name = $row['topic_name'];
-       // if (isset)
+       // if (isset(_POST($topic_name))) {
+        //echo "<li>$topic_name</li>"
+      // }
     //}
 
     // $s = "INSERT INTO scriptures( book, chapter, verse, content)
