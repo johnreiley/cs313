@@ -13,7 +13,6 @@ try {
     $charity = $_POST["Charity"];
 
     $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ('$book', $chapter, $verse, '$content');";
-    if ($faith) $sql += "INSERT INTO scriptures (book, chapter, verse, content) VALUES ('$book', $chapter, $verse, '$content');";
 
     // if ($db->query($sql) == TRUE) {
     //     echo "New scripture created successfully";
@@ -30,12 +29,12 @@ try {
     //     }
     // }
     // echo "</ul>";
-    header("Location: $filepath");
-
+    
 } catch (Exception $e) {
     echo $e->getMessage();
     die();
 }
+header("Location: $filepath");
 
     // $s = "INSERT INTO scriptures( book, chapter, verse, content)
     // VALUES ( 'Hebrews', 11, 4,
