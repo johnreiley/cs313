@@ -29,12 +29,13 @@
             <textarea id="content" cols="30" rows="10"></textarea>
             <div class="fancy-input-txt">Content</div>
         </div>
-        
+        <br />
         <?php
             try {
                 foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
                     $topic_name = $row['topic_name'];
                     echo "<input type='checkbox' name='$topic_name' value='$topic_name'>$topic_name<br>";
+                    echo "<br />";
                 }
             }
             catch (Exception $e) {
