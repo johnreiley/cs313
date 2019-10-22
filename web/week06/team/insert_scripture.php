@@ -7,6 +7,9 @@ try {
     $verse = (int) ($_POST["verse"]);
     $content = $_POST["content"];
 
+    // Error Checking
+    echo "$book<br>$";
+
     $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ($book, $chapter, $verse, $content);";
 
     if ($db->query($sql) === TRUE) {

@@ -14,19 +14,19 @@
 <body>
     <form class="fancy-form" action="insert_scripture.php" method="post">
         <div class="fancy-input">
-            <input type="text" id="book">
+            <input type="text" name="book" id="book">
             <div class="fancy-input-txt">Book</div>
         </div>
         <div class="fancy-input">
-            <input type="text" id="chapter"chapter>
+            <input type="text" name="chapter" id="chapter"chapter>
             <div class="fancy-input-txt">Chapter</div>
         </div>
         <div class="fancy-input">
-            <input type="text" id="verse">
+            <input type="text" name="verse" id="verse">
             <div class="fancy-input-txt">Verse</div>
         </div>
         <div class="fancy-input">
-            <textarea id="content" cols="30" rows="10"></textarea>
+            <textarea id="content" name="content" cols="30" rows="10"></textarea>
             <div class="fancy-input-txt">Content</div>
         </div>
         <br />
