@@ -21,9 +21,9 @@ try {
         echo "Error: " . $sql . "<br>" . $db->error;
     }
 
-    $scriptureId = $db->lastInsertId("scripture_id");
+    $scriptureId = $db->lastInsertId();
 
-    foreach ($db->query('SELECT topic_name, topic_id FROM topic;') as $row) {
+    foreach ($db->query('SELECT topic_id FROM topic;') as $row) {
         $topic_id = $row['topic_id'];
 
         if ($_POST[$topic_name]) {
