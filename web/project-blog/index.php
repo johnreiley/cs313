@@ -27,7 +27,7 @@ $page = "Home";
             foreach (getAllPosts($db) as $post) {
                 $id = $post['post_id'];
                 $title = $post['post_title'];
-                //$img = $post['post_img'];
+                $img = $post['post_img'];
                 $text = $post['post_text'];
                 echo "    
                 <div class=\"post-preview\">
