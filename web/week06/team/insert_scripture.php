@@ -10,23 +10,23 @@ try {
     // Error Checking
     echo "$book<br>$chapter<br>$verse<br>$content";
 
-    $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ($book, $chapter, $verse, $content);";
+    // $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ($book, $chapter, $verse, $content);";
 
-    if ($db->query($sql) === TRUE) {
-        echo "Successfully added scripture.";
-    } else {
-        echo "Error";
-    }
+    // if ($db->query($sql) === TRUE) {
+    //     echo "Successfully added scripture.";
+    // } else {
+    //     echo "Error";
+    // }
 
-    echo "Topic tags:";
-    echo "<ul>";
-    foreach ($db->query("SELECT topic_name FROM topic;") as $row) {
-        $topic_name = $row['topic_name'];
-        if (isset($_POST($topic_name))) {
-            echo "<li>$topic_name</li>";
-        }
-    }
-    echo "</ul>";
+    // echo "Topic tags:";
+    // echo "<ul>";
+    // foreach ($db->query("SELECT topic_name FROM topic;") as $row) {
+    //     $topic_name = $row['topic_name'];
+    //     if (isset($_POST($topic_name))) {
+    //         echo "<li>$topic_name</li>";
+    //     }
+    // }
+    // echo "</ul>";
 } catch (Exception $e) {
     echo $e->getMessage();
     die();
