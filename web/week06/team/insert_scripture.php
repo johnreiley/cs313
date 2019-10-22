@@ -14,11 +14,11 @@ try {
 
     $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ('$book', $chapter, $verse, '$content');";
 
-    // if ($db->query($sql) == TRUE) {
-    //     echo "New scripture created successfully";
-    // } else {
-    //     echo "Error: " . $sql . "<br>" . $db->error;
-    // }
+    if ($db->query($sql) == TRUE) {
+        echo "New scripture created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $db->error;
+    }
 
     // echo "Topic tags:";
     // echo "<ul>";
@@ -30,11 +30,11 @@ try {
     // }
     // echo "</ul>";
     
+    header("Location: $filepath");
 } catch (Exception $e) {
     echo $e->getMessage();
     die();
 }
-header("Location: $filepath");
 
     // $s = "INSERT INTO scriptures( book, chapter, verse, content)
     // VALUES ( 'Hebrews', 11, 4,
