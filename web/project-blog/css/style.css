@@ -104,7 +104,7 @@ footer {
   margin: 20px auto 20px auto;
   max-width: 450px;
   max-height: 450px;
-  background-color: #3d3d3d;
+  background-color: var(--second-bgd-color);
   border-radius: 5px;
   overflow: hidden;
 }
@@ -144,15 +144,15 @@ footer {
 
 .post-preview a .preview-fader {
   z-index: 5;
-  background-color: #3d3d3d;
+  background-color: var(--second-bgd-color);
   position: absolute;
   height: 20px;
   width: 100%;
   top: 440px;
   left: 0;
   margin: 0;
-  -webkit-box-shadow: 0 -10px 40px 40px #3d3d3d;
-          box-shadow: 0 -10px 40px 40px #3d3d3d;
+  -webkit-box-shadow: 0 -10px 40px 40px var(--second-bgd-color);
+          box-shadow: 0 -10px 40px 40px var(--second-bgd-color);
 }
 
 .post-preview a:hover {
