@@ -121,6 +121,7 @@ footer {
   text-decoration: none;
   color: white;
   padding: 15px;
+  max-height: inherit;
 }
 
 .post-preview a h3 {
