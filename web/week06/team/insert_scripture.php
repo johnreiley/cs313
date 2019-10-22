@@ -1,4 +1,6 @@
 <?php
+$filepath = 'https://calm-bastion-61884.herokuapp.com/week06/team/team.php';
+header("Location: $filepath");
 require 'db-connect.php';
 try {
 
@@ -9,11 +11,11 @@ try {
 
     $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ('$book', $chapter, $verse, '$content');";
 
-    if ($db->query($sql) == TRUE) {
-        echo "New scripture created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $db->error;
-    }
+    // if ($db->query($sql) == TRUE) {
+    //     echo "New scripture created successfully";
+    // } else {
+    //     echo "Error: " . $sql . "<br>" . $db->error;
+    // }
 
     // echo "Topic tags:";
     // echo "<ul>";

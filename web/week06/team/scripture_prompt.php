@@ -38,6 +38,7 @@
                     echo "<input type='checkbox' name='$topic_name' value='$topic_name'>$topic_name<br>";
                     echo "<br />";
                 }
+                echo "<input type";
             }
             catch (Exception $e) {
                 echo $e->getMessage();
