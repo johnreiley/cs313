@@ -25,10 +25,10 @@ try {
 
         if ($_POST[$topic_name]) {
             $sql = "INSERT INTO link (topic_id, scripture_id) VALUES ($topic_id, $scriptureId);";
+            $db->query($sql);
         }
     }
 
-    $db->query($sql);
 
     // echo "Topic tags:";
     // echo "<ul>";
