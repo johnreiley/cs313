@@ -18,7 +18,7 @@
     echo "<ul>";
    foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
        $topic_name = $row['topic_name'];
-       if (isset(_POST($topic_name))) {
+       if (isset($_POST($topic_name))) {
         echo "<li>$topic_name</li>";
       }
     }
