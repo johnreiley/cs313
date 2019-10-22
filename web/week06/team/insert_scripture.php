@@ -9,19 +9,15 @@
     $sql = "INSERT INTO scripture(book, chapter, verse, content) VALUES($book, $chapter, $verse, $content)";
 
     if ($db->query($sql) === TRUE) {
-        foreach ($db->query('SELECT book, chapter, verse, content FROM scriptures;') as $row) {
-            $book = $row['book'];
-            $chapter = $row['chapter'];
-            $verse = $row['verse'];
-            $content = $row['content'];
-        
-            echo "<b>$book $chapter:$verse</b> - \"$content\"";
-            echo "<br/>";
-            echo "<br/>";
-        }
+        echo "Successfully added scripture.";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
+
+   // foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
+     //   $topic_name = $row['topic_name'];
+       // if (isset)
+    //}
 
     // $s = "INSERT INTO scriptures( book, chapter, verse, content)
     // VALUES ( 'Hebrews', 11, 4,
