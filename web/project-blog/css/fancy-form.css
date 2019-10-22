@@ -44,6 +44,7 @@
     font-size: 15px;
     color: var(--primary-font-color);
     -webkit-appearance: none;
+    color: black;
 }
 
 .fancy-input textarea {
@@ -57,6 +58,7 @@
     border: solid var(--accent-color) 3px;
     box-shadow: 0px 0px 4px 0px var(--accent-color);
     outline: none;
+    color: black;
 }
 
 .fancy-input-txt {
