@@ -169,6 +169,12 @@ footer {
     text-align: justify;
 }
 
+.post-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
 // comments
 .comment-box {
     background-color: inherit;
