@@ -8,13 +8,9 @@ try {
     $verse = (int) ($_POST["verse"]);
     $content = $_POST["content"];
 
-    $faith = $_POST["Faith"];
-    $sacrifice = $_POST["Sacrifice"];
-    $charity = $_POST["Charity"];        
-
     $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ('$book', $chapter, $verse, '$content');";
-     
-    
+
+
     if ($db->query($sql) == TRUE) {
         echo "New scripture created successfully";
     } else {
@@ -23,8 +19,9 @@ try {
 
     $scriptureId = $db->lastInsertId();
 
-    foreach ($db->query('SELECT topic_id FROM topic;') as $row) {
+    foreach ($db->query('SELECT topic_id, topic_name FROM topic;') as $row) {
         $topic_id = $row['topic_id'];
+        $topic_name = $row['topic_name'];
 
         if ($_POST[$topic_name]) {
             $sql = "INSERT INTO link (topic_id, scripture_id) VALUES ($topic_id, $scriptureId);";
@@ -42,7 +39,7 @@ try {
     //     }
     // }
     // echo "</ul>";
-    
+
     header("Location: $filepath");
 } catch (Exception $e) {
     echo $e->getMessage();
