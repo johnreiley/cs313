@@ -4,8 +4,6 @@ require 'db-connect.php';
 
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,8 +33,7 @@ require 'db-connect.php';
         </div>
         
         <?php
-            foreach ($db->query('SELECT topic_name 
-            FROM topic;') as $row) {
+            foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
                 $topic_name = $row['topic_name'];
                 echo "<input type='checkbox' name='$topic_name' value='$topic_name'>$topic_name<br>";
                 
