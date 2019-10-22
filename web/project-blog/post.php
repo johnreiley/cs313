@@ -30,6 +30,7 @@ $date = $post['post_date'];
 
             <h2 class="page-title"><?php echo $title ?></h2>
             <div class="post-info"><?php echo $date ?></div>
+            <div class="post-img"><img src="<?php echo $img ?>"></div>
             <div class="post-body"><?php echo $post['post_text'] ?></div>
 
             <div class="comment-box">

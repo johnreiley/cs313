@@ -35,7 +35,7 @@ CREATE TABLE posts
 , user_id       INTEGER      NOT NULL REFERENCES users(user_id)
 , post_date     TIMESTAMP    NOT NULL
 , post_title    VARCHAR(100) NOT NULL
--- , post_img      TEXT         NOT NULL
+, post_img      TEXT         NOT NULL
 , post_text     TEXT         NOT NULL
 );
 CREATE SEQUENCE posts_s1 START WITH 1001;
@@ -74,6 +74,7 @@ INSERT INTO posts
 , user_id
 , post_date
 , post_title
+, post_img
 , post_text
 )
 VALUES
@@ -81,7 +82,8 @@ VALUES
 , currval('users_s1')
 , transaction_timestamp()
 , 'Test Post'
-, 'This is just a sample blog post.  It is not about anything in particular.  I just wanted to make sure it is working.'
+, 'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1106530967%2F960x0.jpg%3Ffit%3Dscale'
+, 'This is just a sample blog post.  It is not about anything in particular.  I just wanted to make sure it is working. This is just a sample blog post.  It is not about anything in particular.  I just wanted to make sure it is working. This is just a sample blog post.  It is not about anything in particular.  I just wanted to make sure it is working. This is just a sample blog post.  It is not about anything in particular.  I just wanted to make sure it is working.'
 );
 
 INSERT INTO posts
@@ -89,6 +91,7 @@ INSERT INTO posts
 , user_id
 , post_date
 , post_title
+, post_img
 , post_text
 )
 VALUES
@@ -96,7 +99,8 @@ VALUES
 , currval('users_s1')
 , transaction_timestamp()
 , 'Learn How To Use console.log()'
-, 'If you don''t know how to use console.log() in ES6, then this post is not for you.'
+, 'https://i.udemycdn.com/course/750x422/1395136_3f8a_3.jpg'
+, 'If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you. If you don''t know how to use console.log() in ES6, then this post is not for you.'
 );
 
 INSERT INTO posts
@@ -104,6 +108,7 @@ INSERT INTO posts
 , user_id
 , post_date
 , post_title
+, post_img
 , post_text
 )
 VALUES
@@ -111,6 +116,7 @@ VALUES
 , currval('users_s1')
 , transaction_timestamp()
 , 'Let''s Learn Some Italian!'
+, 'https://www.trafalgar.com/-/media/Project/Trafalgar/Product/hero-images/Northern-Italy-Including-Cinque-Terre-w.jpg?smartCrop=1&centreCrop=1&w=1000&h=600'
 , 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque viverra mauris in aliquam sem fringilla ut. Nunc lobortis mattis aliquam faucibus purus in massa. Diam vel quam elementum pulvinar etiam non quam lacus. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Risus in hendrerit gravida rutrum quisque non tellus orci. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Hendrerit gravida rutrum quisque non tellus orci ac. Amet consectetur adipiscing elit ut aliquam purus sit. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Eget sit amet tellus cras adipiscing enim eu turpis. Tristique risus nec feugiat in fermentum posuere urna. Congue quisque egestas diam in arcu cursus euismod quis viverra. Id interdum velit laoreet id donec ultrices tincidunt arcu non. Enim ut tellus elementum sagittis vitae.<br>
 
 Ultrices gravida dictum fusce ut. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Mattis enim ut tellus elementum sagittis vitae et leo duis. Ac auctor augue mauris augue. Rhoncus est pellentesque elit ullamcorper. Sagittis eu volutpat odio facilisis mauris sit amet. Elit duis tristique sollicitudin nibh sit amet commodo nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. In pellentesque massa placerat duis ultricies lacus sed. Sagittis eu volutpat odio facilisis. Egestas congue quisque egestas diam in arcu cursus euismod.<br>
