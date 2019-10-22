@@ -7,15 +7,13 @@ try {
     $verse = (int) ($_POST["verse"]);
     $content = $_POST["content"];
 
-    // Error Checking
-    echo "$book<br>$chapter<br>$verse<br>$content<br>";
-
     $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ('$book', $chapter, $verse, '$content');";
-
+    echo $sql;
+    
     if ($db->query($sql) === TRUE) {
-        echo "Successfully added scripture.";
+        echo "New scripture created successfully";
     } else {
-        echo "Error";
+        echo "Error: " . $sql . "<br>" . $db->error;
     }
 
     // echo "Topic tags:";
