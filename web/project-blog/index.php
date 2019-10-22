@@ -33,7 +33,7 @@ $page = "Home";
                 <div class=\"post-preview\">
                     <a href=\"post.php?id=$id\">
                         <h3>$title</h3>
-                        <img src=\"\" alt=\"\">
+                        <img src=\"$img\" alt=\"\">
                         <p>$text</p>
                         <div class=\"preview-fader\"></div>
                     </a>
