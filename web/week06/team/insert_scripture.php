@@ -10,13 +10,13 @@ try {
     // Error Checking
     echo "$book<br>$chapter<br>$verse<br>$content";
 
-    // $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ($book, $chapter, $verse, $content);";
+    $sql = "INSERT INTO scriptures (book, chapter, verse, content) VALUES ($book, $chapter, $verse, $content);";
 
-    // if ($db->query($sql) === TRUE) {
-    //     echo "Successfully added scripture.";
-    // } else {
-    //     echo "Error";
-    // }
+    if ($db->query($sql) === TRUE) {
+        echo "Successfully added scripture.";
+    } else {
+        echo "Error";
+    }
 
     // echo "Topic tags:";
     // echo "<ul>";
