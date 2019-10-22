@@ -30,7 +30,7 @@
             <div class="fancy-input-txt">Content</div>
         </div>
         
-        <?php
+        <!-- php
             try {
                 foreach ($db->query('SELECT topic_name FROM topic;') as $row) {
                     $topic_name = $row['topic_name'];
@@ -40,7 +40,7 @@
             catch (Exception $e) {
                 echo $e->getMessage();
             }
-        ?>
+        ?> -->
         <br />
         <br />
         <div class="fancy-btn">

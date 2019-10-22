@@ -22,16 +22,7 @@
     $sql = "INSERT INTO scripture(book, chapter, verse, content) VALUES($book, $chapter, $verse, $content)";
 
     if ($db->query($sql) === TRUE) {
-        foreach ($db->query('SELECT book, chapter, verse, content FROM scriptures;') as $row) {
-            $book = $row['book'];
-            $chapter = $row['chapter'];
-            $verse = $row['verse'];
-            $content = $row['content'];
-        
-            echo "<b>$book $chapter:$verse</b> - \"$content\"";
-            echo "<br/>";
-            echo "<br/>";
-        }
+        displayScriptures();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
