@@ -1,5 +1,6 @@
 :root {
   --primary-bgd-color: rgb(68, 68, 68);
+  --primary-bgd-color-dark: rgb(56, 56, 56);
   --second-bgd-color: rgb(85, 85, 85);
   --nav-bgd-color: rgb(59, 59, 59);
   --nav-bgd-color-dark: rgb(43, 43, 43);
@@ -104,12 +105,13 @@ footer {
   margin: 20px auto 20px auto;
   max-width: 450px;
   max-height: 450px;
-  background-color: var(--second-bgd-color);
+  background-color: var(--primary-bgd-color-dark);
   border-radius: 5px;
   overflow: hidden;
 }
 
 .post-preview a {
+  background-color: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,15 +146,15 @@ footer {
 
 .post-preview a .preview-fader {
   z-index: 5;
-  background-color: var(--second-bgd-color);
+  background-color: var(--primary-bgd-color-dark);
   position: absolute;
   height: 20px;
   width: 100%;
   top: 440px;
   left: 0;
   margin: 0;
-  -webkit-box-shadow: 0 -10px 40px 40px var(--second-bgd-color);
-          box-shadow: 0 -10px 40px 40px var(--second-bgd-color);
+  -webkit-box-shadow: 0 -10px 40px 40px var(--primary-bgd-color-dark);
+          box-shadow: 0 -10px 40px 40px var(--primary-bgd-color-dark);
 }
 
 .post-preview a:hover {
