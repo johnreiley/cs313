@@ -1,5 +1,5 @@
 <?php
-session.start();
+
 try {
     $dbUrl = getenv('DATABASE_URL');
 

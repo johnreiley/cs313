@@ -1,6 +1,4 @@
-<?php
-require 'db-connect.php';
-?>
+<?php require 'db-connect.php'; ?>
 
 
 Scripture Details: <?php 
