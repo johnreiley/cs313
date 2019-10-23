@@ -8,9 +8,9 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $comment = $_POST['comment'];
 
-echo "$id <br> $name <br> $email <br> $comment";
+// echo "$id <br> $name <br> $email <br> $comment";
 
-// postNewComment($db, $id, $name, $email, $comment);
+postNewComment($db, $id, $name, $email, $comment);
 
-// header("Location: post.php?id=$id");
+header("Location: post.php?id=$id");
 ?>
