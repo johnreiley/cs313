@@ -42,19 +42,21 @@ CREATE SEQUENCE posts_s1 START WITH 1001;
 
 
 CREATE TABLE comments
-( comment_id    INTEGER     PRIMARY KEY
-, user_id       INTEGER     NOT NULL REFERENCES users(user_id)
-, post_id       INTEGER     NOT NULL REFERENCES posts(post_id)
-, comment_time  TIMESTAMP   NOT NULL
-, comment_text  TEXT        NOT NULL
+( comment_id    INTEGER      PRIMARY KEY
+, post_id       INTEGER      NOT NULL REFERENCES posts(post_id)
+, comment_name  VARCHAR(100) NOT NULL
+, comment_email VARCHAR(100) NOT NULL
+, comment_time  TIMESTAMP    NOT NULL
+, comment_text  TEXT         NOT NULL
 );
 CREATE SEQUENCE comments_s1 START WITH 1001;
 
 
 CREATE TABLE second_level_comments
 ( id            INTEGER     PRIMARY KEY
-, user_id       INTEGER     NOT NULL REFERENCES users(user_id)
 , comment_id    INTEGER     NOT NULL REFERENCES comments(comment_id)
+, comment_name  VARCHAR(100) NOT NULL
+, comment_email VARCHAR(100) NOT NULL
 , comment_time  TIMESTAMP   NOT NULL
 , comment_text  TEXT        NOT NULL
 );
@@ -131,64 +133,64 @@ Quam elementum pulvinar etiam non quam lacus. Fames ac turpis egestas maecenas p
 
 INSERT INTO comments
 ( comment_id
-, user_id
 , post_id
+, comment_name
+, comment_email
 , comment_time
 , comment_text)
 VALUES
 ( nextval('comments_s1')
-, currval('users_s1')
 , currval('posts_s1')
+, 'John'
+, 'fake@email.com'
 , transaction_timestamp()
 , 'Wow man, I really enjoyed learning all of this Italian.  I actually don''t think it''s Italian though..'
 );
 
 INSERT INTO comments
 ( comment_id
-, user_id
 , post_id
+, comment_name
+, comment_email
 , comment_time
 , comment_text)
 VALUES
 ( nextval('comments_s1')
-, currval('users_s1')
 , currval('posts_s1')
+, 'George'
+, 'fake@email.com'
 , transaction_timestamp()
 , 'I couldn''t understand any of this so I''m going to find another language to study.'
 );
 
 INSERT INTO comments
 ( comment_id
-, user_id
 , post_id
+, comment_name
+, comment_email
 , comment_time
 , comment_text)
 VALUES
 ( nextval('comments_s1')
-, currval('users_s1')
 , currval('posts_s1')
+, 'Patricia'
+, 'fake@email.com'
 , transaction_timestamp()
 , 'I thought this was a made-up langauge at first.'
 );
 
 INSERT INTO second_level_comments
 ( id
-, user_id
 , comment_id
+, comment_name
+, comment_email
 , comment_time
 , comment_text)
 VALUES
 ( nextval('sl_comments_s1')
-, currval('users_s1')
 , currval('comments_s1')
+, 'James'
+, 'fake@email.com'
 , transaction_timestamp()
 , 'Dude, me too!  Then I was like, "Oh wait, I''m a gerbal."'
 );
-
-
-/******** ADD SOME DUMMY USERS ********/
-INSERT INTO users( user_id, username, password, email, first_name, last_name, creation_date)
-VALUES( nextval('users_s1'), 'dabum', 'password', 'fakeremail@gmail.com', 'Henry', 'Ford', transaction_timestamp());
-
-INSERT INTO users( user_id, username, password, email, first_name, last_name, creation_date)
-VALUES( nextval('users_s1'), 'grimeygiraffe', 'password', 'fakeemail@gmail.com', 'James', 'Polk', transaction_timestamp());

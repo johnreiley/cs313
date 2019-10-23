@@ -63,17 +63,15 @@ function getPostComments($db, $postId)
 {
     $query = '
     SELECT 
-      c.comment_id
-    , c.user_id
-    , c.post_id
-    , c.comment_time
-    , c.comment_text
-    , u.first_name
-    , u.last_name
-    FROM comments c JOIN users u
-    ON c.user_id = u.user_id 
-    WHERE c.post_id=:post_id
-    ORDER BY c.comment_id';
+      comment_id
+    , post_id
+    , comment_name
+    , comment_email
+    , comment_time
+    , comment_text
+    FROM comments
+    WHERE post_id=:post_id
+    ORDER BY comment_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':post_id' => $postId));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -87,17 +85,15 @@ function getSecondLevelComments($db, $commentId)
 {
     $query = '
     SELECT 
-      c.id
-    , c.user_id
-    , c.comment_id
-    , c.comment_time
-    , c.comment_text
-    , u.first_name
-    , u.last_name
-    FROM second_level_comments c JOIN users u
-    ON c.user_id = u.user_id 
+      id
+    , comment_id
+    , comment_name
+    , comment_email
+    , comment_time
+    , comment_text
+    FROM second_level_comments 
     WHERE comment_id=:comment_id
-    ORDER BY c.id';
+    ORDER BY id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':comment_id' => $commentId));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -120,7 +116,7 @@ function registerNewUser($db, $username, $password, $email, $firstName, $lastNam
     , email
     , first_name
     , last_name
-    , creation_date
+    , creation_date)
     VALUES
     ( users_s1.NEXTVAL
     , username=:username
@@ -150,7 +146,7 @@ function postNewBlogPost($db, $userId, $postTitle, $postText)
     , user_id
     , post_date
     , post_title
-    , post_text
+    , post_text)
     VALUES
     ( posts_s1.NEXTVAL
     , user_id=:user_id
@@ -168,8 +164,32 @@ function postNewBlogPost($db, $userId, $postTitle, $postText)
 
 
 // post new comment
-function postNewComment($db, $userId, $postId, $commentText)
-{ }
+function postNewComment($db, $postId, $name, $email, $commentText)
+{ 
+    $query = '
+    INSERT INTO comments
+    ( comment_id
+    , post_id
+    , comment_name
+    , comment_email
+    , comment_time
+    , comment_text)
+    VALUES
+    ( comments_s1.NEXTVAL
+    , post_id=:post_id
+    , name=:name
+    , email=:email
+    , transaction_timestamp()
+    , comment_text=:comment_text
+    )';
+    $stmt = $db->prepare($query);
+    $stmt->execute(array(
+        ':post_id' => $postId,
+        ':name' => $name,
+        ':email' => $email,
+        ':comment_text' => $commentText
+    ));
+}
 
 
 // post new secondary comment

@@ -177,6 +177,10 @@ footer {
   border-radius: 5px;
 }
 
+.id-input {
+  display: none;
+}
+
 .comment-box {
   background-color: inherit;
   padding: 30px 0 30px 0;
