@@ -178,10 +178,10 @@ function postNewComment($db, $postId, $name, $email, $commentText)
     VALUES
     ( nextval(\'comments_s1\')
     , post_id=:post_id
-    , name=:name
-    , email=:email
+    , \'name=:name\'
+    , \'email=:email\'
     , transaction_timestamp()
-    , comment_text=:comment_text
+    , \'comment_text=:comment_text\'
     )';
     $stmt = $db->prepare($query);
     print_r($stmt);
