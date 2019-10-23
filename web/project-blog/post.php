@@ -59,23 +59,23 @@ $img = $post['post_img'];
                 <?php
                 foreach (getPostComments($db, $id) as $comment) {
                     $commentId = $comment['comment_id'];
-                    $user = $comment['first_name'] . " " . $comment['last_name'];
+                    $name = $comment['name'];
                     $date = $comment['comment_time'];
                     $text = $comment['comment_text'];
                     echo "
                     <div id=\"comment-$commentId\" class=\"comment\">
-                       <div class=\"comment-details\">$user - $date</div>
+                       <div class=\"comment-details\">$name - $date</div>
                        <div class=\"comment-body\">$text</div>
                     </div>
                     <div class=\"children\">";
                     foreach (getSecondLevelComments($db, $commentId) as $comment) {
                         $commentId = $comment['id'];
-                        $user = $comment['first_name'] . " " . $comment['last_name'];
+                        $name = $comment['name'];
                         $date = $comment['comment_time'];
                         $text = $comment['comment_text'];
                         echo "
                         <div id=\"comment-$commentId\" class=\"comment\">
-                            <div class=\"comment-details\">$user - $date</div>
+                            <div class=\"comment-details\">$name - $date</div>
                             <div class=\"comment-body\">$text</div>
                         </div>";
                     }
