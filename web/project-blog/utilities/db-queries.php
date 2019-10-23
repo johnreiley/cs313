@@ -176,7 +176,7 @@ function postNewComment($db, $postId, $name, $email, $commentText)
     , comment_time
     , comment_text)
     VALUES
-    ( comments_s1.NEXTVAL
+    ( nextval(\'comments_s1\')
     , post_id=:post_id
     , name=:name
     , email=:email
