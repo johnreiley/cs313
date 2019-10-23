@@ -166,6 +166,7 @@ function postNewBlogPost($db, $userId, $postTitle, $postText)
 // post new comment
 function postNewComment($db, $postId, $name, $email, $commentText)
 { 
+    echo "INSIDE postNewComment()";
     $query = '
     INSERT INTO comments
     ( comment_id
@@ -189,6 +190,8 @@ function postNewComment($db, $postId, $name, $email, $commentText)
         ':email' => $email,
         ':comment_text' => $commentText
     ));
+
+    echo "AFTER statement execute";
 }
 
 
