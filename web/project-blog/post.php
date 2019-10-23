@@ -36,22 +36,22 @@ $img = $post['post_img'];
 
             <div class="comment-box">
                 <h2>Comments</h2>
-                <form class="fancy-form">
+                <form class="fancy-form" method="post" action="submit-comment.php" onsubmit="return verifyComment()">
                     <div class="fancy-input">
-                        <input type="text">
+                        <input type="text" id="name" name="name" required>
                         <div class="fancy-input-txt">name</div>
                     </div>
                     <div class="fancy-input">
-                        <input type="text">
+                        <input type="email" id="email" name="email" required>
                         <div class="fancy-input-txt">email</div>
                     </div>
                     <div class="fancy-input">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
                         <div class="fancy-input-txt">comments</div>
                     </div>
                     <div class="break"></div>
                     <div class="fancy-btn">
-                        <button>Submit</button>
+                        <input type="submit" value="Submit">
                     </div>
                 </form>
 
