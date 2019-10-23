@@ -167,7 +167,7 @@ function postNewBlogPost($db, $userId, $postTitle, $postText)
 function postNewComment($db, $postId, $name, $email, $commentText)
 { 
     echo "INSIDE postNewComment()";
-    $query = '
+    $query = "
     INSERT INTO comments
     ( comment_id
     , post_id
@@ -176,13 +176,13 @@ function postNewComment($db, $postId, $name, $email, $commentText)
     , comment_time
     , comment_text)
     VALUES
-    ( nextval(\'comments_s1\')
+    ( nextval('comments_s1')
     , post_id=:post_id
     , name=:name
     , email=:email
     , transaction_timestamp()
     , comment_text=:comment_text
-    )';
+    )";
     $stmt = $db->prepare($query);
     $stmt->execute(array(
         ':post_id' => $postId,
