@@ -177,11 +177,11 @@ function postNewComment($db, $postId, $name, $email, $commentText)
     , comment_text)
     VALUES
     ( nextval(\'comments_s1\')
-    , post_id=:post_id
-    , name=:name
-    , email=:email
+    , :post_id
+    , :name
+    , :email
     , transaction_timestamp()
-    , comment_text=:comment_text
+    , :comment_text
     )';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':post_id', $postId, PDO::PARAM_INT);
