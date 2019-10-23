@@ -184,6 +184,7 @@ function postNewComment($db, $postId, $name, $email, $commentText)
     , comment_text=:comment_text
     )";
     $stmt = $db->prepare($query);
+    print_r($stmt);
     $stmt->execute(array(
         ':post_id' => $postId,
         ':name' => $name,
