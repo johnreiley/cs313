@@ -4,9 +4,9 @@ require '../utilities/connect-db.php';
 $db = get_db();
 
 $id = $_GET['id'];
-$name = $_POST['name'];
-$email = $_POST['email'];
-$comment = $_POST['comment'];
+$name = htmlspecialchars($_POST['name']);
+$email = htmlspecialchars($_POST['email']);
+$comment = htmlspecialchars($_POST['comment']);
 
 postNewComment($db, $id, $name, $email, $comment);
 
