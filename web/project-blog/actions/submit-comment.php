@@ -3,7 +3,7 @@
 // require_once 'utilities/connect-db.php';
 // $db = get_db();
 
-$id = $_POST['id'];
+$id = $_GET['id'];
 $name = $_POST['name'];
 $email = $_POST['email'];
 $comment = $_POST['comment'];
