@@ -184,10 +184,10 @@ function postNewComment($db, $postId, $name, $email, $commentText)
     , comment_text=:comment_text
     )';
     $stmt = $db->prepare($query);
-    $stmt->bindValue(':post_id', $postId, );
-    $stmt->bindValue(':name', $name, );
-    $stmt->bindValue(':email', $email, );
-    $stmt->bindValue(':comment_text', $commentText, );
+    $stmt->bindValue(':post_id', $postId, PDO::PARAM_INT);
+    $stmt->bindValue(':name', $name, PDO::PARAM_STR);
+    $stmt->bindValue(':email', $email, PDO::PARAM_STR);
+    $stmt->bindValue(':comment_text', $commentText, PDO::PARAM_STR);
     $stmt->execute();
 
     echo "AFTER statement execute";
