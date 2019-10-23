@@ -36,7 +36,7 @@ $img = $post['post_img'];
 
             <div class="comment-box">
                 <h2>Comments</h2>
-                <form class="fancy-form" method="post" action="submit-comment.php?id=<?php echo $id ?>">
+                <form class="fancy-form" method="post" action="actions/submit-comment.php?id=<?php echo $id ?>">
                     <div class="fancy-input">
                         <input type="text" id="name" name="name" required>
                         <div class="fancy-input-txt">name</div>
