@@ -36,7 +36,7 @@ $img = $post['post_img'];
 
             <div class="comment-box">
                 <h2>Comments</h2>
-                <form class="fancy-form" method="post" action="submit-comment.php">
+                <form class="fancy-form" method="post" action="submit-comment.php?id=<?php echo $id ?>">
                     <div class="fancy-input">
                         <input type="text" id="name" name="name" required>
                         <div class="fancy-input-txt">name</div>
@@ -49,7 +49,6 @@ $img = $post['post_img'];
                         <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
                         <div class="fancy-input-txt">comments</div>
                     </div>
-                    <input type="text" class="id-input">
                     <div class="break"></div>
                     <div class="fancy-btn">
                         <input type="submit" value="Submit">
