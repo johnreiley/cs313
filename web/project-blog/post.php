@@ -59,7 +59,7 @@ $img = $post['post_img'];
                 <?php
                 foreach (getPostComments($db, $id) as $comment) {
                     $commentId = $comment['comment_id'];
-                    $name = $comment['name'];
+                    $name = $comment['comment_name'];
                     $date = $comment['comment_time'];
                     $text = $comment['comment_text'];
                     echo "
@@ -70,7 +70,7 @@ $img = $post['post_img'];
                     <div class=\"children\">";
                     foreach (getSecondLevelComments($db, $commentId) as $comment) {
                         $commentId = $comment['id'];
-                        $name = $comment['name'];
+                        $name = $comment['comment_name'];
                         $date = $comment['comment_time'];
                         $text = $comment['comment_text'];
                         echo "
