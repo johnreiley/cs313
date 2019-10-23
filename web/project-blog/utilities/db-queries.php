@@ -166,7 +166,6 @@ function postNewBlogPost($db, $userId, $postTitle, $postText)
 // post new comment
 function postNewComment($db, $postId, $name, $email, $commentText)
 { 
-    echo "INSIDE postNewComment()";
     $query = '
     INSERT INTO comments
     ( comment_id
@@ -189,8 +188,6 @@ function postNewComment($db, $postId, $name, $email, $commentText)
     $stmt->bindValue(':email', $email, PDO::PARAM_STR);
     $stmt->bindValue(':comment_text', $commentText, PDO::PARAM_STR);
     $stmt->execute();
-
-    echo "AFTER statement execute";
 }
 
 

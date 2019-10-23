@@ -10,5 +10,5 @@ $comment = $_POST['comment'];
 
 postNewComment($db, $id, $name, $email, $comment);
 
-// header("Location: post.php?id=$id");
+header("Location: post.php?id=$id");
 ?>
