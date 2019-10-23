@@ -77,6 +77,7 @@
 .fancy-input input:focus+.fancy-input-txt,
 .fancy-input textarea:focus+.fancy-input-txt {
     z-index: 2;
+    color: var(--accent-color);
     background-color: var(--primary-bgd-color);
     transform: translate(15px, -13px) scale(0.7);
     -webkit-transform: translate(15px, -13px) scale(0.7);
