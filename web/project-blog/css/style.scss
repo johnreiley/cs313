@@ -206,6 +206,7 @@ footer {
 
 
 /************** LOGIN ******************/
+
 .login-container {
     padding: 0 !important;
     display: flex;
@@ -237,5 +238,12 @@ footer {
             margin: 10px auto 10px auto;
             width: 80%;
         }
+    }
+}
+
+@media only screen and (max-width: 650px) 
+{ 
+    .login-form {
+        box-shadow: none;
     }
 }

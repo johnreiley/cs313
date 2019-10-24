@@ -237,4 +237,11 @@ footer {
   margin: 10px auto 10px auto;
   width: 80%;
 }
+
+@media only screen and (max-width: 650px) {
+  .login-form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
