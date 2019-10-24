@@ -1,5 +1,5 @@
 var title = document.querySelector('#title');
-var imgUrl = document.querySelector('#imgUrl');
+var imgUrl = document.querySelector('#img-url');
 var bodyText = document.querySelector('#body-text');
 
 var titleDiv = document.querySelector('.page-title');
