@@ -242,6 +242,7 @@ footer {
   .login-form {
     -webkit-box-shadow: none;
             box-shadow: none;
+    border: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
