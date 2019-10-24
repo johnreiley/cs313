@@ -16,12 +16,12 @@
             <h2>Admin Portal</h2>
             <div class="break"></div>
             <div class="fancy-input">
-                <input type="username" id="name" name="name" required>
+                <input type="username" id="username" name="username" required>
                 <div class="fancy-input-txt">username</div>
             </div>
             <div class="break"></div>
             <div class="fancy-input">
-                <input type="password" id="email" name="email" required>
+                <input type="password" id="password" name="password" required>
                 <div class="fancy-input-txt">password</div>
             </div>
             <div class="break"></div>
