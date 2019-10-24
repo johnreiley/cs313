@@ -6,15 +6,15 @@ $title = "";
 $img = "";
 $text = "";
 
-if (isset($_POST['post-edit-id'])) {
-    $id = $_POST['post-edit-id'];
-    echo $id;
-    // $post = getSinglePost($db, $id);
+// if (isset($_POST['post-edit-id'])) {
+//     $id = $_POST['post-edit-id'];
+//     echo $id;
+//     // $post = getSinglePost($db, $id);
 
-    // $title = $post['post_title'];
-    // $img = $post['post_img'];
-    // $text = $post['post_text'];
-}
+//     // $title = $post['post_title'];
+//     // $img = $post['post_img'];
+//     // $text = $post['post_text'];
+// }
 
 ?>
 <!DOCTYPE html>
@@ -30,6 +30,7 @@ if (isset($_POST['post-edit-id'])) {
 </head>
 
 <body>
+    
     <main>
         <div class="content-container">
             <form class="fancy-form" method="post" action="actions/save-post.php?id=<?php echo $id ?>">
