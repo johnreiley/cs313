@@ -7,6 +7,29 @@ function getUserInfo($db)
 { }
 
 
+// verify login credentials
+function verifyLoginCredentials($db, $username, $password)
+{
+    $query = '
+    SELECT user_id
+    FROM users
+    WHERE username=:username
+    AND password=:password';
+    $stmt = $db->prepare($query);
+    $stmt->execute(array(
+        ':username' => $username,
+        ':password' => $password
+    ));
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if (count($row) == 1) {
+        return $row;
+    } else {
+        return false;
+    }
+}
+
+
 // check if the user is an admin
 function isAdminUser($db, $userId)
 {
@@ -128,10 +151,10 @@ function registerNewUser($db, $username, $password, $email, $firstName, $lastNam
     )';
     $stmt = $db->prepare($query);
     $stmt->execute(array(
-        ':username' => $username, 
-        ':password' => $password, 
-        ':email' => $email, 
-        ':first_name' => $firstName, 
+        ':username' => $username,
+        ':password' => $password,
+        ':email' => $email,
+        ':first_name' => $firstName,
         ':last_name' => $lastName
     ));
 }
@@ -139,7 +162,7 @@ function registerNewUser($db, $username, $password, $email, $firstName, $lastNam
 
 // post new blog post
 function postNewBlogPost($db, $userId, $postTitle, $postText)
-{ 
+{
     $query = '
     INSERT INTO posts
     ( post_id
@@ -165,7 +188,7 @@ function postNewBlogPost($db, $userId, $postTitle, $postText)
 
 // post new comment
 function postNewComment($db, $postId, $name, $email, $commentText)
-{ 
+{
     $query = '
     INSERT INTO comments
     ( comment_id
@@ -221,7 +244,7 @@ function deleteBlogPost($db, $postId)
 
 // delete comment
 function deleteComment($db, $commentId)
-{ 
+{
     $query = '
     DELETE FROM comments
     WHERE comment_id=:comment_id';
