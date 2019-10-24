@@ -207,7 +207,7 @@ footer {
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: var(--primary-bgd-color);
-  min-height: calc(100vh - var(--footer-height));
+  min-height: calc(100vh - var(--nav-height));
 }
 
 .login-form {
