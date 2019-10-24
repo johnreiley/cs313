@@ -13,7 +13,7 @@
     <main>
         <div class="content-container">
             <form class="fancy-form login-form" method="post" action="actions/sign-in.php">
-                <h2>Sign in</h2>
+                <h2>Admin Portal</h2>
                 <div class="break"></div>
                 <div class="fancy-input">
                     <input type="username" id="name" name="name" required>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="break"></div>
                 <div class="fancy-btn">
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Login">
                 </div>
             </form>
         </div>
