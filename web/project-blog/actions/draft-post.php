@@ -24,7 +24,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <?php //require '../components/inject-head.php' ?>
+    <?php require '../components/inject-head.php' ?>
     <!-- <script src="../js/post-draft-previewer.js" defer></script> -->
     <title>Blog - Draft Post</title>
 </head>
