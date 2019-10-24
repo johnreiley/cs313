@@ -8,9 +8,14 @@ $password = $_POST['password'];
 
 $userInfo = verifyLoginCredentials($db, $username, $password);
 
+$redirectUrl = "";
+
 if ($userInfo != false) {
     session_start();
     $_SESSION['user_id'] = $userInfo['user_id'];
+    $redirectUrl = "index.php";
+} else {
+    $redirectUrl = "admin-login.php";
 }
+header("Location: $redirectUrl");
 ?>
-
