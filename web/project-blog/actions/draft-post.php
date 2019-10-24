@@ -8,11 +8,12 @@ $text = "";
 
 if (isset($_POST['post-edit-id'])) {
     $id = $_POST['post-edit-id'];
-    $post = getSinglePost($db, $id);
+    echo $id;
+    // $post = getSinglePost($db, $id);
 
-    $title = $post['post_title'];
-    $img = $post['post_img'];
-    $text = $post['post_text'];
+    // $title = $post['post_title'];
+    // $img = $post['post_img'];
+    // $text = $post['post_text'];
 }
 
 ?>
