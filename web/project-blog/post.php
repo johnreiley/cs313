@@ -26,6 +26,13 @@ $img = $post['post_img'];
 
     <main>
         <div class="content-container">
+            <?php
+            if ($isAdmin) {
+                echo "
+                <button type=\"submit\" name=\"post-edit-id\" formmethod=\"post\" formaction=\"actions/draft-post.php\" value=\"$id\">Edit</button>
+                ";
+            } 
+            ?>
 
             <h2 class="page-title"><?php echo $title ?></h2>
             <div class="post-info"><?php echo $date ?></div>

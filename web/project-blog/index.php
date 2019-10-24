@@ -22,10 +22,7 @@ $page = "Home";
         <div class="content-container">
             <?php
             if ($isAdmin) {
-                echo "
-                <form method=\"post\">
-                    <input type=\"\"
-                </form>";
+
             } 
             ?>
             <h2 class="page-title">Blog</h2>
