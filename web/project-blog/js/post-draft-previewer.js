@@ -15,6 +15,10 @@ title.addEventListener('keyup', keyupListener);
 imgUrl.addEventListener('keyup', keyupListener);
 bodyText.addEventListener('keyup', keyupListener);
 
+title.addEventListener('blur', keyupListener);
+imgUrl.addEventListener('blur', keyupListener);
+bodyText.addEventListener('blur', keyupListener);
+
 function keyupListener(e) {
     titleDiv.innerText = title.value;
     // info.innerText = Date.now()
