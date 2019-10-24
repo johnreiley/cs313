@@ -11,7 +11,10 @@ function getUserInfo($db)
 function verifyLoginCredentials($db, $username, $password)
 {
     $query = '
-    SELECT user_id
+    SELECT 
+      user_id
+    , first_name
+    , last_name
     FROM users
     WHERE username=:username
     AND password=:password';
@@ -22,7 +25,7 @@ function verifyLoginCredentials($db, $username, $password)
     ));
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if (count($row) == 1) {
+    if (count($row) == 3) {
         return $row;
     } else {
         return null;
