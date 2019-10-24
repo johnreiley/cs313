@@ -199,6 +199,11 @@ footer {
   text-align: left;
 }
 
+/************** EDITOR ******************/
+.body-text {
+  font-family: monospace;
+}
+
 /************** LOGIN ******************/
 .login-container {
   padding: 0 !important;
