@@ -11,7 +11,7 @@
 
 <body>
     <main>
-        <div class="content-container">
+        <div class="content-container login-container">
             <form class="fancy-form login-form" method="post" action="actions/sign-in.php">
                 <h2>Admin Portal</h2>
                 <div class="break"></div>

@@ -200,11 +200,19 @@ footer {
 }
 
 /************** LOGIN ******************/
+.login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 .login-form {
   background-color: var(--primary-bgd-color-dark) !important;
   border-radius: 10px;
   padding: 20px;
-  max-width: 300px;
+  max-width: 300px !important;
 }
 
 .login-form .fancy-btn {
