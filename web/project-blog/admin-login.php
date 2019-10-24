@@ -13,7 +13,8 @@
     <main>
         <div class="content-container">
             <form class="fancy-form login-form" method="post" action="actions/sign-in.php">
-                <h2>Sign-in</h2>
+                <h2>Sign in</h2>
+                <div class="break"></div>
                 <div class="fancy-input">
                     <input type="username" id="name" name="name" required>
                     <div class="fancy-input-txt">username</div>
@@ -30,6 +31,7 @@
             </form>
         </div>
     </main>
+    <?php require 'components/footer.php' ?>
 </body>
 
 </html>

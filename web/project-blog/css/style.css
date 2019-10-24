@@ -198,4 +198,11 @@ footer {
 .comment-box .comment-details {
   text-align: left;
 }
+
+/************** LOGIN ******************/
+.login-form {
+  background-color: var(--primary-bgd-color-dark) !important;
+  border-radius: 10px;
+  padding: 20px;
+}
 /*# sourceMappingURL=style.css.map */
