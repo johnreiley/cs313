@@ -25,7 +25,7 @@ function verifyLoginCredentials($db, $username, $password)
     if (count($row) == 1) {
         return $row;
     } else {
-        return false;
+        return null;
     }
 }
 

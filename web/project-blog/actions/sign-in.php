@@ -10,7 +10,7 @@ $userInfo = verifyLoginCredentials($db, $username, $password);
 
 $redirectUrl = "";
 
-if ($userInfo != false) {
+if ($userInfo != null) {
     session_start();
     $_SESSION['user_id'] = $userInfo['user_id'];
     $redirectUrl = "../index.php";
