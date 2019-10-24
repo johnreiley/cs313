@@ -1,5 +1,5 @@
 <?php
-// require 'components/inject-requires.php';
+require 'components/inject-requires.php';
 
 // $id = 0;
 // $title = "";
@@ -43,6 +43,7 @@
                     <input type="text" id="img-url" name="img-url" required>
                     <div class="fancy-input-txt">image url</div>
                 </div>
+                <div class="break"></div>
                 <div class="fancy-input">
                     <textarea name="body-text" id="body-text" cols="30" rows="10"></textarea>
                     <div class="fancy-input-txt">body text</div>
@@ -54,21 +55,17 @@
             </form>
 
             <div class="draft-preview">
-                <html>
-
-                <body>
-                    <h2 class="page-title"></h2>
-                    <div class="post-info"></div>
-                    <div class="post-img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="post-body"></div>
-                </body>
-
-                </html>
+                <h2 class="page-title"></h2>
+                <div class="post-info"></div>
+                <div class="post-img">
+                    <img src="" alt="">
+                </div>
+                <div class="post-body"></div>
             </div>
         </div>
     </main>
+
+    <?php require 'components/footer.php' ?>
 
 </body>
 
