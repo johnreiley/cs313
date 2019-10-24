@@ -1,7 +1,5 @@
 <?php
-require 'utilities/db-queries.php';
-require 'utilities/connect-db.php';
-$db = get_db();
+require 'components/inject-requires.php';
 
 $id = $_GET['id'];
 
@@ -37,6 +35,7 @@ $img = $post['post_img'];
             <div class="comment-box">
                 <form class="fancy-form" method="post" action="actions/submit-comment.php?id=<?php echo $id ?>">
                     <h2>Comments</h2>
+                    <div class="break"></div>
                     <div class="fancy-input">
                         <input type="text" id="name" name="name" required>
                         <div class="fancy-input-txt">name</div>

@@ -1,7 +1,5 @@
 <?php
-require 'utilities/db-queries.php';
-require 'utilities/connect-db.php';
-$db = get_db();
+require 'components/inject-requires.php';
 $page = "Home";
 ?>
 
@@ -22,6 +20,14 @@ $page = "Home";
 
     <main>
         <div class="content-container">
+            <?php
+            if ($isAdmin) {
+                echo "
+                <form method=\"post\">
+                    <input type=\"\"
+                </form>";
+            } 
+            ?>
             <h2 class="page-title">Blog</h2>
             <?php
             foreach (getAllPosts($db) as $post) {
