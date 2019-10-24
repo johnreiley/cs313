@@ -206,6 +206,8 @@ footer {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+  background-color: var(--primary-bgd-color);
+  min-height: calc(100vh - var(--footer-height));
 }
 
 .login-form {
