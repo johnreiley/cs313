@@ -14,7 +14,7 @@ if ($userInfo != false) {
     session_start();
     $_SESSION['user_id'] = $userInfo['user_id'];
     $redirectUrl = "../index.php";
-    echo "$username, $password";
+    echo "$username, $password, " . $userInfo['user_id'];
 } else {
     $redirectUrl = "../admin-login.php";
 }
