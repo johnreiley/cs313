@@ -3,6 +3,7 @@ var imgUrl = document.querySelector('#imgUrl');
 var bodyText = document.querySelector('#body-text');
 
 var titleDiv = document.querySelector('.page-title');
+var info = document.querySelector('.post-info');
 var img = document.querySelector('.post-img').firstChild;
 var bodyTextDiv = document.querySelector('.post-text');
 
@@ -16,6 +17,7 @@ bodyText.addEventListener('keyup', keyupListener);
 
 function keyupListener(e) {
     titleDiv.innerText = title.value;
+    // info.innerText = Date.now()
     img.src = imgUrl.value;
     bodyTextDiv.innerHTML = bodyText.value;
 }

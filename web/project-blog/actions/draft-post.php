@@ -1,6 +1,7 @@
 <?php
 require '../components/inject-requires.php';
 
+$id = 0;
 $title = "";
 $img = "";
 $text = "";
@@ -23,14 +24,14 @@ if (isset($_POST['post-edit-id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php require '../components/inject-head.php' ?>
-    <script src="../js/post-draft-previewer.js" defer></script>
+    <!-- <script src="../js/post-draft-previewer.js" defer></script> -->
     <title>Blog - Draft Post</title>
 </head>
 
 <body>
     <main>
         <div class="content-container">
-            <form class="fancy-form" method="post" action="actions/save-post.php">
+            <form class="fancy-form" method="post" action="actions/save-post.php?id=<?php echo $id ?>">
                 <div class="fancy-input">
                     <input type="text" id="title" name="title" required>
                     <div class="fancy-input-txt">title</div>
@@ -46,7 +47,7 @@ if (isset($_POST['post-edit-id'])) {
                 </div>
                 <div class="break"></div>
                 <div class="fancy-btn">
-                    <input type="submit" value="Login">
+                    <input type="submit" value="Save">
                 </div>
             </form>
 

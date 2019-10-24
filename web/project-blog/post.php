@@ -29,7 +29,9 @@ $img = $post['post_img'];
             <?php
             if ($isAdmin) {
                 echo "
-                <button type=\"submit\" name=\"post-edit-id\" formmethod=\"post\" formaction=\"actions/draft-post.php\" value=\"$id\">Edit</button>
+                <form method=\"post\" action=\"actions/draft-post.php\">
+                <button type=\"submit\" name=\"post-edit-id\" value=\"$id\">Edit</button>
+                </form>
                 ";
             } 
             ?>
