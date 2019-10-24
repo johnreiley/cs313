@@ -4,7 +4,7 @@ var bodyText = document.querySelector('#body-text');
 
 var titleDiv = document.querySelector('.page-title');
 var info = document.querySelector('.post-info');
-var img = document.querySelector('.post-img').firstChild;
+var img = document.querySelector('.post-img').firstElementChild;
 console.log(img);
 var bodyTextDiv = document.querySelector('.post-body');
 
