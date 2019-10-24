@@ -5,7 +5,7 @@ var bodyText = document.querySelector('#body-text');
 var titleDiv = document.querySelector('.page-title');
 var info = document.querySelector('.post-info');
 var img = document.querySelector('.post-img').firstChild;
-var bodyTextDiv = document.querySelector('.post-text');
+var bodyTextDiv = document.querySelector('.post-body');
 
 titleDiv.innerText = title.value;
 img.src = imgUrl.value;
