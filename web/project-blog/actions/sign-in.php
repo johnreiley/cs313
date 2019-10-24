@@ -13,9 +13,9 @@ $redirectUrl = "";
 if ($userInfo != false) {
     session_start();
     $_SESSION['user_id'] = $userInfo['user_id'];
-    $redirectUrl = "index.php";
+    $redirectUrl = "../index.php";
 } else {
-    $redirectUrl = "admin-login.php";
+    $redirectUrl = "../admin-login.php";
 }
 header("Location: $redirectUrl");
 ?>
