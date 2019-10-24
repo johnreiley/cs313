@@ -214,10 +214,17 @@ footer {
 }
 
 .login-form {
-    background-color: var(--primary-bgd-color-dark) !important;
-    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
     padding: 20px;
     max-width: 300px !important;
+    box-shadow: var(--item-box-shadow);
+
+    h2 {
+        text-align: center;
+        width: 100%;
+    }
 
     .fancy-btn {
         width: 100%;
