@@ -212,6 +212,7 @@ footer {
 }
 
 .login-form {
+  border: solid var(--primary-bgd-color-dark) 1px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 5px;
