@@ -27,7 +27,7 @@ body {
 
 .btn {
   display: block;
-  margin: 20px;
+  margin: 5px;
   font-family: inherit;
   font-size: 15px;
   padding: 5px 10px 5px 10px;
@@ -322,11 +322,11 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--primary-bgd-color-dark);
+  background: var(--primary-bgd-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: var(--primary-bgd-color-dark);
 }
 
 ::-webkit-scrollbar-thumb:hover {

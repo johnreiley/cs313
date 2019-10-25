@@ -327,11 +327,11 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--primary-bgd-color-dark);
+    background: var(--primary-bgd-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(-);
+    background: var(--primary-bgd-color-dark);
 }
 
 ::-webkit-scrollbar-thumb:hover {
