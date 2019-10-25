@@ -29,7 +29,7 @@ body {
 
 .btn {
     display: block;
-    margin: 20px;
+    margin: 5px;
     font-family: inherit;
     font-size: 15px;
     padding: 5px 10px 5px 10px;
@@ -258,6 +258,7 @@ footer {
 .action-buttons {
     display: flex;
     justify-content: flex-end;
+
     form {
         display: inherit;
     }
@@ -323,16 +324,16 @@ footer {
 /*********** SCROLL BAR **************/
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-track {
+    background: var(--primary-bgd-color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(-);
+}
+
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
