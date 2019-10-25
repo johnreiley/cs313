@@ -193,8 +193,10 @@ footer {
 }
 
 .comment-box {
+    margin-top: 30px;
+    border-top: solid gray 2px ;
     background-color: inherit;
-    padding: 30px 0 30px 0;
+    padding: 0px 0 30px 0;
 
     .comment {
         border-top: solid gray 1px;
