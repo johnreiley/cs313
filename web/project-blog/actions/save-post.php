@@ -1,4 +1,5 @@
 <?php
+require '../components/inject-requires-actions.php';
 
 $title = $_POST['title'];
 $img = $_POST['img-url'];

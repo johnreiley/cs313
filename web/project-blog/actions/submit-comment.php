@@ -1,7 +1,5 @@
 <?php
-require '../utilities/db-queries.php';
-require '../utilities/connect-db.php';
-$db = get_db();
+require '../components/inject-requires-actions.php';
 
 $id = $_GET['id'];
 $name = htmlspecialchars($_POST['name']);

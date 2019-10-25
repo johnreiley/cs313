@@ -1,7 +1,5 @@
 <?php
-require '../utilities/connect-db.php';
-require '../utilities/db-queries.php';
-$db = get_db();
+require '../components/inject-requires-actions.php';
 $redirectUrl = "../admin-login.php";
 
 $username = $_POST['username'];
