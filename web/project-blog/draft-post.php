@@ -1,6 +1,11 @@
 <?php
 require 'components/inject-requires.php';
 
+if (!$isAdmin) {
+    header('Location: admin-login.php');
+    die();
+}
+
 $id = 0;
 $title = "";
 $img = "";

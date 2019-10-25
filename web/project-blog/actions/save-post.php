@@ -5,10 +5,9 @@ $img = $_POST['img-url'];
 $text = $_POST['body-text'];
 
 if (isset($_POST['id'])) {
-    // update the table
+    updateBlogPost($db, $_POST['id'], $title, $img, $text);
 } else {
-    // insert to the table
+    postNewBlogPost($db, $title, $img, $text);
 }
-
 
 ?>

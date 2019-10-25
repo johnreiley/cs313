@@ -164,7 +164,7 @@ function registerNewUser($db, $username, $password, $email, $firstName, $lastNam
 
 
 // post new blog post
-function postNewBlogPost($db, $userId, $postTitle, $postImg, $postText)
+function postNewBlogPost($db, $postTitle, $postImg, $postText)
 {
     $query = "
     INSERT INTO posts
