@@ -8,7 +8,7 @@ $text = "";
 
 if (isset($_POST['post-edit-id'])) {
     $id = $_POST['post-edit-id'];
-    echo $id;
+
     $post = getSinglePost($db, $id);
 
     $title = $post['post_title'];
@@ -58,7 +58,7 @@ if (isset($_POST['post-edit-id'])) {
                 <h2 class="page-title"></h2>
                 <div class="post-info"></div>
                 <div class="post-img">
-                    <img src="" alt="">
+                    <img src="" alt="draft post image">
                 </div>
                 <div class="post-body"></div>
             </div>
