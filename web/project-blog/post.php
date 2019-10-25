@@ -33,14 +33,14 @@ $img = $post['post_img'];
                     <button type=\"submit\" name=\"post-edit-id\" value=\"$id\">Edit</button>
                 </form>
                 ";
-            } 
+            }
             ?>
-
-            <h2 class="page-title"><?php echo $title ?></h2>
-            <div class="post-info"><?php echo $date ?></div>
-            <div class="post-img"><img src="<?php echo $img ?>"></div>
-            <div class="post-body"><?php echo $post['post_text'] ?></div>
-
+            <div class="blog-post">
+                <h2 class="page-title"><?php echo $title ?></h2>
+                <div class="post-info"><?php echo $date ?></div>
+                <div class="post-img"><img src="<?php echo $img ?>"></div>
+                <div class="post-body"><?php echo $post['post_text'] ?></div>
+            </div>
             <div class="comment-box">
                 <form class="fancy-form" method="post" action="actions/submit-comment.php?id=<?php echo $id ?>">
                     <h2>Comments</h2>

@@ -13,6 +13,8 @@
     --nav-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.26);
     --item-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.26);
 
+    --std-animation-duration: 0.5s;
+
     --nav-height: 56px;
     --footer-height: 70px;
 }
@@ -108,7 +110,7 @@ footer {
     background-color: var(--primary-bgd-color-dark);
     border-radius: 5px;
     overflow: hidden;
-    animation: grow 0.5s;
+    animation: grow var(--std-animation-duration);
 
     a {
         background-color: inherit;
@@ -161,22 +163,24 @@ footer {
 
 /************** POST ******************/
 
-// info
-.post-info {}
+.blog-post {
+    animation: fadein var(--std-animation-duration);
+    // info
+    .post-info {}
 
-// body
-.post-body {
-    padding: 20px 0 30px 0;
-    text-align: justify;
+    // body
+    .post-body {
+        padding: 20px 0 30px 0;
+        text-align: justify;
+    }
+
+    .post-img img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
 }
-
-.post-img img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
 // comments
 .id-input {
     display: none;
