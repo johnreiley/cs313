@@ -29,9 +29,14 @@ $img = $post['post_img'];
             <?php
             if ($isAdmin) {
                 echo "
-                <form method=\"post\" action=\"draft-post.php\">
-                    <button type=\"submit\" name=\"post-edit-id\" value=\"$id\">Edit</button>
-                </form>
+                <div class=\"action-buttons\">
+                    <form method=\"post\" action=\"draft-post.php\">
+                        <button class=\"btn normal-btn\" type=\"submit\" name=\"post-edit-id\" value=\"$id\">Edit</button>
+                    </form>
+                    <form method=\"post\" action=\"delete-post.php\">
+                        <button class=\"btn warning-btn\" type=\"submit\" name=\"post-edit-id\" value=\"$id\">Edit</button>
+                    </form>
+                </div>
                 ";
             }
             ?>
@@ -43,7 +48,7 @@ $img = $post['post_img'];
             </div>
             <div class="comment-box">
                 <form class="fancy-form" method="post" action="actions/submit-comment.php?id=<?php echo $id ?>">
-                <h2>Comments</h2>
+                    <h2>Comments</h2>
                     <div class="break"></div>
                     <div class="fancy-input">
                         <input type="text" id="name" name="name" required>
