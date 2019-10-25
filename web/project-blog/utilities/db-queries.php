@@ -54,7 +54,10 @@ function isAdminUser($db, $userId)
 // get all blog posts
 function getAllPosts($db)
 {
-    $query = 'SELECT post_id, post_date, post_title, post_img, post_text FROM posts';
+    $query = '
+    SELECT post_id, post_date, post_title, post_img, post_text 
+    FROM posts 
+    ORDER BY post_id';
     $stmt = $db->prepare($query);
     $stmt->execute();
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -75,8 +78,7 @@ function getSinglePost($db, $postId)
     , post_img
     , post_text
     FROM posts
-    WHERE post_id=:post_id
-    ORDER BY post_id';
+    WHERE post_id=:post_id';
     $stmt = $db->prepare($query);
     $stmt->execute(array(':post_id' => $postId));
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
