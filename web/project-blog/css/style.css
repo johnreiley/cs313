@@ -109,8 +109,8 @@ footer {
   background-color: var(--primary-bgd-color-dark);
   border-radius: 5px;
   overflow: hidden;
-  -webkit-animation: grow var(--std-animation-duration);
-          animation: grow var(--std-animation-duration);
+  -webkit-animation: grow var(--std-animation-duration) forwards;
+          animation: grow var(--std-animation-duration) forwards;
 }
 
 .post-preview a {
