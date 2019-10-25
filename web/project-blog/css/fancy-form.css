@@ -38,7 +38,7 @@
     transition: border 0.3s, box-shadow 0.3s;
     flex: 1;
     background-color: rgba(255, 255, 255, 0);
-    border: solid rgb(197, 197, 197) 3px;
+    border: solid rgb(156, 156, 156) 2px;
     padding: 7px;
     border-radius: 5px;
     font-size: 15px;
@@ -53,7 +53,7 @@
 
 .fancy-input input:focus,
 .fancy-input textarea:focus {
-    border: solid var(--accent-color) 3px;
+    border-color: var(--accent-color);
     box-shadow: 0px 0px 4px 0px var(--accent-color);
     outline: none;
 }
