@@ -101,11 +101,6 @@ header nav .sign-out-btn {
   right: 0;
 }
 
-header nav .home-btn {
-  position: absolute;
-  left: 0;
-}
-
 main {
   background-color: var(--primary-bgd-color);
   min-height: calc(100vh - var(--footer-height) - var(--nav-height));
