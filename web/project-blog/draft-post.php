@@ -35,17 +35,17 @@ if (isset($_POST['post-edit-id'])) {
         <div class="content-container">
             <form class="fancy-form" method="post" action="actions/save-post.php?id=<?php echo $id ?>">
                 <div class="fancy-input">
-                    <input type="text" id="title" name="title" required>
+                    <input type="text" id="title" name="title" value="<?php echo $title ?>" required>
                     <div class="fancy-input-txt">title</div>
                 </div>
                 <div class="break"></div>
                 <div class="fancy-input">
-                    <input type="text" id="img-url" name="img-url" required>
+                    <input type="text" id="img-url" name="img-url" value="<?php echo $img ?>" required>
                     <div class="fancy-input-txt">image url</div>
                 </div>
                 <div class="break"></div>
                 <div class="fancy-input">
-                    <textarea name="body-text" id="body-text" cols="30" rows="10"></textarea>
+                    <textarea name="body-text" id="body-text" value="<?php echo $text ?>" cols="30" rows="10"></textarea>
                     <div class="fancy-input-txt">body text</div>
                 </div>
                 <div class="break"></div>
