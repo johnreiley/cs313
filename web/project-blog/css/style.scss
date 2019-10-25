@@ -62,7 +62,7 @@ header {
         background-color: var(--nav-bgd-color);
         margin: 0;
         padding: 0;
-        height: auto;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: stretch;
@@ -87,6 +87,7 @@ header {
         .sign-out-btn {
             position: absolute;
             right: 0;
+            padding-bottom: 10px;
         }
 
         .home-btn {
