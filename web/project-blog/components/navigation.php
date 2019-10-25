@@ -1,7 +1,7 @@
 <header>
     <nav>
         <a href="index.php" class="nav-item home-btn"><i class="material-icons">home</i></a>
-        <a href="archive.php" class="nav-item">All Posts</a>
+        <a href="archive.php" class="nav-item">Archive</a>
         <a href="about.php" class="nav-item">About</a>
         <?php
         if ($isAdmin)
