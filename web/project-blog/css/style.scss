@@ -60,7 +60,8 @@ header {
         }
 
         .sign-out-btn {
-            float: right;
+            position: absolute;
+            right: 0;
         }
     }
 }

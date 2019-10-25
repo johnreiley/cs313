@@ -60,12 +60,14 @@ if (isset($_POST['post-edit-id'])) {
             </form>
 
             <div class="draft-preview">
-                <h2 class="page-title"></h2>
-                <div class="post-info"></div>
-                <div class="post-img">
-                    <img src="" alt="draft post image">
+                <div class="blog-post">
+                    <h2 class="page-title"></h2>
+                    <div class="post-info"></div>
+                    <div class="post-img">
+                        <img src="" alt="draft post image">
+                    </div>
+                    <div class="post-body"></div>
                 </div>
-                <div class="post-body"></div>
             </div>
         </div>
     </main>

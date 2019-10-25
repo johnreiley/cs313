@@ -71,7 +71,8 @@ header nav .nav-item:hover {
 }
 
 header nav .sign-out-btn {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 
 main {
