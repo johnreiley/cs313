@@ -70,6 +70,10 @@ header nav .nav-item:hover {
   background-color: var(--nav-bgd-color-dark) !important;
 }
 
+header nav .sign-out-btn {
+  float: right;
+}
+
 main {
   background-color: var(--primary-bgd-color);
   min-height: calc(100vh - var(--footer-height) - var(--nav-height));

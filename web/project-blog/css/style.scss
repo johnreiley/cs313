@@ -58,6 +58,10 @@ header {
             color: var(--accent-color) !important;
             background-color: var(--nav-bgd-color-dark) !important;
         }
+
+        .sign-out-btn {
+            float: right;
+        }
     }
 }
 
