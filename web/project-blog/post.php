@@ -30,13 +30,11 @@ $img = $post['post_img'];
             if ($isAdmin) {
                 echo "
                 <div class=\"action-buttons\">
-                    <form method=\"post\" action=\"draft-post.php\">
-                        <button class=\"btn normal-btn\" type=\"submit\" name=\"post-edit-id\" value=\"$id\">
+                    <form method=\"post\" action=\"\">
+                        <button formaction=\"draft-post.php\" class=\"btn normal-btn\" type=\"submit\" name=\"post-edit-id\" value=\"$id\">
                         <i class=\"material-icons\">edit</i>
                         </button>
-                    </form>
-                    <form method=\"post\" action=\"actions/delete-post.php\">
-                        <button class=\"btn warning-btn\" type=\"submit\" name=\"post-delete-id\" value=\"$id\">
+                        <button formaction=\"actions/delete-post.php\" class=\"btn warning-btn\" type=\"submit\" name=\"post-delete-id\" value=\"$id\">
                         <i class=\"material-icons\">delete</i>
                         </button>
                     </form>
