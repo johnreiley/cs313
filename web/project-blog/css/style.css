@@ -200,10 +200,14 @@ footer {
 }
 
 /************** EDITOR ******************/
-.body-text {
-  font-family: monospace;
+.draft-preview {
   border-top: solid 2px;
   padding-top: 40px;
+}
+
+#body-text {
+  font-family: monospace;
+  min-height: 500px;
 }
 
 /************** LOGIN ******************/
