@@ -164,35 +164,34 @@ function registerNewUser($db, $username, $password, $email, $firstName, $lastNam
 
 
 // post new blog post
-function postNewBlogPost($db, $userId, $postTitle, $postText)
+function postNewBlogPost($db, $userId, $postTitle, $postImg, $postText)
 {
-    $query = '
+    $query = "
     INSERT INTO posts
     ( post_id
-    , user_id
     , post_date
     , post_title
+    , post_img
     , post_text)
     VALUES
-    ( posts_s1.NEXTVAL
-    , user_id=:user_id
+    ( nextval('posts_s1')
     , transaction_timestamp()
-    , post_title=:post_title
-    , post_text=:post_text
-    )';
+    , :post_title
+    , :post_img
+    , :post_text
+    )";
     $stmt = $db->prepare($query);
-    $stmt->execute(array(
-        ':user_id' => $userId,
-        ':post_title' => $postTitle,
-        ':post_text' => $postText
-    ));
+    $stmt->bindValue(':post_title', $postTitle, PDO::PARAM_STR);
+    $stmt->bindValue(':post_img', $postImg, PDO::PARAM_STR);
+    $stmt->bindValue(':post_text', $postText, PDO::PARAM_STR);
+    $stmt->execute();
 }
 
 
 // post new comment
 function postNewComment($db, $postId, $name, $email, $commentText)
 {
-    $query = '
+    $query = "
     INSERT INTO comments
     ( comment_id
     , post_id
@@ -201,13 +200,13 @@ function postNewComment($db, $postId, $name, $email, $commentText)
     , comment_time
     , comment_text)
     VALUES
-    ( nextval(\'comments_s1\')
+    ( nextval('comments_s1')
     , :post_id
     , :name
     , :email
     , transaction_timestamp()
     , :comment_text
-    )';
+    )";
     $stmt = $db->prepare($query);
     $stmt->bindValue(':post_id', $postId, PDO::PARAM_INT);
     $stmt->bindValue(':name', $name, PDO::PARAM_STR);
@@ -218,8 +217,31 @@ function postNewComment($db, $postId, $name, $email, $commentText)
 
 
 // post new secondary comment
-function postNewSecondaryComment($db, $userId, $commentId, $commentText)
-{ }
+function postNewSecondLevelComment($db, $commentId, $name, $email, $commentText)
+{
+    $query = "
+    INSERT INTO comments
+    ( id
+    , comment_id
+    , comment_name
+    , comment_email
+    , comment_time
+    , comment_text)
+    VALUES
+    ( nextval('sl_comments_s1')
+    , :comment_id
+    , :name
+    , :email
+    , transaction_timestamp()
+    , :comment_text
+    )";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':comment_id', $commentId, PDO::PARAM_INT);
+    $stmt->bindValue(':name', $name, PDO::PARAM_STR);
+    $stmt->bindValue(':email', $email, PDO::PARAM_STR);
+    $stmt->bindValue(':comment_text', $commentText, PDO::PARAM_STR);
+    $stmt->execute();
+}
 
 
 
@@ -227,8 +249,22 @@ function postNewSecondaryComment($db, $userId, $commentId, $commentText)
 /****************UPDATE QUERIES**************/
 
 // edit blog post
-function updateBlogPost($db, $postTitle, $postText)
-{ }
+function updateBlogPost($db, $postId, $postTitle, $postImg, $postText)
+{ 
+    $query = "
+    UPDATE posts
+    SET post_title = :post_title
+    ,   post_img = :post_img
+    ,   post_text = :post_text
+    WHERE
+      post_id = :post_id";
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':post_id', $postId, PDO::PARAM_STR);
+    $stmt->bindValue(':post_title', $postTitle, PDO::PARAM_STR);
+    $stmt->bindValue(':post_img', $postImg, PDO::PARAM_STR);
+    $stmt->bindValue(':post_text', $postText, PDO::PARAM_STR);
+    $stmt->execute();
+}
 
 
 
