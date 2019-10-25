@@ -98,7 +98,7 @@ footer {
   background-color: var(--primary-bgd-color);
   text-align: center;
   height: var(--footer-height);
-  font-weight: 200;
+  font-size: small;
 }
 
 .post-preview {
