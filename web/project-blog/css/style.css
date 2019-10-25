@@ -109,33 +109,33 @@ footer {
   background-color: var(--primary-bgd-color-dark);
   border-radius: 5px;
   overflow: hidden;
-  -webkit-animation: shrinkFromBig var(--std-animation-duration);
-          animation: shrinkFromBig var(--std-animation-duration);
+  -webkit-animation: grow var(--std-animation-duration);
+          animation: grow var(--std-animation-duration);
 }
 
 .post-preview:nth-child(1) {
-  -webkit-animation-delay: 0.05556s;
-          animation-delay: 0.05556s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .post-preview:nth-child(2) {
-  -webkit-animation-delay: 0.11111s;
-          animation-delay: 0.11111s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .post-preview:nth-child(3) {
-  -webkit-animation-delay: 0.16667s;
-          animation-delay: 0.16667s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .post-preview:nth-child(4) {
-  -webkit-animation-delay: 0.22222s;
-          animation-delay: 0.22222s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .post-preview:nth-child(5) {
-  -webkit-animation-delay: 0.27778s;
-          animation-delay: 0.27778s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .post-preview a {
