@@ -110,7 +110,7 @@ footer {
     background-color: var(--primary-bgd-color-dark);
     border-radius: 5px;
     overflow: hidden;
-    animation: grow var(--std-animation-duration) ease-in-out;
+    animation: grow var(--std-animation-duration);
 
     // @for $i from 1 through 5 {
     //       &:nth-child(#{$i}) {
