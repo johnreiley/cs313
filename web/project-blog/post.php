@@ -31,10 +31,14 @@ $img = $post['post_img'];
                 echo "
                 <div class=\"action-buttons\">
                     <form method=\"post\" action=\"draft-post.php\">
-                        <button class=\"btn normal-btn\" type=\"submit\" name=\"post-edit-id\" value=\"$id\">Edit</button>
+                        <button class=\"btn normal-btn\" type=\"submit\" name=\"post-edit-id\" value=\"$id\">
+                        <i class=\"material-icons\">edit</i>
+                        </button>
                     </form>
-                    <form method=\"post\" action=\"delete-post.php\">
-                        <button class=\"btn warning-btn\" type=\"submit\" name=\"post-edit-id\" value=\"$id\">Edit</button>
+                    <form method=\"post\" action=\"actions/delete-post.php\">
+                        <button class=\"btn warning-btn\" type=\"submit\" name=\"post-delete-id\" value=\"$id\">
+                        <i class=\"material-icons\">delete</i>
+                        </button>
                     </form>
                 </div>
                 ";
