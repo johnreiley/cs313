@@ -112,11 +112,11 @@ footer {
     overflow: hidden;
     animation: grow var(--std-animation-duration);
 
-    @for $i from 1 through 5 {
-          &:nth-child(#{$i}) {
-            animation-delay: $i * (1s / 2);
-          }
-      }
+    // @for $i from 1 through 5 {
+    //       &:nth-child(#{$i}) {
+    //         animation-delay: $i * (1s / 2);
+    //       }
+    //   }
 
     a {
         background-color: inherit;
