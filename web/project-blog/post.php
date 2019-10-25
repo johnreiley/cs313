@@ -43,7 +43,7 @@ $img = $post['post_img'];
             </div>
             <div class="comment-box">
                 <form class="fancy-form" method="post" action="actions/submit-comment.php?id=<?php echo $id ?>">
-                    <h2>Comments</h2>
+                <h2>Comments</h2>
                     <div class="break"></div>
                     <div class="fancy-input">
                         <input type="text" id="name" name="name" required>
