@@ -108,6 +108,8 @@ footer {
   background-color: var(--primary-bgd-color-dark);
   border-radius: 5px;
   overflow: hidden;
+  -webkit-animation: grow 0.5s;
+          animation: grow 0.5s;
 }
 
 .post-preview a {
