@@ -13,7 +13,7 @@
     --nav-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.26);
     --item-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.26);
 
-    --std-animation-duration: 0.5s;
+    --std-animation-duration: 0.7s;
 
     --nav-height: 56px;
     --footer-height: 70px;
@@ -170,7 +170,7 @@ footer {
 /************** POST ******************/
 
 .blog-post {
-    animation: grow var(--std-animation-duration);
+    animation: fadein var(--std-animation-duration);
     // info
     .post-info {}
 
