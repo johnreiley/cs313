@@ -109,8 +109,33 @@ footer {
   background-color: var(--primary-bgd-color-dark);
   border-radius: 5px;
   overflow: hidden;
-  -webkit-animation: grow var(--std-animation-duration) forwards;
-          animation: grow var(--std-animation-duration) forwards;
+  -webkit-animation: grow var(--std-animation-duration);
+          animation: grow var(--std-animation-duration);
+}
+
+.post-preview:nth-child(1) {
+  -webkit-animation-delay: 0.05556s;
+          animation-delay: 0.05556s;
+}
+
+.post-preview:nth-child(2) {
+  -webkit-animation-delay: 0.11111s;
+          animation-delay: 0.11111s;
+}
+
+.post-preview:nth-child(3) {
+  -webkit-animation-delay: 0.16667s;
+          animation-delay: 0.16667s;
+}
+
+.post-preview:nth-child(4) {
+  -webkit-animation-delay: 0.22222s;
+          animation-delay: 0.22222s;
+}
+
+.post-preview:nth-child(5) {
+  -webkit-animation-delay: 0.27778s;
+          animation-delay: 0.27778s;
 }
 
 .post-preview a {
