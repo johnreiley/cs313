@@ -73,6 +73,10 @@ header nav .nav-item:hover {
 header nav .sign-out-btn {
   position: absolute;
   right: 0;
+  font-size: 0.8em !important;
+  height: 100%;
+  padding: 0 10px;
+  line-height: 55px;
 }
 
 main {
