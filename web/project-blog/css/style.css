@@ -168,8 +168,8 @@ footer {
 
 /************** POST ******************/
 .blog-post {
-  -webkit-animation: fadein var(--std-animation-duration);
-          animation: fadein var(--std-animation-duration);
+  -webkit-animation: grow var(--std-animation-duration);
+          animation: grow var(--std-animation-duration);
 }
 
 .blog-post .post-body {

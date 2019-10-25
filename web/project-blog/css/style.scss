@@ -170,7 +170,7 @@ footer {
 /************** POST ******************/
 
 .blog-post {
-    animation: fadein var(--std-animation-duration);
+    animation: grow var(--std-animation-duration);
     // info
     .post-info {}
 
