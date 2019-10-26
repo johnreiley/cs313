@@ -110,8 +110,8 @@ $img = $post['post_img'];
     document.querySelector('#post-delete-btn').onmousedown = () => {
         window.onbeforeunload = function() {
             return "Are you sure you want to delete this post?";
+            window.onbeforeunload = undefined;
         };
-        window.onbeforeunload = undefined;
     }
 
 </script>
