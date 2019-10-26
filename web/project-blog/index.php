@@ -39,7 +39,7 @@ $page = "Home";
                 $id = $post['post_id'];
                 $title = $post['post_title'];
                 $img = $post['post_img'];
-                $text = substr($post['post_text'], 0, 350);
+                $text = substr($post['post_text'], 0, 380);
                 echo "    
                 <div class=\"post-preview\">
                     <a href=\"post.php?id=$id\">
