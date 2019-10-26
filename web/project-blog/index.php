@@ -25,7 +25,7 @@ $page = "Home";
                 echo "
                 <div class=\"action-buttons\">
                     <form method=\"post\" action=\"\">
-                        <button formaction=\"draft-post.php\" class=\"btn normal-btn\" type=\"submit\" name=\"post-edit-id\">
+                        <button formaction=\"draft-post.php\" class=\"btn normal-btn\" type=\"submit\">
                         <i class=\"material-icons\">post_add</i>
                         </button>
                     </form>
