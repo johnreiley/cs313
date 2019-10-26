@@ -250,9 +250,6 @@ footer {
   position: fixed;
   right: 10px;
   top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -260,6 +257,11 @@ footer {
 
 .action-buttons form {
   display: inherit;
+}
+
+.action-buttons form button {
+  -webkit-box-shadow: var(--item-box-shadow);
+          box-shadow: var(--item-box-shadow);
 }
 
 .draft-preview {
