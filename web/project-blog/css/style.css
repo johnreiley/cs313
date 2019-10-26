@@ -27,7 +27,7 @@ body {
 
 .btn {
   display: block;
-  margin: 5px;
+  margin: 10px;
   font-family: inherit;
   font-size: 15px;
   padding: 5px 10px 5px 10px;
@@ -262,6 +262,7 @@ footer {
 .action-buttons form button {
   -webkit-box-shadow: var(--item-box-shadow);
           box-shadow: var(--item-box-shadow);
+  width: 24px;
 }
 
 .draft-preview {
