@@ -2,6 +2,7 @@
 require 'components/inject-requires.php';
 
 $id = $_GET['id'];
+echo $id;
 
 //$post = getSinglePost($db, $id);
 $title = "";//$post['post_title'];
