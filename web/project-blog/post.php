@@ -6,6 +6,7 @@ $id = $_GET['id'];
 $post = getSinglePost($db, $id);
 $title = $post['post_title'];
 $date = $post['post_date'];
+$date = date("F jS, Y", strtotime(explode(" ", $date)[0]));
 $img = $post['post_img'];
 ?>
 
