@@ -262,7 +262,7 @@ footer {
 .action-buttons form button {
   -webkit-box-shadow: var(--item-box-shadow);
           box-shadow: var(--item-box-shadow);
-  width: 24px;
+  width: 44px;
 }
 
 .draft-preview {
