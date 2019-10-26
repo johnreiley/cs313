@@ -77,15 +77,14 @@ $img = $post['post_img'];
                     $name = $comment['comment_name'];
                     $date = $comment['comment_time'];
 
+                    $date = date("F j, Y H:i", strtotime($date . " -6 hours"));
                     $dateArray = explode(" ", $date);
-                    // $stuff = date("F j, Y H:i", strtotime($date . " -6 hours"));
-                    $date = date("F j, Y", strtotime($dateArray[0]));
-                    $time = date("H:i", strtotime($dateArray[1] . " -6 hours"));
-                    if ($time[0] == 0) $time = substr($time, 1, 4);
+                    $time = $dateArray[3];
                     if ((int) substr($time, 0, 2) > 11) $time = "$time PM";
                     else $time = "$time AM";
                     if ((int) substr($time, 0, 2) > 12) $time = (int) substr($time, 0, 2) - 12 . substr($time, 2, 7);
-                    $date = "$date $time MDT";
+                    $dateArray[3] = $time;
+                    $date = implode(" ", $dateArray) . " MDT";
 
                     $text = $comment['comment_text'];
                     echo "
