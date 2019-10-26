@@ -57,7 +57,7 @@ function getAllPosts($db)
     $query = '
     SELECT post_id, post_date, post_title, post_img, post_text 
     FROM posts 
-    ORDER BY post_id';
+    ORDER BY post_id DESC';
     $stmt = $db->prepare($query);
     $stmt->execute();
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
