@@ -41,7 +41,8 @@ if (isset($_POST['post-edit-id'])) {
 
         <div class="content-container">
             <form class="fancy-form" method="post" action="actions/save-post.php<?php if ($id != 0) echo "?id=$id" ?>">
-            <h2>Draft Post</h2>
+                <h2>Draft Post</h2>
+                <div class="break"></div>
                 <div class="fancy-input">
                     <input type="text" id="title" name="title" value="<?php echo $title ?>" required>
                     <div class="fancy-input-txt">title</div>
