@@ -55,7 +55,7 @@ if (isset($_POST['post-edit-id'])) {
                 </div>
                 <div class="break"></div>
                 <div class="fancy-btn">
-                    <input type="submit" value="Save">
+                    <input type="submit" id="save-post-btn" value="Save">
                 </div>
             </form>
 
@@ -76,6 +76,9 @@ if (isset($_POST['post-edit-id'])) {
 
 </body>
 <script>
+document.querySelector('#save-post-btn').onclick = () => {
+    window.onbeforeunload = undefined;
+}
 window.onbeforeunload = function() {
    return "Are you sure you want to leave the page?";
 };
