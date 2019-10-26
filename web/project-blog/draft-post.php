@@ -41,6 +41,7 @@ if (isset($_POST['post-edit-id'])) {
 
         <div class="content-container">
             <form class="fancy-form" method="post" action="actions/save-post.php<?php if ($id != 0) echo "?id=$id" ?>">
+            <h2>Draft Post</h2>
                 <div class="fancy-input">
                     <input type="text" id="title" name="title" value="<?php echo $title ?>" required>
                     <div class="fancy-input-txt">title</div>
@@ -62,6 +63,7 @@ if (isset($_POST['post-edit-id'])) {
             </form>
 
             <div class="draft-preview">
+                <h2>Post Preview</h2>
                 <div class="blog-post">
                     <h2 class="page-title"></h2>
                     <div class="post-info"></div>
