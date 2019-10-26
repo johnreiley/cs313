@@ -107,7 +107,7 @@ $img = $post['post_img'];
 
 </body>
 <script>
-    document.querySelector('#post-delete-btn').onclick = () => {
+    document.querySelector('#post-delete-btn').onmousedown = () => {
         window.onbeforeunload = function() {
             return "Are you sure you want to delete this post?";
         };
