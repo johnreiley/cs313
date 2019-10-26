@@ -80,8 +80,11 @@ $img = $post['post_img'];
                     $text = $comment['comment_text'];
                     echo "
                     <div id=\"comment-$commentId\" class=\"comment\">
-                       <div class=\"comment-details\">$name - $date</div>
-                       <div class=\"comment-body\">$text</div>
+                        <div class=\"comment-delete-btn\">
+                            <i class=\"material-icons\">remove_circle_outline</i>
+                        </div>
+                        <div class=\"comment-details\">$name - $date</div>
+                        <div class=\"comment-body\">$text</div>
                     </div>
                     <div class=\"children\">";
                     foreach (getSecondLevelComments($db, $commentId) as $comment) {
