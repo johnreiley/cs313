@@ -75,5 +75,10 @@ if (isset($_POST['post-edit-id'])) {
     <?php require 'components/footer.php' ?>
 
 </body>
+<script>
+window.onbeforeunload = function() {
+   return "Are you sure you want to leave the page?";
+};
+</script>
 
 </html>
