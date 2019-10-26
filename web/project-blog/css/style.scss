@@ -277,6 +277,11 @@ footer {
 .draft-preview {
     border-top: solid 2px;
     padding-top: 40px;
+    
+    .blog-post {
+        border: solid 1px gray;
+        border-radius: 5px;
+    }
 }
 
 #body-text {
