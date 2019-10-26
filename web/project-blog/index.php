@@ -17,7 +17,6 @@ $page = "Home";
 <body>
     <?php require 'components/navigation.php' ?>
 
-
     <main>
         <div class="content-container">
         <?php

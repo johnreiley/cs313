@@ -37,6 +37,8 @@ if (isset($_POST['post-edit-id'])) {
 <body>
 
     <main>
+        <?php require 'components/navigation.php' ?>
+
         <div class="content-container">
             <form class="fancy-form" method="post" action="actions/save-post.php<?php if ($id != 0) echo "?id=$id" ?>">
                 <div class="fancy-input">
@@ -76,12 +78,12 @@ if (isset($_POST['post-edit-id'])) {
 
 </body>
 <script>
-document.querySelector('#save-post-btn').onclick = () => {
-    window.onbeforeunload = undefined;
-}
-window.onbeforeunload = function() {
-   return "Are you sure you want to leave the page?";
-};
+    document.querySelector('#save-post-btn').onclick = () => {
+        window.onbeforeunload = undefined;
+    }
+    window.onbeforeunload = function() {
+        return "Are you sure you want to leave the page?";
+    };
 </script>
 
 </html>
