@@ -35,7 +35,7 @@ $img = $post['post_img'];
                         <button formaction=\"draft-post.php\" class=\"btn normal-btn\" type=\"submit\" name=\"post-edit-id\" value=\"$id\">
                         <i class=\"material-icons\">edit</i>
                         </button>
-                        <button formaction=\"actions/delete-post.php\" class=\"btn warning-btn\" type=\"submit\" name=\"post-delete-id\" value=\"$id\">
+                        <button formaction=\"actions/delete-post.php\" class=\"btn warning-btn\" type=\"submit\" id=\"post-delete-btn\" name=\"post-delete-id\" value=\"$id\">
                         <i class=\"material-icons\">delete</i>
                         </button>
                     </form>
@@ -106,5 +106,15 @@ $img = $post['post_img'];
     <?php require 'components/footer.php' ?>
 
 </body>
+<script>
+    document.querySelector('#post-delete-btn').onclick = () => {
+        window.onbeforeunload = function() {
+            return "Are you sure you want to delete this post?";
+        };
+        window.onbeforeunload = undefined;
+    }
+
+</script>
+
 
 </html>
