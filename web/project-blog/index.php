@@ -32,7 +32,7 @@ $page = "Home";
                 ";
             }
             ?>
-            <h2 class="page-title">Blog</h2>
+            <!-- <h2 class="page-title">Blog</h2> -->
             <?php
             foreach (getAllPosts($db) as $post) {
                 $id = $post['post_id'];
