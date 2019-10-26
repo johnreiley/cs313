@@ -242,13 +242,22 @@ footer {
 
 .comment-box .comment .comment-delete-btn {
   float: right;
+  padding: 0px;
+  background-color: var(--primary-bgd-color);
+  border: none;
+  color: var(--primary-font-color-dark);
 }
 
-.comment-box .children {
+.comment-box .comment .comment-delete-btn a {
+  text-decoration: none;
+  color: var(--warning-color) !important;
+}
+
+.children {
   margin-left: 30px;
 }
 
-.comment-box .comment-details {
+.comment-details {
   text-align: left;
 }
 
