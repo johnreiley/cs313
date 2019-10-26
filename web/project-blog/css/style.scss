@@ -247,6 +247,10 @@ footer {
             background-color: var(--primary-bgd-color);
             border: none;
             color: var(--primary-font-color-dark);
+
+            a {
+                text-decoration: none;
+            }
         }
     }
 }

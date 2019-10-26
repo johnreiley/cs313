@@ -81,7 +81,9 @@ $img = $post['post_img'];
                     echo "
                     <div id=\"comment-$commentId\" class=\"comment\">
                         <div class=\"comment-delete-btn\">
-                            <i class=\"material-icons\">remove_circle_outline</i>
+                            <a href=\"actions/delete-comment.php?comment-id=$commentId&post-id=$id\">
+                                <i class=\"material-icons\">remove_circle_outline</i>
+                            </a>
                         </div>
                         <div class=\"comment-details\">$name - $date</div>
                         <div class=\"comment-body\">$text</div>
