@@ -248,6 +248,7 @@ footer {
 .action-buttons {
   position: fixed;
   right: 10px;
+  top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
