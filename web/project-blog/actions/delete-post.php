@@ -1,5 +1,5 @@
 <?php
-require '../components/inject-requires.php';
+require '../components/inject-requires-actions.php';
 
 $id = $_POST['post-delete-id'];
 
