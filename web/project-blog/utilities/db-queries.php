@@ -303,3 +303,26 @@ function deleteSecondaryComment($db, $commentId)
     $stmt = $db->prepare($query);
     $stmt->execute(array(':comment_id' => $commentId));
 }
+
+
+
+/*********** RANDOM FUNCTIONS ***************/
+
+function formatDatabaseTimestampFull($timestamp) {
+    $date = date("F j, Y H:i", strtotime($timestamp . " -6 hours"));
+    $dateArray = explode(" ", $date);
+    $time = $dateArray[3];
+    
+    if ((int) substr($time, 0, 2) > 11) $time = "$time PM";
+    else $time = "$time AM";
+    if ((int) substr($time, 0, 2) > 12) $time = (int) substr($time, 0, 2) - 12 . substr($time, 2, 7);
+    $dateArray[3] = "• $time";
+    
+    return implode(" ", $dateArray) . " MDT";
+}
+
+function formatDatabaseTimestampDate($timestamp) {
+    $date = date("F j, Y H:i", strtotime($timestamp . " -6 hours"));
+    $dateArray = array_slice(explode(" ", $date), 0, 3);
+    return implode(" ", $dateArray);
+}

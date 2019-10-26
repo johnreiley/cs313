@@ -6,7 +6,7 @@ $id = $_GET['id'];
 $post = getSinglePost($db, $id);
 $title = $post['post_title'];
 $date = $post['post_date'];
-$date = date("F j, Y", strtotime(explode(" ", $date)[0]));
+$date = formatDatabaseTimestampDate($date);
 $img = $post['post_img'];
 ?>
 
@@ -76,16 +76,7 @@ $img = $post['post_img'];
                     $commentId = $comment['comment_id'];
                     $name = $comment['comment_name'];
                     $date = $comment['comment_time'];
-
-                    $date = date("F j, Y H:i", strtotime($date . " -6 hours"));
-                    $dateArray = explode(" ", $date);
-                    $time = $dateArray[3];
-                    if ((int) substr($time, 0, 2) > 11) $time = "$time PM";
-                    else $time = "$time AM";
-                    if ((int) substr($time, 0, 2) > 12) $time = (int) substr($time, 0, 2) - 12 . substr($time, 2, 7);
-                    $dateArray[3] = "• $time";
-                    $date = implode(" ", $dateArray) . " MDT";
-
+                    $date = formatDatabaseTimestampFull($date);
                     $text = $comment['comment_text'];
                     echo "
                     <div id=\"comment-$commentId\" class=\"comment\">
