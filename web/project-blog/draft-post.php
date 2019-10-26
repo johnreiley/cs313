@@ -38,7 +38,7 @@ if (isset($_POST['post-edit-id'])) {
 
     <main>
         <div class="content-container">
-            <form class="fancy-form" method="post" action="actions/save-post.php?id=<?php echo $id ?>">
+            <form class="fancy-form" method="post" action="actions/save-post.php<?php if ($id != 0) echo "?id=$id" ?>">
                 <div class="fancy-input">
                     <input type="text" id="title" name="title" value="<?php echo $title ?>" required>
                     <div class="fancy-input-txt">title</div>

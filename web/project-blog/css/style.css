@@ -263,6 +263,7 @@ footer {
   -webkit-box-shadow: var(--item-box-shadow);
           box-shadow: var(--item-box-shadow);
   width: 44px;
+  height: 38px;
 }
 
 .draft-preview {
