@@ -20,10 +20,18 @@ $page = "Home";
 
     <main>
         <div class="content-container">
-            <?php
+        <?php
             if ($isAdmin) {
-
-            } 
+                echo "
+                <div class=\"action-buttons\">
+                    <form method=\"post\" action=\"\">
+                        <button formaction=\"draft-post.php\" class=\"btn normal-btn\" type=\"submit\" name=\"post-edit-id\">
+                        <i class=\"material-icons\">post_add</i>
+                        </button>
+                    </form>
+                </div>
+                ";
+            }
             ?>
             <h2 class="page-title">Blog</h2>
             <?php
