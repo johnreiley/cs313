@@ -240,6 +240,10 @@ footer {
   padding: 20px 10px 20px 10px;
 }
 
+.comment-box .comment .comment-delete-btn {
+  float: right;
+}
+
 .comment-box .children {
   margin-left: 30px;
 }

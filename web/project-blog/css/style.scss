@@ -211,6 +211,7 @@ footer {
     .post-info {
         padding: 10px;
     }
+
     // body
     .post-body {
         padding: 20px 0 30px 0;
@@ -241,21 +242,26 @@ footer {
         padding: 20px 10px 20px 10px;
 
         .comment-delete-btn {
-            
+            float: right;
+            padding: 0px;
+            background-color: var(--primary-bgd-color);
+            border: none;
+            color: var(--primary-font-color-dark);
         }
     }
+}
 
-    .children {
-        margin-left: 30px;
-    }
+.children {
+    margin-left: 30px;
+}
 
-    .secondary-comment {}
+.secondary-comment {}
 
-    .comment-details {
-        text-align: left;
-    }
+.comment-details {
+    text-align: left;
+}
 
-    .comment-body {}
+.comment-body {}
 
 }
 
@@ -281,7 +287,7 @@ footer {
 .draft-preview {
     border-top: solid 2px;
     padding-top: 40px;
-    
+
     .blog-post {
         border: solid 1px gray;
         border-radius: 5px;
