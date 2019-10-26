@@ -83,7 +83,7 @@ $img = $post['post_img'];
                     if ((int) substr($time, 0, 2) > 11) $time = "$time PM";
                     else $time = "$time AM";
                     if ((int) substr($time, 0, 2) > 12) $time = (int) substr($time, 0, 2) - 12 . substr($time, 2, 7);
-                    $dateArray[3] = $time;
+                    $dateArray[3] = "- $time";
                     $date = implode(" ", $dateArray) . " MDT";
 
                     $text = $comment['comment_text'];
