@@ -5,8 +5,8 @@ $id = $_GET['id'];
 
 $post = getSinglePost($db, $id);
 $title = $post['post_title'];
-$date = "";//$post['post_date'];
-$img = "";//$post['post_img'];
+$date = $post['post_date'];
+$img = $post['post_img'];
 ?>
 
 <!DOCTYPE html>
