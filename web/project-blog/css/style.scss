@@ -256,6 +256,7 @@ footer {
 
 /************** EDITOR ******************/
 .action-buttons {
+    z-index: 10;
     position: fixed;
     right: 10px;
     top: 70px;
