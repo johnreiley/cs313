@@ -76,6 +76,7 @@ $img = $post['post_img'];
                     $commentId = $comment['comment_id'];
                     $name = $comment['comment_name'];
                     $date = $comment['comment_time'];
+                    $date = date("F j, Y", strtotime(explode(" ", $date)[0]));
                     $text = $comment['comment_text'];
                     echo "
                     <div id=\"comment-$commentId\" class=\"comment\">
