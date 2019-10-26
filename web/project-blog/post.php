@@ -78,13 +78,15 @@ $img = $post['post_img'];
                     $date = $comment['comment_time'];
                     $date = formatDatabaseTimestampFull($date);
                     $text = $comment['comment_text'];
-                    echo "
-                    <div id=\"comment-$commentId\" class=\"comment\">
-                        <div class=\"comment-delete-btn\">
+                    echo "<div id=\"comment-$commentId\" class=\"comment\">";
+                    if ($isAdmin) {
+                    echo "<div class=\"comment-delete-btn\">
                             <a href=\"actions/delete-comment.php?comment-id=$commentId&post-id=$id\">
                                 <i class=\"material-icons\">remove_circle_outline</i>
                             </a>
-                        </div>
+                        </div>";
+                    }
+                    echo "
                         <div class=\"comment-details\">$name - $date</div>
                         <div class=\"comment-body\">$text</div>
                     </div>
@@ -95,8 +97,15 @@ $img = $post['post_img'];
                         $date = $comment['comment_time'];
                         $date = formatDatabaseTimestampFull($date);
                         $text = $comment['comment_text'];
+                        echo "<div id=\"comment-$commentId\" class=\"comment\">";
+                        if ($isAdmin) {
+                            echo "<div class=\"comment-delete-btn\">
+                                    <a href=\"actions/delete-comment.php?comment-id=$commentId&post-id=$id\">
+                                        <i class=\"material-icons\">remove_circle_outline</i>
+                                    </a>
+                                </div>";
+                            }
                         echo "
-                        <div id=\"comment-$commentId\" class=\"comment\">
                             <div class=\"comment-details\">$name - $date</div>
                             <div class=\"comment-body\">$text</div>
                         </div>";
