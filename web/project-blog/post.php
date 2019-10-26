@@ -88,6 +88,7 @@ $img = $post['post_img'];
                         $commentId = $comment['id'];
                         $name = $comment['comment_name'];
                         $date = $comment['comment_time'];
+                        $date = formatDatabaseTimestampFull($date);
                         $text = $comment['comment_text'];
                         echo "
                         <div id=\"comment-$commentId\" class=\"comment\">
