@@ -208,7 +208,8 @@ footer {
     animation: fadein var(--std-animation-duration);
 
     // info
-    .post-info {}
+    .post-info {
+        padding: 10px;
 
     // body
     .post-body {
