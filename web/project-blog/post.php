@@ -51,7 +51,7 @@ $img = $post['post_img'];
                 <div class="post-body"><?php echo $post['post_text'] ?></div>
             </div>
             <div class="comment-box">
-                <form class="fancy-form" method="post" action="actions/submit-comment.php?id=<?php echo $id ?>">
+                <form class="fancy-form" method="post" action="actions/submit-comment.php?id=<?php echo $id ?>&type=1">
                     <h2>Comments</h2>
                     <div class="break"></div>
                     <div class="fancy-input">
@@ -106,9 +106,9 @@ $img = $post['post_img'];
                         echo "<div id=\"comment-$commentId\" class=\"comment\">";
                         if ($isAdmin) {
                             echo "<div class=\"comment-delete-btn\">
-                                    <a href=\"actions/delete-comment.php?comment-id=$commentId&post-id=$id\">
+                                    <button href=\"actions/delete-comment.php?comment-id=$commentId&post-id=$id\">
                                         <i class=\"material-icons\">remove_circle_outline</i>
-                                    </a>
+                                    </button>
                                 </div>";
                             }
                         echo "
