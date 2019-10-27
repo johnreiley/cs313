@@ -1,7 +1,7 @@
 function openCommentBlock(commentId) {
     let comment = document.querySelector(`#comment-${commentId}`);
-    let name = document.querySelector(`#comment-${commentId} .comment-details`).innerText;
-    console.log(name);
+    let name = document.querySelector(`#comment-${commentId} .comment-details`).innerText.split(" -")[0];
+    
 }
 
 
