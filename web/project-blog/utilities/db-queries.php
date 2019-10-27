@@ -222,7 +222,7 @@ function postNewComment($db, $postId, $name, $email, $commentText)
 function postNewSecondLevelComment($db, $commentId, $name, $email, $commentText)
 {
     $query = "
-    INSERT INTO comments
+    INSERT INTO second_level_comments
     ( id
     , comment_id
     , comment_name
