@@ -9,7 +9,7 @@ function openCommentBlock(commentId) {
     let name = document.querySelector(`#comment-${commentId} .comment-details`).innerText.split(" -")[0];
 
     let commentBlock = `
-        <form class="fancy-form" method="post" action="actions/submit-comment.php?id=${commentId}&type=2">
+        <form class="fancy-form" method="post" action="actions/submit-comment.php?id=${}&comment-id=${commentId}">
             <div class="reply-prompt">Reply to ${name}'s comment</div>
             <div class="break"></div>
             <div class="fancy-input">

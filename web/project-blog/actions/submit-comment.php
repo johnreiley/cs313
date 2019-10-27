@@ -1,8 +1,9 @@
 <?php
 require '../components/inject-requires-actions.php';
 
-$id = $_GET['id'];
-$commentType = $_GET['type'];
+$id = $_SESSION['post-id'];
+// $id = $_GET['id'];
+// $commentType = $_GET['type'];
 $name = htmlspecialchars($_POST['name']);
 $email = htmlspecialchars($_POST['email']);
 $comment = htmlspecialchars($_POST['comment']);

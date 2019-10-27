@@ -2,6 +2,7 @@
 require 'components/inject-requires.php';
 
 $id = $_GET['id'];
+$_SESSION['post-id'] = $id;
 
 $post = getSinglePost($db, $id);
 $title = $post['post_title'];
@@ -51,7 +52,7 @@ $img = $post['post_img'];
                 <div class="post-body"><?php echo $post['post_text'] ?></div>
             </div>
             <div class="comment-box">
-                <form class="fancy-form" method="post" action="actions/submit-comment.php?id=<?php echo $id ?>&type=1">
+                <form class="fancy-form" method="post" action="actions/submit-comment.php?id=<?php echo $id ?>">
                     <h2>Comments</h2>
                     <div class="break"></div>
                     <div class="fancy-input">
