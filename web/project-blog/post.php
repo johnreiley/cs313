@@ -18,7 +18,7 @@ $img = $post['post_img'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php require 'components/inject-head.php' ?>
-    <script src="js/reply-handler.js" defer></script>
+    <script src="js/reply-handler.js"></script>
     <title>Blog - <?php echo $title ?></title>
 </head>
 
@@ -91,7 +91,7 @@ $img = $post['post_img'];
                         <div class=\"comment-details\">$name - $date</div>
                         <div class=\"comment-body\">$text</div>
                         <div class=\"comment-reply-btn\">
-                            <button href=\"#\">
+                            <button onclick=\"openCommentBlock($commentId)\">
                                 <i class=\"material-icons\">reply</i>
                             </button>
                         </div>
