@@ -259,6 +259,11 @@ footer {
   color: var(--primary-font-color);
 }
 
+.comment-box .comment .reply-prompt {
+  padding-left: 10px;
+  font-style: italic;
+}
+
 .comment-box .comment #cancel-reply-btn {
   background-color: var(--warning-color);
 }

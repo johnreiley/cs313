@@ -10,7 +10,7 @@ function openCommentBlock(commentId) {
 
     let commentBlock = `
         <form class="fancy-form" method="post" action="actions/submit-comment.php?id=<?php echo $id ?>&type=2">
-            <div>Reply to ${name}'s comment</div>
+            <div class="reply-prompt">Reply to ${name}'s comment</div>
             <div class="break"></div>
             <div class="fancy-input">
                 <input type="text" id="name" name="name" required>

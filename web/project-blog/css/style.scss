@@ -260,6 +260,11 @@ footer {
             color: var(--primary-font-color);
         }
 
+        .reply-prompt {
+            padding-left: 10px;
+            font-style: italic;
+        }
+
         #cancel-reply-btn {
             background-color: var(--warning-color);
         }
