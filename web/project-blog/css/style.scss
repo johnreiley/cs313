@@ -259,6 +259,10 @@ footer {
             border: none;
             color: var(--primary-font-color);
         }
+
+        #cancel-reply-btn {
+            background-color: var(--warning-color);
+        }
     }
 }
 

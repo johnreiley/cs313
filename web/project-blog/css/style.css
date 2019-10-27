@@ -259,6 +259,10 @@ footer {
   color: var(--primary-font-color);
 }
 
+.comment-box .comment #cancel-reply-btn {
+  background-color: var(--warning-color);
+}
+
 .children {
   margin-left: 30px;
 }
