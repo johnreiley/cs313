@@ -11,7 +11,7 @@ if ($commentType == 1) {
     postNewComment($db, $id, $name, $email, $comment);
 }
 else if ($commentType == 2) {
-    postNewSecondLevelComment($db, $id, $name, $email, $comment);
+    //postNewSecondLevelComment($db, $id, $name, $email, $comment);
 }
 
 header("Location: ../post.php?id=$id");

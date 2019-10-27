@@ -1,4 +1,4 @@
-function intializeInputs() {
+function intializeFancyForm() {
     let inputs = Array.from(document.querySelectorAll('.fancy-input'));
     inputs.forEach((input) => {
         if (input.children[0].value != '') {
@@ -16,4 +16,4 @@ function intializeInputs() {
     });
 }
 
-intializeInputs();
+intializeFancyForm();

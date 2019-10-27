@@ -36,7 +36,7 @@ function openCommentBlock(commentId) {
     popupForm.innerHTML = commentBlock;
 
     comment.appendChild(popupForm);
-    intializeInputs();
+    intializeFancyForm();
     popupFormIsOpen = true;
 
     document.querySelector('#cancel-reply-btn').onclick = () => {
