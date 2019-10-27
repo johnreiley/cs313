@@ -92,6 +92,10 @@
     font-weight: 400;
 }
 
+.fancy-btn {
+    display: flex;
+}
+
 .fancy-btn input {
     display: block;
     margin: 20px;

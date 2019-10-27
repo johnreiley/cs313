@@ -1,9 +1,8 @@
-let popupFormIsOpen = false;
+var popupFormIsOpen = false;
 
 function openCommentBlock(commentId) {
     if (popupFormIsOpen) {
-        let popupForm = document.querySelector('#popup-form');
-        popupForm.parentNode.removeChild(popupForm);
+        closePopupForm();
     }
 
     let comment = document.querySelector(`#comment-${commentId}`);
@@ -37,4 +36,14 @@ function openCommentBlock(commentId) {
     popupForm.innerHTML = commentBlock;
 
     comment.appendChild(popupForm);
+    popupFormIsOpen = true;
+
+    document.querySelector('#cancel-reply-btn').onclick = () => {
+        closePopupForm();
+    }
+}
+
+function closePopupForm() {
+    let popupForm = document.querySelector('#popup-form');
+    popupForm.parentNode.removeChild(popupForm);
 }
