@@ -52,7 +52,7 @@ $img = $post['post_img'];
                 <div class="post-body"><?php echo $post['post_text'] ?></div>
             </div>
             <div class="comment-box">
-                <form class="fancy-form" method="post" action="actions/submit-comment.php?id=<?php echo $id ?>">
+                <form class="fancy-form" method="post" action="actions/submit-comment.php?">
                     <h2>Comments</h2>
                     <div class="break"></div>
                     <div class="fancy-input">

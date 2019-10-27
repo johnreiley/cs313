@@ -10,7 +10,7 @@ $comment = htmlspecialchars($_POST['comment']);
 
 if (isset($_GET['comment-id'])) {
     $commentId = $_GET['comment-id'];
-    //postNewSecondLevelComment($db, $commentId, $name, $email, $comment);
+    postNewSecondLevelComment($db, $commentId, $name, $email, $comment);
 }
 else {
     postNewComment($db, $id, $name, $email, $comment);
