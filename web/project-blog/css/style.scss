@@ -254,9 +254,7 @@ footer {
             }
         }
 
-        .comment-reply-btn {
-            float: left;
-            padding: 5px;
+        .comment-reply-btn button{
             background-color: var(--primary-bgd-color);
             border: none;
             color: var(--primary-font-color);

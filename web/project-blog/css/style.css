@@ -253,9 +253,7 @@ footer {
   color: var(--warning-color) !important;
 }
 
-.comment-box .comment .comment-reply-btn {
-  float: left;
-  padding: 5px;
+.comment-box .comment .comment-reply-btn button {
   background-color: var(--primary-bgd-color);
   border: none;
   color: var(--primary-font-color);
