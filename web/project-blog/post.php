@@ -91,9 +91,9 @@ $img = $post['post_img'];
                         <div class=\"comment-details\">$name - $date</div>
                         <div class=\"comment-body\">$text</div>
                         <div class=\"comment-reply-btn\">
-                            <a href=\"#\">
+                            <button href=\"#\">
                                 <i class=\"material-icons\">reply</i>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class=\"children\">";
@@ -106,9 +106,9 @@ $img = $post['post_img'];
                         echo "<div id=\"comment-$commentId\" class=\"comment\">";
                         if ($isAdmin) {
                             echo "<div class=\"comment-delete-btn\">
-                                    <button href=\"actions/delete-comment.php?comment-id=$commentId&post-id=$id\">
+                                    <a href=\"actions/delete-comment.php?comment-id=$commentId&post-id=$id\">
                                         <i class=\"material-icons\">remove_circle_outline</i>
-                                    </button>
+                                    </a>
                                 </div>";
                             }
                         echo "
