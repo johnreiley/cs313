@@ -46,4 +46,5 @@ function openCommentBlock(commentId) {
 function closePopupForm() {
     let popupForm = document.querySelector('#popup-form');
     popupForm.parentNode.removeChild(popupForm);
+    popupFormIsOpen = false;
 }
