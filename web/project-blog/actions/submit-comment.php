@@ -7,12 +7,12 @@ $name = htmlspecialchars($_POST['name']);
 $email = htmlspecialchars($_POST['email']);
 $comment = htmlspecialchars($_POST['comment']);
 
-if ($commentType == 1) {
-    postNewComment($db, $id, $name, $email, $comment);
+if (isset($_GET['comment-id'])) {
+    $commentId = $_GET['comment-id'];
+    //postNewSecondLevelComment($db, $commentId, $name, $email, $comment);
 }
-else if ($commentType == 2) {
-    //postNewSecondLevelComment($db, $id, $name, $email, $comment);
+else {
+    postNewComment($db, $id, $name, $email, $comment);
 }
 
 header("Location: ../post.php?id=$id");
-?>
