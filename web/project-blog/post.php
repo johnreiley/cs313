@@ -18,6 +18,7 @@ $img = $post['post_img'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php require 'components/inject-head.php' ?>
+    <script src="js/reply-handler.js" defer></script>
     <title>Blog - <?php echo $title ?></title>
 </head>
 
@@ -89,6 +90,11 @@ $img = $post['post_img'];
                     echo "
                         <div class=\"comment-details\">$name - $date</div>
                         <div class=\"comment-body\">$text</div>
+                        <div class=\"comment-reply-btn\">
+                            <a href=\"#\">
+                                <i class=\"material-icons\">reply</i>
+                            </a>
+                        </div>
                     </div>
                     <div class=\"children\">";
                     foreach (getSecondLevelComments($db, $commentId) as $comment) {

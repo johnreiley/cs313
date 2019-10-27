@@ -253,6 +253,12 @@ footer {
                 color: var(--warning-color) !important;
             }
         }
+
+        .comment-reply-btn {
+            float: left;
+            padding: 5px;
+            color: var(--primary-font-color);
+        }
     }
 }
 
