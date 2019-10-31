@@ -64,7 +64,7 @@ if (isset($_POST['post-edit-id'])) {
                 </div>
 
                 <div class="break"></div>
-                <div id="editor"></div>
+                <textarea id="editor"></textarea>
 
                 <div class="break"></div>
                 <div class="fancy-btn">
