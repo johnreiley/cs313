@@ -64,7 +64,9 @@ if (isset($_POST['post-edit-id'])) {
                 </div>
 
                 <div class="break"></div>
-                <textarea id="editor"></textarea>
+                <div class="fancy-input">
+                    <div id="editor"></div>
+                </div>
 
                 <div class="break"></div>
                 <div class="fancy-btn">
@@ -103,7 +105,7 @@ if (isset($_POST['post-edit-id'])) {
     }
     window.onbeforeunload = function() {
         return "Are you sure you want to leave the page?";
-    }; 
+    };
 </script>
 
 </html>
