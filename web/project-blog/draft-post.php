@@ -92,17 +92,17 @@ if (isset($_POST['post-edit-id'])) {
 <!-- Main Quill library -->
 <script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
 <script>
+    // intialize quill
+    var quill = new Quill('#editor', {
+        theme: 'snow'
+    });
+
     document.querySelector('#save-post-btn').onclick = () => {
         window.onbeforeunload = undefined;
     }
     window.onbeforeunload = function() {
         return "Are you sure you want to leave the page?";
-    }; <
-
-    // intialize quill
-    var quill = new Quill('#editor', {
-        theme: 'snow'
-    });
+    }; 
 </script>
 
 </html>
