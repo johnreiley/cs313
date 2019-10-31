@@ -63,6 +63,7 @@ if (isset($_POST['post-edit-id'])) {
                     <div class="fancy-input-txt">body text</div>
                 </div>
 
+                <div class="break"></div>
                 <div id="editor"></div>
 
                 <div class="break"></div>
