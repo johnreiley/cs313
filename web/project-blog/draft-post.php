@@ -66,12 +66,8 @@ if (isset($_POST['post-edit-id'])) {
                     <textarea name="body-text" id="body-text" cols="30" rows="10"><?php echo $text ?></textarea>
                     <div class="fancy-input-txt">body text</div>
                 </div>
-                
-                <script>
-                    var quill = new Quill('#editor', {
-                        theme: 'snow'
-                    });
-                </script>
+
+                <div id="editor"></div>
 
                 <div class="break"></div>
                 <div class="fancy-btn">
@@ -102,7 +98,12 @@ if (isset($_POST['post-edit-id'])) {
     }
     window.onbeforeunload = function() {
         return "Are you sure you want to leave the page?";
-    };
+    }; <
+
+    // intialize quill
+    var quill = new Quill('#editor', {
+        theme: 'snow'
+    });
 </script>
 
 </html>
