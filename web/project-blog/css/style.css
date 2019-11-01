@@ -310,6 +310,10 @@ footer {
   margin-top: 10px;
 }
 
+#body-text {
+  display: none;
+}
+
 /************** LOGIN ******************/
 .login-container {
   padding: 0 !important;
