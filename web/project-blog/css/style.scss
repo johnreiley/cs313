@@ -306,11 +306,11 @@ footer {
     color: var(--primary-font-color);
     background-color: var(--primary-bgd-color);
     
-    .ql-stroke.ql-fill {
+    .ql-stroke, .ql-fill {
         fill: var(--primary-font-color);
         stroke: var(--primary-font-color);
     }
-    .ql-stroke:hover.ql-fill:hover {
+    .ql-stroke:hover, .ql-fill:hover {
         fill: var(--accent-color);
         stroke: var(--accent-color);
     }
@@ -321,7 +321,7 @@ footer {
     border-top-left-radius: 5px;    
     .ql-picker {
         color: var(--primary-font-color);
-        .ql-picker-label:hover.ql-picker-option:hover {
+        .ql-picker-label:hover, .ql-picker-option:hover {
             color: var(--accent-color);
         }
         .ql-picker-options {
