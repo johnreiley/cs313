@@ -300,6 +300,7 @@ footer {
 
 .ql-snow {
     display: block;
+    border-width: 2px;
     color: var(--primary-font-color);
     background-color: var(--primary-bgd-color-dark);
 
@@ -310,6 +311,16 @@ footer {
     .ql-stroke {
         stroke: var(--primary-font-color);
     }
+}
+
+.ql-toolbar {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;    
+}
+
+.ql-containter {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 
