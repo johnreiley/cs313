@@ -301,6 +301,7 @@ footer {
 .draft-preview {
   border-top: solid 2px;
   padding-top: 40px;
+  margin-top: 40px;
 }
 
 .draft-preview .blog-post {
