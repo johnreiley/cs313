@@ -422,7 +422,7 @@ footer {
 
 .ql-container .ql-editor {
   font-family: var(--font-apple);
-  font-size: inherit;
+  font-size: 15px;
 }
 
 .ql-container a {
