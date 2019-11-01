@@ -309,9 +309,15 @@ footer {
     .ql-fill {
         fill: var(--primary-font-color);
     }
+    .ql-fill:hover {
+        fill: var(--accent-color);
+    }
 
     .ql-stroke {
         stroke: var(--primary-font-color);
+    }
+    .ql-stroke:hover {
+        stroke: var(--accent-color);
     }
 }
 
@@ -320,7 +326,7 @@ footer {
     border-top-left-radius: 5px;    
     .ql-picker {
         color: var(--primary-font-color);
-        .ql-picker-label:hover {
+        .ql-picker-label:hover.ql-picker-option:hover {
             color: var(--accent-color);
         }
         .ql-picker-options {
