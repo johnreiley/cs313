@@ -299,6 +299,7 @@ footer {
 }
 
 .ql-snow {
+  display: block;
   color: var(--primary-font-color);
   background-color: var(--primary-bgd-color-dark);
 }
