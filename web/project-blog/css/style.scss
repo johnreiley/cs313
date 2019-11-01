@@ -306,14 +306,14 @@ footer {
     color: var(--primary-font-color);
     background-color: var(--primary-bgd-color);
     
-    .ql-stroke, .ql-fill {
+    .ql-fill {
         fill: var(--primary-font-color);
+    }
+    
+    .ql-stroke {
         stroke: var(--primary-font-color);
     }
-    .ql-stroke:hover, .ql-fill:hover {
-        fill: var(--accent-color);
-        stroke: var(--accent-color);
-    }
+
 }
 
 .ql-toolbar {
@@ -334,6 +334,10 @@ footer {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     height: 500px;
+
+    a {
+        color: var(--accent-color);
+    }
 }
 
 
