@@ -323,6 +323,7 @@ footer {
 .ql-container {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  height: 500px;
 }
 
 .draft-preview {
@@ -335,11 +336,6 @@ footer {
   border-radius: 5px;
   padding: 5px;
   margin-top: 10px;
-}
-
-#body-text {
-  font-family: monospace;
-  min-height: 500px;
 }
 
 /************** LOGIN ******************/
