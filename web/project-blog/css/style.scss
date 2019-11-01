@@ -318,6 +318,15 @@ footer {
 .ql-toolbar {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;    
+    .ql-picker {
+        color: var(--primary-font-color);
+        .ql-picker-label:hover {
+            color: var(--accent-color);
+        }
+        .ql-picker-options {
+            background-color: var(--primary-bgd-color);
+        }
+    }
 }
 
 .ql-container {
