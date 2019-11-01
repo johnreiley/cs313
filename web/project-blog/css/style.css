@@ -307,19 +307,13 @@ footer {
   background-color: var(--primary-bgd-color);
 }
 
-.ql-snow .ql-fill {
+.ql-snow .ql-stroke.ql-fill {
   fill: var(--primary-font-color);
-}
-
-.ql-snow .ql-fill:hover {
-  fill: var(--accent-color);
-}
-
-.ql-snow .ql-stroke {
   stroke: var(--primary-font-color);
 }
 
-.ql-snow .ql-stroke:hover {
+.ql-snow .ql-stroke:hover.ql-fill:hover {
+  fill: var(--accent-color);
   stroke: var(--accent-color);
 }
 

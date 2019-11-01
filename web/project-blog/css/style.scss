@@ -305,18 +305,13 @@ footer {
     margin: 0 10px 0 10px;
     color: var(--primary-font-color);
     background-color: var(--primary-bgd-color);
-
-    .ql-fill {
+    
+    .ql-stroke.ql-fill {
         fill: var(--primary-font-color);
-    }
-    .ql-fill:hover {
-        fill: var(--accent-color);
-    }
-
-    .ql-stroke {
         stroke: var(--primary-font-color);
     }
-    .ql-stroke:hover {
+    .ql-stroke:hover.ql-fill:hover {
+        fill: var(--accent-color);
         stroke: var(--accent-color);
     }
 }
