@@ -288,13 +288,12 @@ footer {
 
     form {
         display: inherit;
+    }
 
-        button {
-            box-shadow: var(--item-box-shadow);
-            width: 44px;
-            height: 38px;
-        }
-
+    button, input {
+        box-shadow: var(--item-box-shadow);
+        width: 44px;
+        height: 38px;
     }
 }
 
@@ -389,11 +388,11 @@ footer {
     margin: 0 10px 0 10px;
     color: var(--primary-font-color);
     background-color: var(--primary-bgd-color);
-    
+
     .ql-fill {
         fill: var(--primary-font-color);
     }
-    
+
     .ql-stroke {
         stroke: var(--primary-font-color);
     }
@@ -402,12 +401,16 @@ footer {
 
 .ql-toolbar {
     border-top-right-radius: 5px;
-    border-top-left-radius: 5px;    
+    border-top-left-radius: 5px;
+
     .ql-picker {
         color: var(--primary-font-color);
-        .ql-picker-label:hover, .ql-picker-item:hover {
+
+        .ql-picker-label:hover,
+        .ql-picker-item:hover {
             color: var(--accent-color);
         }
+
         .ql-picker-options {
             background-color: var(--primary-bgd-color);
         }
@@ -443,8 +446,9 @@ footer {
 .ql-snow .ql-toolbar .ql-picker-item:hover,
 .ql-snow.ql-toolbar .ql-picker-item.ql-selected,
 .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
-  color: var(--accent-color);
+    color: var(--accent-color);
 }
+
 .ql-snow.ql-toolbar button:hover .ql-fill,
 .ql-snow .ql-toolbar button:hover .ql-fill,
 .ql-snow.ql-toolbar button:focus .ql-fill,
@@ -473,8 +477,9 @@ footer {
 .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
 .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill,
 .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
-  fill: var(--accent-color);
+    fill: var(--accent-color);
 }
+
 .ql-snow.ql-toolbar button:hover .ql-stroke,
 .ql-snow .ql-toolbar button:hover .ql-stroke,
 .ql-snow.ql-toolbar button:focus .ql-stroke,
@@ -503,5 +508,5 @@ footer {
 .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
 .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
 .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
-  stroke: var(--accent-color);
+    stroke: var(--accent-color);
 }

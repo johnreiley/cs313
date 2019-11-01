@@ -65,7 +65,7 @@ if (isset($_POST['post-edit-id'])) {
                 <div id="editor"><?php echo $text ?></div>
 
                 <div class="break"></div>
-                <div class="fancy-btn">
+                <div class="fancy-btn action-buttons">
                     <input type="submit" id="save-post-btn" value="Save">
                 </div>
             </form>

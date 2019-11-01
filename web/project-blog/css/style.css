@@ -291,7 +291,7 @@ footer {
   display: inherit;
 }
 
-.action-buttons form button {
+.action-buttons button, .action-buttons input {
   -webkit-box-shadow: var(--item-box-shadow);
           box-shadow: var(--item-box-shadow);
   width: 44px;
@@ -406,7 +406,8 @@ footer {
   color: var(--primary-font-color);
 }
 
-.ql-toolbar .ql-picker .ql-picker-label:hover, .ql-toolbar .ql-picker .ql-picker-item:hover {
+.ql-toolbar .ql-picker .ql-picker-label:hover,
+.ql-toolbar .ql-picker .ql-picker-item:hover {
   color: var(--accent-color);
 }
 
