@@ -66,7 +66,8 @@ if (isset($_POST['post-edit-id'])) {
 
                 <div class="break"></div>
                 <div class="fancy-btn action-buttons">
-                    <input type="submit" id="save-post-btn" value="Save">
+                    <button type="submit" id="save-post-btn"><i class="material-icons">save</i></button>
+                    <!-- <input type="submit" id="save-post-btn" value="Save"> -->
                 </div>
             </form>
 
