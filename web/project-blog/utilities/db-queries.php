@@ -269,7 +269,6 @@ function updateBlogPost($db, $postId, $postTitle, $postImg, $postText)
 }
 
 
-
 /***************DELETE QUERIES****************/
 
 // delete blog post
