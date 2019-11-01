@@ -147,12 +147,6 @@ footer {
     overflow: hidden;
     animation: grow var(--std-animation-duration);
 
-    // @for $i from 1 through 5 {
-    //       &:nth-child(#{$i}) {
-    //         animation-delay: $i * (1s / 2);
-    //       }
-    //   }
-
     a {
         background-color: inherit;
         display: flex;
@@ -254,7 +248,7 @@ footer {
             }
         }
 
-        .comment-reply-btn button{
+        .comment-reply-btn button {
             background-color: var(--primary-bgd-color);
             border: none;
             color: var(--primary-font-color);
@@ -300,8 +294,23 @@ footer {
             width: 44px;
             height: 38px;
         }
+
     }
 }
+
+.sql-snow {
+    color: var(--primary-font-color);
+    background-color: var(--primary-bgd-color-dark);
+
+    .ql-fill {
+        fill: var(--primary-font-color);
+    }
+
+    .ql-stroke {
+        stroke: var(--primary-font-color);
+    }
+}
+
 
 .draft-preview {
     border-top: solid 2px;
