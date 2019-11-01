@@ -60,7 +60,6 @@ if (isset($_POST['post-edit-id'])) {
                 <div class="break"></div>
                 <div class="fancy-input">
                     <textarea name="body-text" id="body-text" cols="30" rows="10"><?php echo $text ?></textarea>
-                    <div class="fancy-input-txt">body text</div>
                 </div>
 
                 <div class="break"></div>
