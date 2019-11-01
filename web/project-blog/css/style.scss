@@ -419,6 +419,11 @@ footer {
     border-bottom-right-radius: 5px;
     height: 500px;
 
+    .ql-editor {
+        font-family: var(--font-apple);
+        font-size: inherit;
+    }
+
     a {
         color: var(--accent-color);
     }
