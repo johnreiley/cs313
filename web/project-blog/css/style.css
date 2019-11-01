@@ -298,6 +298,19 @@ footer {
   height: 38px;
 }
 
+.ql-snow {
+  color: var(--primary-font-color);
+  background-color: var(--primary-bgd-color-dark);
+}
+
+.ql-snow .ql-fill {
+  fill: var(--primary-font-color);
+}
+
+.ql-snow .ql-stroke {
+  stroke: var(--primary-font-color);
+}
+
 .draft-preview {
   border-top: solid 2px;
   padding-top: 40px;
