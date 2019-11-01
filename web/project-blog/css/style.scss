@@ -301,8 +301,9 @@ footer {
 .ql-snow {
     display: block;
     border-width: 2px;
+    width: 100%;
     color: var(--primary-font-color);
-    background-color: var(--primary-bgd-color-dark);
+    background-color: var(--primary-bgd-color);
 
     .ql-fill {
         fill: var(--primary-font-color);
