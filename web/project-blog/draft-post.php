@@ -62,7 +62,6 @@ if (isset($_POST['post-edit-id'])) {
                     <textarea name="body-text" id="body-text" cols="30" rows="10"><?php echo $text ?></textarea>
                 </div>
 
-                <div class="break"></div>
                 <div id="editor"><?php echo $text ?></div>
 
                 <div class="break"></div>
