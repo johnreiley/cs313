@@ -26,9 +26,9 @@ function verifyLoginCredentials($db, $username, $password)
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($row != null && password_verify($password, $row['password'])) {
-        return true;
+        return $row;
     } else {
-        return false;
+        return null;
     }
 }
 
