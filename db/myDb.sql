@@ -14,7 +14,7 @@ DROP SEQUENCE sl_comments_s1;
 CREATE TABLE users
 ( user_id       INTEGER     PRIMARY KEY
 , username      VARCHAR(30) UNIQUE NOT NULL
-, password      VARCHAR(30) NOT NULL
+, password      VARCHAR(100) NOT NULL
 , email         VARCHAR(50) UNIQUE NOT NULL
 , first_name    VARCHAR(30) NOT NULL
 , last_name     VARCHAR(30) NOT NULL
@@ -65,7 +65,7 @@ CREATE SEQUENCE sl_comments_s1 START WITH 1001;
 
 /******** ADD MYSELF AS ADMIN ********/
 INSERT INTO users( user_id, username, password, email, first_name, last_name, creation_date)
-VALUES( nextval('users_s1'), 'jlreiley', 'cangetin', 'johnlouisreiley@gmail.com', 'John', 'Reiley', transaction_timestamp());
+VALUES( nextval('users_s1'), 'jlreiley', '$2y$10$0gR17JMlFtIgwVvx4boGi.aWr9S9PyNmtWKgTQs8mnbFlf59ISJKy', 'johnlouisreiley@gmail.com', 'John', 'Reiley', transaction_timestamp());
 
 INSERT INTO administrators(admin_id, user_id)
 VALUES( nextval('administrators_s1'), currval('users_s1'));
