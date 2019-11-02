@@ -6,6 +6,6 @@ $id = $_POST['post-delete-id'];
 if ($isAdmin) {
     deleteBlogPost($db, $id);
 }
-// header('Location: ../index.php');
+header('Location: ../index.php');
 
 ?>
