@@ -285,6 +285,12 @@ function deleteBlogPost($db, $postId)
 function deleteComment($db, $commentId)
 {
     $query = '
+    DELETE FROM second_level_comments
+    WHERE comment_id=:comment_id';
+    $stmt = $db->prepare($query);
+    $stmt->execute(array(':comment_id' => $commentId));
+
+    $query = '
     DELETE FROM comments
     WHERE comment_id=:comment_id';
     $stmt = $db->prepare($query);

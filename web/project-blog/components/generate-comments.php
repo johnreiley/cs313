@@ -32,7 +32,7 @@ foreach (getPostComments($db, $id) as $comment) {
         echo "<div id=\"comment-$commentId\" class=\"comment\">";
         if ($isAdmin) {
             echo "<div class=\"comment-delete-btn\">
-                      <a href=\"actions/delete-comment.php?comment-id=$commentId&post-id=$id\">
+                      <a href=\"actions/delete-comment.php?comment-id=$commentId&post-id=$id&is-sub-comment=true\">
                           <i class=\"material-icons\">remove_circle_outline</i>
                       </a>
                   </div>";
