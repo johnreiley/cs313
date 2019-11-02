@@ -13,11 +13,11 @@ function verifyLoginCredentials($db, $username, $password)
     $query = '
     SELECT 
       user_id
+    , password
     , first_name
     , last_name
     FROM users
-    WHERE username=:username
-    AND password=:password';
+    WHERE username=:username';
     $stmt = $db->prepare($query);
     $stmt->execute(array(
         ':username' => $username,
@@ -25,10 +25,10 @@ function verifyLoginCredentials($db, $username, $password)
     ));
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if (count($row) == 3) {
-        return $row;
+    if ($row != null && password_verify($password, $row['password'])) {
+        return true;
     } else {
-        return null;
+        return false;
     }
 }
 
