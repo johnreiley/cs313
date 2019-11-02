@@ -274,16 +274,14 @@ function updateBlogPost($db, $postId, $postTitle, $postImg, $postText)
 function deleteBlogPost($db, $postId)
 {
     $query = '
-    DELETE FROM second_level_comments
+    SELECT comment_id FROM comments
     WHERE post_id=:post_id';
     $stmt = $db->prepare($query);
-    $stmt->execute(array(':post_id' => $postId));
+    $rows = $stmt->execute(array(':post_id' => $postId));
 
-    $query = '
-    DELETE FROM comments
-    WHERE post_id=:post_id';
-    $stmt = $db->prepare($query);
-    $stmt->execute(array(':post_id' => $postId));
+    foreach ($rows as $row) {
+        deleteComment($db, $row['comment_id']);
+    }
 
     $query = '
     DELETE FROM posts
