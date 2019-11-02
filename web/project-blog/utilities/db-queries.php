@@ -277,7 +277,8 @@ function deleteBlogPost($db, $postId)
     SELECT comment_id FROM comments
     WHERE post_id=:post_id';
     $stmt = $db->prepare($query);
-    $rows = $stmt->execute(array(':post_id' => $postId));
+    $stmt->execute(array(':post_id' => $postId));
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($rows as $row) {
         echo $row['comment_id'];
