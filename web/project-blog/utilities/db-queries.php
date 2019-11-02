@@ -281,15 +281,14 @@ function deleteBlogPost($db, $postId)
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($rows as $row) {
-        echo $row['comment_id'];
-        // deleteComment($db, $row['comment_id']);
+        deleteComment($db, $row['comment_id']);
     }
 
-    // $query = '
-    // DELETE FROM posts
-    // WHERE post_id=:post_id';
-    // $stmt = $db->prepare($query);
-    // $stmt->execute(array(':post_id' => $postId));
+    $query = '
+    DELETE FROM posts
+    WHERE post_id=:post_id';
+    $stmt = $db->prepare($query);
+    $stmt->execute(array(':post_id' => $postId));
 }
 
 
