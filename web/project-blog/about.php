@@ -22,7 +22,7 @@ $page = "About";
         <div class="content-container">
             <h2 class="page-title"><?php echo $page ?></h2>
             <div>
-                Insert about info here
+                Welcome to my blog where you will find many articles that do not make much sense.  Some day there will meaningful information on here.  But for the time being, please enjoy being confused.
             </div>
         </div>
     </main>

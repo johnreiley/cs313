@@ -6,7 +6,6 @@ var editor = document.querySelector('.ql-editor');
 var titleDiv = document.querySelector('.page-title');
 var info = document.querySelector('.post-info');
 var img = document.querySelector('.post-img').firstElementChild;
-console.log(img);
 var bodyTextDiv = document.querySelector('.post-body');
 
 titleDiv.innerText = title.value;
