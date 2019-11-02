@@ -20,8 +20,7 @@ function verifyLoginCredentials($db, $username, $password)
     WHERE username=:username';
     $stmt = $db->prepare($query);
     $stmt->execute(array(
-        ':username' => $username,
-        ':password' => $password
+        ':username' => $username
     ));
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
