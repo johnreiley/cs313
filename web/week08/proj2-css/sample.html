@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
         h2 {
@@ -15,29 +15,55 @@
     </style>
     <title>Style</title>
 </head>
+
 <body>
 
-<h2>BUTTONS</h2>
-<button class="btn">I'm a normal button</button>
-<button class="btn btn-primary">I'm a primary button</button>
-<button class="btn btn-secondary">I'm a secondary button</button>
-<button class="btn btn-warn">I'm a warn button</button>
-<button class="btn btn-secondary btn-icon"><i class="material-icons">photo_camera</i></button>
-<button class="btn btn-primary btn-icon"><i class="material-icons">photo_camera</i></button>  
-<button class="btn btn-warn btn-icon"><i class="material-icons">clear</i></button>
-<a class="btn btn-secondary">Some text</a>
-<br>
+    <header>
+        <nav>
+            <div></div>
+        </nav>
+    </header>
 
-<h2>INPUTS</h2>
-<form action="">
-<input type="text" placeholder="VIN" class=""><button class="btn btn-primary btn-icon"><i class="material-icons">photo_camera</i></button> 
-<br>
-<input type="text" placeholder="make" class="">
-<br>
-<input type="text" placeholder="model" class="">
-<br>
-<input type="text" placeholder="year" class="">
-</form>
+    <div class="content">
+
+        <h2>BUTTONS</h2>
+        <div><button class="btn">normal button</button></div>
+        <div><button class="btn btn-primary">primary button</button></div>
+        <div><button class="btn btn-secondary">secondary button</button></div>
+        <div><button class="btn btn-warn">warn button</button></div>
+        <div><button class="btn btn-secondary btn-icon"><i class="material-icons">photo_camera</i></button></div>
+        <div><button class="btn btn-primary btn-icon"><i class="material-icons">photo_camera</i></button> </div>
+        <div><button class="btn btn-warn btn-icon"><i class="material-icons">clear</i></button></div>
+        <br>
+        <div><a class="btn btn-secondary">Some text</a></div>
+        <br>
+
+
+
+        <h2>INPUTS</h2>
+        <form action="">
+            <div class="input-btn-container">
+                <input type="text" placeholder="VIN" class=""><button class="btn btn-primary btn-icon input-btn"><i
+                        class="material-icons">photo_camera</i></button>
+            </div>
+            <div class="break"></div>
+            <input type="text" placeholder="make" class="">
+
+            <input type="text" placeholder="model" class="">
+
+            <input type="text" placeholder="year" class="half">
+        </form>
+
+
+        <h2>LISTS</h2>
+        <ul class="list">
+            <li class="list-item">Here is one</li>
+            <li class="list-item">Here is another</li>
+            <li class="list-item">Don't stop</li>
+            <li class="list-item">believing!</li>
+        </ul>
+    </div>
 
 </body>
+
 </html>
