@@ -2,12 +2,24 @@
     --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --font-size: 15px;
     --item-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
-    --input-shadow: 0 0 2px 1px;
+    --input-shadow: 0 0 2px 0;
     --border-radius: 3px;
     --darkgray: rgb(94, 94, 94);
     --lightgray: rgb(173, 173, 173);
     --blue: rgb(47, 150, 219);
     --red: tomato;
+}
+
+.full {
+    width: 100%;
+}
+
+.half {
+    width: 50%;
+}
+
+.quarter {
+    width: 25%;
 }
 
 
@@ -24,12 +36,20 @@
     outline: none;
     // box-shadow: var(--item-shadow);
     height: 42px;
+    transition: filter 0.2s;
+}
+
+.btn:hover {
+    filter: brightness(0.95);
 }
 
 .btn:active {
     box-shadow: none;
-    filter: brightness(0.95);
+    filter: brightness(0.85);
 }
+
+
+
 
 .btn-primary {
     color: white;
@@ -47,6 +67,7 @@
 .btn-icon {
     margin: 1px 0 0 0;
     width: 44px;
+    transform: translateY(6px);
 }
 
 
@@ -56,9 +77,10 @@ input {
     transition: box-shadow 0.1s;
     font-size: var(--font-size);
     padding: 8px;
+    margin: 5px 0 5px 0;
     border-radius: var(--border-radius);
     border: solid 1px var(--lightgray);
-    box-shadow: 0 0 0 0 black;
+    // box-shadow: 0 0 0 0 black;
 }
 
 input:focus {
