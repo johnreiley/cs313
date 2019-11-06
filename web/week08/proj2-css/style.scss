@@ -48,9 +48,6 @@
     filter: brightness(0.85);
 }
 
-
-
-
 .btn-primary {
     color: white;
     background-color: var(--blue);
@@ -61,13 +58,19 @@
     background-color: white;
     color: var(--blue);
     border: solid 1px var(--blue);
+}
 
+.btn-warn {
+    color: white;
+    background-color: var(--red);
+    border: solid 1px var(--red);
 }
 
 .btn-icon {
     margin: 1px 0 0 0;
     width: 44px;
     transform: translateY(5px);
+    border-radius: 22px;
 }
 
 

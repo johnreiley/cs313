@@ -67,11 +67,18 @@
   border: solid 1px var(--blue);
 }
 
+.btn-warn {
+  color: white;
+  background-color: var(--red);
+  border: solid 1px var(--red);
+}
+
 .btn-icon {
   margin: 1px 0 0 0;
   width: 44px;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
+  border-radius: 22px;
 }
 
 /********* INPUTS *********/
