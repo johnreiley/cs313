@@ -53,6 +53,9 @@
 
 /********* INPUTS *********/
 input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   -webkit-transition: -webkit-box-shadow 0.1s;
   transition: -webkit-box-shadow 0.1s;
   transition: box-shadow 0.1s;

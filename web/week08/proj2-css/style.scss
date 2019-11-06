@@ -52,6 +52,7 @@
 
 /********* INPUTS *********/
 input {
+    appearance: none;
     transition: box-shadow 0.1s;
     font-size: var(--font-size);
     padding: 8px;
