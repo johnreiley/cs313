@@ -36,6 +36,20 @@ body {
 }
 
 /******** BUTTONS ********/
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.btn-container .btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .btn {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -48,7 +62,7 @@ body {
   border: none;
   border-radius: var(--border-radius);
   padding: 8px;
-  margin: 5px 0 5px 0;
+  margin: 5px 5px 5px 5px;
   outline: none;
   height: 42px;
   -webkit-transition: -webkit-filter 0.2s;
@@ -169,4 +183,6 @@ input:focus {
 .list .list-item:last-child {
   border: none;
 }
+
+/************ COLORS *************/
 /*# sourceMappingURL=style.css.map */

@@ -29,7 +29,7 @@ body {
 
 /******** NAVIGATION ********/
 nav {
-    height: ;
+    // height: ;
 
     .nav-item {
 
@@ -46,6 +46,15 @@ nav {
 
 
 /******** BUTTONS ********/
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    .btn {
+        flex: 1;
+    }
+}
+
 .btn {
     user-select: none;
     color: white;
@@ -55,7 +64,7 @@ nav {
     border: none;
     border-radius: var(--border-radius);
     padding: 8px;
-    margin: 5px 0 5px 0;
+    margin: 5px 5px 5px 5px;
     outline: none;
     // box-shadow: var(--item-shadow);
     height: 42px;
