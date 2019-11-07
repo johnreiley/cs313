@@ -1,0 +1,22 @@
+{
+    "/": {
+        "responseCode": 200,
+        "contentType": "text/html",
+        "filepath": "./index.html"
+    },
+    "/home": {
+        "responseCode": 200,
+        "contentType": "text/html",
+        "filepath": "./index.html"
+    },
+    "/getData": {
+        "responseCode": 200,
+        "contentType": "application/json",
+        "filepath": "./data.json"
+    },
+    "/main.css": {
+        "responseCode": 200,
+        "contentType": "text/css",
+        "filepath": "./main.css"
+    }
+}
